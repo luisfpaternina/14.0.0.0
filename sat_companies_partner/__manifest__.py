@@ -25,7 +25,8 @@
     ],
 
     'data': [
-       
+
+        'data/sequences.xml',   
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/res_partner_delegation.xml',
@@ -34,7 +35,6 @@
         'views/res_partner_communities.xml',
         'views/crm_lead.xml',
         'views/products.xml',
-        'data/sequences.xml',
         
     ],
     'installable': True
