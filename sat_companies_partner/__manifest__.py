@@ -21,6 +21,7 @@
         'stock',
         'account_accountant',
         'l10n_latam_base',
+        'account',
     ],
 
     'data': [
