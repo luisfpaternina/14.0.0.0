@@ -138,6 +138,12 @@ class ResPartner(models.Model):
     is_community = fields.Boolean(
         string="Is community",
         related="partner_type_id.is_community")
+    payment_term_maintenance_id = fields.Many2one(
+        'account.payment.term',
+        string="Terms maintenance")
+    payment_term_tel_id = fields.Many2one(
+        'account.payment.term',
+        string="Terms telephone")
 
 
     _sql_constraints = [
