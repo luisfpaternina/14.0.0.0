@@ -81,6 +81,7 @@
             name="Categorty udn" 
             parent="sale.menu_sale_config"
             action="sat_companies_industry.action_view_categ_udn"
+            sequence="60"
             />
 
     </data>
