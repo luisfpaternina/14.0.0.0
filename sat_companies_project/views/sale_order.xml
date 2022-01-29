@@ -22,6 +22,11 @@
                 <field name="is_potential_client" invisible="1"/>
             </xpath>
 
+            <xpath expr="//field[@name='payment_term_id']" position="attributes">
+                <attribute name="attrs">{}</attribute>
+                <attribute name="required">1</attribute>
+            </xpath>
+
         </field> 
     </record>
 </odoo>
