@@ -76,5 +76,12 @@
             action="sat_companies_industry.action_view_categ_udn"
             />
 
+        <menuitem 
+            id="menu_project_task_categ_udn_sale" 
+            name="Categorty udn" 
+            parent="sale.menu_sale_config"
+            action="sat_companies_industry.action_view_categ_udn"
+            />
+
     </data>
 </odoo> 
