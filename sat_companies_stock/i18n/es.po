@@ -742,7 +742,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__population_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__population_id
 msgid "Date population"
-msgstr "Dato población"
+msgstr "Vecindad"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_december
