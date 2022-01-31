@@ -137,44 +137,44 @@
                                 DNI………………………………………
                                </p>
                                 <!--3RA PAGINA! -->
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Identificación del Responsable.</strong> 
                                     Le informamos que los datos personales que Usted nos proporciona son incorporados a un tratamiento de datos personales denominado CLIENTES cuyo responsable es SERKI INSTALACIONES Y SERVICIOS, S.L conNIF B84241454 y con domicilio en AV. DE L’ALTET Nº29 BAJO, 03208 de ELCHE, ALICANTE (ESPAÑA). Puede contactar con elResponsable, bien por teléfono en el número 965422376 o bien mediante correo electrónico en el buzón contabilidad@serki.es.
 
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Finalidad.</strong>
                                     ¬La finalidad es la gestión de la relación mercantil, tanto desde un punto de vista administrativo y de cumplimiento de obligaciones fiscales, como desde un punto de vista comercial y de marketing (comunicaciones, información comercial y gestión sobre productos y servicios). Distribución y comunicación con carácter publicitario.
 
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Plazo de Conservación.</strong>
                                     ¬Una vez finalizada la relación contractual, o prestación de servicio el plazo de conservación de los datos será de 6 años para dar cumplimiento a obligaciones legales, fiscales y mercantiles. Desde un punto de vista comercial y de marketing los datos serán conservados indefinidamente mientras exista un interés mutuo. Respecto a los tratamientos de datos de publicidad y uso de imágenes los datos serán conservados indefinidamente mientras exista un interés mutuo. El usuario podrá ejercitar los derechos reflejados más abajo. 
 
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Decisiones automatizadas y elaboración de perfiles.</strong>
                                     No se toman decisiones automatizadas ni se elaboran perfiles.
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Base Jurídica del Tratamiento.</strong>
                                     ¬La base jurídica del tratamiento es la ejecución de un contrato mercantil o la prestación de un servicio, así como el cumplimiento de obligaciones fiscales y mercantiles. Además de consentimiento EXPLÍCITO para fines determinados. Consentimiento explicito para los tratamientos de datos de publicidad y uso de imágenes los datos.
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Destinatarios de cesiones.</strong>
                                     ¬Se prevén cesiones a bancos, cajas de ahorro y cajas rurales, además de aquellas que están autorizadas por ley.
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Transferencias Internacionales.</strong>
                                     ¬No se realizan transferencias internacionales.
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     <strong>Derechos.</strong>
                                     De acuerdo con la legislación vigente tiene los siguientes derechos: 
                                     - Derecho a solicitar el acceso a sus datos personales.  - Derecho a solicitar su rectificación o supresión.  - Derecho a solicitar la limitación de su tratamiento - Derecho a oponerse al tratamiento.  - Derecho a la portabilidad de los datos. 
                                     Para ejercer sus derechos, dirigiéndose por escrito con fotocopia de DNI o documento identificativo equivalente y solicitando el correspondiente formulario a SERKI INSTALACIONES Y SERVICIOS, S.L o a través de la dirección de correo contabilidad@serki.es con el Asunto “Derechos Ley Protección de Datos”. Opcionalmente, puede redirigir al interesado a la Autoridad de Control competente para obtener información adicional acerca de sus derechos. Asimismo, en caso de considerar vulnerado su derecho a la protección de datos personales, podrá interponer una reclamación ante la Agencia Española de Protección de Datos.
                                 </p>
-                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                <p align="justify" t-if="p == 2" style="font-size:12px">
                                     De conformidad con el <strong>Reglamento (UE) 2016/679</strong>, de 27 de abril de 2016, o Reglamento General de Protección de Datos (RGPD), en lo que no contradiga el mencionado Reglamento, por lo dispuesto en la <strong>Ley Orgánica 3/2018</strong> de protección de datos de carácter personal y garantías de los derechos digitales y con la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE) deseo recibir información relacionada con SERKI INSTALACIONES Y SERVICIOS, S.L por cualquier medio facilitado a la empresa, entendiéndose medios electrónicos y medios de comunicación postales.
                                 </p>
                                 <br></br>
@@ -201,6 +201,7 @@
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     <strong>FIRMADO.</strong>
                                 </p>
+                                <!--4TA PAGINA! -->
                                 <p align="justify" t-if="p == 3" style="font-size:13px">
                                     Por favor, complete los campos marcados con un *
                                 </p>
