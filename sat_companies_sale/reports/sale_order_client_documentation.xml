@@ -204,6 +204,14 @@
                                 <p align="justify" t-if="p == 3" style="font-size:13px">
                                     Por favor, complete los campos marcados con un *
                                 </p>
+                                <br></br>
+                                <table width="100%">
+                                    <tr>
+                                        <td>TITULAR</td>
+                                        <td>CIF TITULAR</td>
+                                        <td>Su número de cuenta</td>
+                                    </tr>
+                                </table>
                            </div>
                         </div>
                         <div class="footer">
