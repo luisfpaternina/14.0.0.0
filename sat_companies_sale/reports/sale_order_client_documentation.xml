@@ -205,11 +205,18 @@
                                     Por favor, complete los campos marcados con un *
                                 </p>
                                 <br></br>
-                                <table width="100%">
+                                <table width="100%" t-if="p == 3">
                                     <tr>
                                         <td>TITULAR</td>
+                                        <td>[DPCLI]</td>
+                                    </tr>
+                                    <tr>
                                         <td>CIF TITULAR</td>
+                                        <td>[POBCLI]</td>
+                                    </tr>
+                                    <tr>
                                         <td>Su número de cuenta</td>
+                                        <td></td>
                                     </tr>
                                 </table>
                            </div>
