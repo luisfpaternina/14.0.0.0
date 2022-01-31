@@ -93,7 +93,7 @@ msgstr "Comercial captación"
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 msgid "Commercial maintenance"
-msgstr "Comercial captación"
+msgstr "Comercial mantenimiento"
 
 #. module: sat_companies_partner
 #: model:ir.actions.act_window,name:sat_companies_partner.action_view_communities
