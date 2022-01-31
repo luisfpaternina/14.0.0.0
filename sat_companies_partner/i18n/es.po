@@ -594,7 +594,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__observations_oca
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__observations_oca
 msgid "Observations"
-msgstr "Observaciones"
+msgstr "Notas adicionales"
 
 #. module: sat_companies_partner
 #: model:ir.actions.act_window,name:sat_companies_partner.action_view_res_partner_type
