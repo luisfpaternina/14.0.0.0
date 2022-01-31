@@ -63,8 +63,8 @@
                                 float:left;
                                 }
                                 div#cuadro{
-                                width:30px;
-                                height:30px;
+                                width:20px;
+                                height:20px;
                                 background-color:white;
                                 float:left;
                                 border: 1px solid black;
