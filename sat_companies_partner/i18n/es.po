@@ -268,7 +268,7 @@ msgstr "Aparatos"
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 msgid "Gagdets"
-msgstr "Aparatos"
+msgstr "Relación de aparatos"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__percentaje_mto
