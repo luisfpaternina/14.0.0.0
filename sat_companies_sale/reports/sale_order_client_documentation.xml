@@ -55,6 +55,8 @@
                                 height:30px;
                                 background-color:white;
                                 float:left;
+                                border: 1px solid #338F30;
+                                border-radius: 40px;
                                 }
                             </style>
                             <!--PRIMERA PAGINA! -->
