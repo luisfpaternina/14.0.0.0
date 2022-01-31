@@ -192,6 +192,9 @@
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     <strong>FIRMADO.</strong>
                                 </p>
+                                <p align="justify" t-if="p == 3" style="font-size:15px">
+                                    Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>
+                                </p>
                            </div>
                         </div>
                         <div class="footer">
