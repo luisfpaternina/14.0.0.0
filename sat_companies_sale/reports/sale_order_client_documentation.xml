@@ -45,6 +45,9 @@
                             <p align="justify" t-if="p == 3">
                                     Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>
                             </p>
+                            <p align="justify" t-if="p == 3" style="font-size:13px">
+                                    Mediante la firma del presente formulario de Orden de Domiciliación, Usted autoriza a SERKI INSTALACIONES Y SERVICIOS, S.L. a enviar órdenes a su entidad financiera, para adeudar en su cuenta los importes que se devenguen como consecuencia de la prestación de los servicios de mantenimiento y reparación de ascensores y, asimismo, autoriza a su entidad financiera para cargar en su cuenta los importes debidamente notificados por SERKI INSTALACIONES Y SERVICIOS, S.L.. Usted tiene derecho a ser reembolsado por su entidad financiera, de acuerdo con los términos y condiciones del contrato suscrito con la misma. Dicho reembolso deberá reclamarse en un plazo máximo de 8 semanas a contar desde la fecha en que se realizó el adeudo de su cuenta.
+                                </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
@@ -194,9 +197,6 @@
                                 </p>
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     <strong>FIRMADO.</strong>
-                                </p>
-                                <p align="justify" t-if="p == 3" style="font-size:13px">
-                                    Mediante la firma del presente formulario de Orden de Domiciliación, Usted autoriza a SERKI INSTALACIONES Y SERVICIOS, S.L. a enviar órdenes a su entidad financiera, para adeudar en su cuenta los importes que se devenguen como consecuencia de la prestación de los servicios de mantenimiento y reparación de ascensores y, asimismo, autoriza a su entidad financiera para cargar en su cuenta los importes debidamente notificados por SERKI INSTALACIONES Y SERVICIOS, S.L.. Usted tiene derecho a ser reembolsado por su entidad financiera, de acuerdo con los términos y condiciones del contrato suscrito con la misma. Dicho reembolso deberá reclamarse en un plazo máximo de 8 semanas a contar desde la fecha en que se realizó el adeudo de su cuenta.
                                 </p>
                                 <p align="justify" t-if="p == 3" style="font-size:13px">
                                     Por nuestra parte le remitiremos la factura de la forma acordada.
