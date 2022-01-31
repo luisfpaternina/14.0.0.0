@@ -167,7 +167,7 @@
                                 <table style="width:100%;">
                                     <tr>
                                         <td><strong>SI</strong> quiero</td>
-                                        <td><div id="cuadro" style=" text-align: center;"> <t> <span></span>  </t></div></td>
+                                        <td><div id="cuadro" style=" text-align: center;"> <t> <span>✔</span>  </t></div></td>
                                         <td>Mal Manejo</td>
                                         <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
                                         <td>Uso Normal</td>
