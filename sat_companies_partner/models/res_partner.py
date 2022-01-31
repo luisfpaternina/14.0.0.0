@@ -109,7 +109,7 @@ class ResPartner(models.Model):
         string="O.C.A",
         tracking=True)
     client_code = fields.Char(
-        string="Code",
+        string="Client code",
         tracking=True,
         copy=False)
     gadget_ids = fields.Many2many(
