@@ -1744,7 +1744,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__model_gadget
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__model_gadget
 msgid "Model gadget"
-msgstr "Modelo aparato"
+msgstr "Modelo"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__months_number
