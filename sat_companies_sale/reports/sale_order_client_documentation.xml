@@ -55,7 +55,7 @@
                                 height:30px;
                                 background-color:white;
                                 float:left;
-                                border: 1px solid #338F30;
+                                border: 1px solid black;
                                 border-radius: 40px;
                                 }
                             </style>
@@ -170,9 +170,7 @@
                                     <tr>
                                         <td><strong>SI</strong> quiero</td>
                                         <td><div id="cuadro" style=" text-align: center;"> <t> <span>✔</span>  </t></div></td>
-                                        <td>Mal Manejo</td>
-                                        <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
-                                        <td>Uso Normal</td>
+                                        <td><strong>NO</strong> quiero</td>
                                         <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
                                     </tr>
                                 </table>
