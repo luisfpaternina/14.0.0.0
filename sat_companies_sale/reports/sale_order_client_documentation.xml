@@ -186,6 +186,9 @@
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     Dn./a, ............................................................................................................. con DNI / NIE ......................... doy mi consentimiento expreso de acuerdo con lo expuesto en el presente documento.
                                 </p>
+                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                    <strong>FIRMADO.</strong>
+                                </p>
                            </div>
                         </div>
                         <div class="footer">
