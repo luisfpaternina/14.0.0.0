@@ -124,7 +124,7 @@ class ProductTemplate(models.Model):
         string="Low Mto",
         tracking=True)
     billing_period  = fields.Char(
-        string="Billing period",
+        string="Billing",
         tracking=True)
     type_increase = fields.Char(
         string="Increase",
