@@ -50,6 +50,12 @@
                                 background-color:white;
                                 float:left;
                                 }
+                                div#cuadro{
+                                width:30px;
+                                height:30px;
+                                background-color:white;
+                                float:left;
+                                }
                             </style>
                             <!--PRIMERA PAGINA! -->
                             <p align="center" t-if="p == 0">
@@ -157,6 +163,17 @@
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     De conformidad con el <strong>Reglamento (UE) 2016/679</strong>, de 27 de abril de 2016, o Reglamento General de Protección de Datos (RGPD), en lo que no contradiga el mencionado Reglamento, por lo dispuesto en la <strong>Ley Orgánica 3/2018</strong> de protección de datos de carácter personal y garantías de los derechos digitales y con la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE) deseo recibir información relacionada con SERKI INSTALACIONES Y SERVICIOS, S.L por cualquier medio facilitado a la empresa, entendiéndose medios electrónicos y medios de comunicación postales.
                                 </p>
+                                <br></br>
+                                <table style="width:100%;" t-if="o.type_service in 'correctivo' or o.type_service in 'preventivo'">
+                                    <tr>
+                                        <td><strong>SI</strong> quiero</td>
+                                        <td><div id="cuadro" style=" text-align: center;"> <t> <span></span>  </t></div></td>
+                                        <td>Mal Manejo</td>
+                                        <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
+                                        <td>Uso Normal</td>
+                                        <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
+                                    </tr>
+                                </table>
                            </div>
                         </div>
                         <div class="footer">
