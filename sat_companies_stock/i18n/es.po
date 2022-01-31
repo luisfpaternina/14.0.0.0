@@ -614,7 +614,7 @@ msgstr "Código"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__company_product_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__company_product_id
 msgid "Company"
-msgstr "Compañía"
+msgstr "Compañía relacionada"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__type_contract
