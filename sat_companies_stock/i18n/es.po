@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 00:09+0000\n"
-"PO-Revision-Date: 2022-01-26 00:09+0000\n"
+"POT-Creation-Date: 2022-01-31 11:06+0000\n"
+"PO-Revision-Date: 2022-01-31 11:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -466,7 +466,7 @@ msgstr "Dirección 3"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__partner_admin_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__user_id
 msgid "Admin"
-msgstr "Es administrador"
+msgstr "Administrador"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__user_id
@@ -547,11 +547,15 @@ msgid "Bidirectional model"
 msgstr "Modelo bidirecional"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__billing_period
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__billing_period
+msgid "Billing"
+msgstr "Facturar apt"
+
+#. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_gadgets_billing_period
 #: model:ir.model,name:sat_companies_stock.model_stock_gadgets_billing_period
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__billing_period
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__billing_period_id
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__billing_period
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__billing_period_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__billing_period
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__billing_period_id
@@ -2138,6 +2142,12 @@ msgid "Reduced pit"
 msgstr "Foso reducido"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__ref_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__ref_type
+msgid "Ref type"
+msgstr ""
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__ref
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__ref
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__ref
@@ -2345,9 +2355,7 @@ msgid "Tractor group"
 msgstr "Grupo tractor"
 
 #. module: sat_companies_stock
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__ref_type
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__type_gadget
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__ref_type
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__type_gadget
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__ref_type
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__type_gadget
