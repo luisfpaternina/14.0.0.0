@@ -35,8 +35,8 @@
                             <p t-if="p == 2" align="right">
                                 <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                             </p>
-                            <h3 t-if="p == 2">CONSENTIMIENTO INFORMADO</h3>
-                            <i t-if="p == 2">REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES
+                            <h3 t-if="p == 2" style="font-size:17px">CONSENTIMIENTO INFORMADO</h3>
+                            <i t-if="p == 2" style="font-size:17px">REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES
                                 LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES
                             </i>
                             <p t-if="p == 3" align="right">
