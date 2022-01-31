@@ -42,6 +42,9 @@
                             <p t-if="p == 3" align="right">
                                 <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                             </p>
+                            <p align="justify" t-if="p == 3">
+                                    Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
@@ -191,9 +194,6 @@
                                 </p>
                                 <p align="justify" t-if="p == 2" style="font-size:13px">
                                     <strong>FIRMADO.</strong>
-                                </p>
-                                <p align="justify" t-if="p == 3" style="font-size:15px">
-                                    Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>
                                 </p>
                            </div>
                         </div>
