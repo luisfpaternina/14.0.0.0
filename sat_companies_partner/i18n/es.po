@@ -48,7 +48,7 @@ msgstr "Agregar observaciones"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_product__partner_admin_id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_template__partner_admin_id
 msgid "Admin"
-msgstr "Es administrador"
+msgstr "Administrador"
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
