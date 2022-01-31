@@ -39,6 +39,9 @@
                             <i t-if="p == 2">REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES
                                 LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES
                             </i>
+                            <p t-if="p == 3" align="right">
+                                <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
