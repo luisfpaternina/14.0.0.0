@@ -169,11 +169,20 @@
                                 <table style="width:100%;" t-if="p == 2">
                                     <tr>
                                         <td><strong>SI</strong> quiero</td>
-                                        <td><div id="cuadro" style=" text-align: center;"> <t> <span>✔</span>  </t></div></td>
+                                        <td><div id="cuadro" style=" text-align: center;"> <t> <span></span>  </t></div></td>
                                         <td><strong>NO</strong> quiero</td>
                                         <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
                                     </tr>
                                 </table>
+                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                    La inacción en la selección anterior se entenderá como NO.
+                                </p>
+                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                    <strong>Consentimiento.</strong> En ELCHE a ................................................ 
+                                </p>
+                                <p align="justify" t-if="p == 2" style="font-size:13px">
+                                    COMUNIDAD DE PROPIETARIOS  [DPCLI]  [POBCLI]  
+                                </p>
                            </div>
                         </div>
                         <div class="footer">
