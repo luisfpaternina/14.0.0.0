@@ -180,9 +180,9 @@
                                 <br></br>
                                 <table style="width:100%;" t-if="p == 2">
                                     <tr>
-                                        <td><strong>SI</strong> quiero</td>
+                                        <td><p style="font-size:13px"><strong>SI</strong> quiero</p></td>
                                         <td><div id="cuadro" style=" text-align: center;"> <t> <span></span>  </t></div></td>
-                                        <td><strong>NO</strong> quiero</td>
+                                        <td><p style="font-size:13px"><strong>NO</strong> quiero</p></td>
                                         <td><div id="cuadro" style=" text-align: center;"><t> <span></span>  </t></div></td>
                                     </tr>
                                 </table>
