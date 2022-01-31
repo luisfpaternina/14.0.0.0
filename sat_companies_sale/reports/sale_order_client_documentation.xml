@@ -208,12 +208,20 @@
                                 <br></br>
                                 <table width="100%" t-if="p == 3">
                                     <tr>
-                                        <td>TITULAR</td>
-                                        <td>[DPCLI]</td>
+                                        <td>
+                                            <p style="font-size:13px">TITULAR</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px">[DPCLI]</p>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>CIF TITULAR</td>
-                                        <td>[POBCLI]</td>
+                                        <td>
+                                            <p style="font-size:13px">CIF TITULAR</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px">[POBCLI]</p>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Su número de cuenta</td>
