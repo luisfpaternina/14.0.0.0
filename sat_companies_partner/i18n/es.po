@@ -637,7 +637,7 @@ msgstr "Población"
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_delegation__code
 msgid "Postal Code"
-msgstr "Código"
+msgstr "Código del tercero"
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.custom_view_res_partner_search
