@@ -147,14 +147,15 @@ class ResPartner(models.Model):
         'account.payment.term',
         string="Terms telephone")
 
-    
+
     _sql_constraints = [
         (
             'client_code_uniq',
-            'unique(client_code)',
+            'check(1=1)',
             'The client code is unique!'
         )
     ]
+
     
 
     """
@@ -278,7 +279,13 @@ class ResPartner(models.Model):
 
     @api.model
     def create(self, vals):
-        if vals.get('client_code', 'New') == 'New':
-            vals['client_code'] = self.env['ir.sequence'].next_by_code('partner') or 'New'
+        if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
+            vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
         result = super(ResPartner, self).create(vals)
+        return result
+    
+    def write(self, vals):
+        if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
+            vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
+        result = super(ResPartner, self).write(vals)
         return result
