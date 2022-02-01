@@ -55,6 +55,20 @@
                             <p t-if="p == 4" align="right">
                                 <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                             </p>
+                            <table width="100%" t-if="p == 4">
+                                      <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Peter</td>
+                                        <td>Griffin</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Lois</td>
+                                        <td>Griffin</td>
+                                      </tr>
+                                </table>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
@@ -271,20 +285,6 @@
                                             <p style="font-size:13px"></p>
                                         </td>
                                     </tr>
-                                </table>
-                                <table width="100%" t-if="p == 4">
-                                      <tr>
-                                        <th>Firstname</th>
-                                        <th>Lastname</th>
-                                      </tr>
-                                      <tr>
-                                        <td>Peter</td>
-                                        <td>Griffin</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Lois</td>
-                                        <td>Griffin</td>
-                                      </tr>
                                 </table>
                            </div>
                         </div>
