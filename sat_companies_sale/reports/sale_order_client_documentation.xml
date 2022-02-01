@@ -228,7 +228,15 @@
                                             <p style="font-size:13px">Su número de cuenta</p>
                                         </td>
                                         <td>
+                                            <p style="font-size:13px"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
                                             <p style="font-size:13px">Nombre del acreedor</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px"></p>
                                         </td>
                                     </tr>
                                 </table>
