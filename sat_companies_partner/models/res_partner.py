@@ -194,6 +194,7 @@ class ResPartner(models.Model):
 
         return res
     """
+    
     def _validate_percentage(self):
         for record in self:
             if record.percentaje_rep > 100 or record.percentaje_mto > 100:
