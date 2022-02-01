@@ -51,6 +51,9 @@
                             <p align="justify" t-if="p == 3" style="font-size:13px">
                                 Por nuestra parte le remitiremos la factura de la forma acordada.
                             </p>
+                            <p t-if="p == 4" align="right">
+                                <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
