@@ -194,7 +194,7 @@ class ResPartner(models.Model):
 
         return res
     """
-    
+
     def _validate_percentage(self):
         for record in self:
             if record.percentaje_rep > 100 or record.percentaje_mto > 100:
@@ -285,6 +285,7 @@ class ResPartner(models.Model):
         result = super(ResPartner, self).create(vals)
         return result
     
+
     def write(self, vals):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
             vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
