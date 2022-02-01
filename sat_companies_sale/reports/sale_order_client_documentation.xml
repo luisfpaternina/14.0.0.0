@@ -239,6 +239,30 @@
                                             <p style="font-size:13px"></p>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:13px">Tipo de pago</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:13px">Localidad donde se firma</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:13px">Firma</p>
+                                        </td>
+                                        <td>
+                                            <p style="font-size:13px"></p>
+                                        </td>
+                                    </tr>
                                 </table>
                            </div>
                         </div>
