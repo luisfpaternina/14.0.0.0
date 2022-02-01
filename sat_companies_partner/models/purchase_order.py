@@ -5,4 +5,5 @@ class PurchaseOrder(models.Model):
 
     is_potential_client = fields.Boolean(
         string="Is a potential client",
-        tracking=True)
+        tracking=True,
+        related="partner_id.is_potential_client")
