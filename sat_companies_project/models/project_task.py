@@ -83,7 +83,7 @@ class ProjectTaskInherit(models.Model):
                             related="product_id.rae")
     check_suscription_recurrent = fields.Boolean(
         "Suscription recurrent",
-        compute="_compute_check_suscription_recurrent")
+        compute="compute_check_suscription_recurrent")
     check_pit_datetime = fields.Datetime(
         'Check Datetime Pit')
     check_cabine_datetime = fields.Datetime(
@@ -96,30 +96,22 @@ class ProjectTaskInherit(models.Model):
     ot_type_id = fields.Many2one(
         'sale.order.type',
         string="Tipo OT")
-    
     @api.onchange('categ_udn_id')
     def related_type_ot(self):
         for record in self:
             record.ot_type_id = record.categ_udn_id.ot_type_id
 
-    def _compute_check_suscription_recurrent(self):
+    def compute_check_suscription_recurrent(self):
         for record in self:
-            partner = record.partner_id
-            suscription_template = record.product_id.subscription_template_id
-            product = record.product_id
-            subscription_recurrent = self.env['sale.subscription'].search([('partner_id','=',partner.id),('template_id','=',suscription_template.id)])
-            if subscription_recurrent.recurring_invoice_line_ids:
-                ids_products = []
-                for p in subscription_recurrent.recurring_invoice_line_ids:
-                    ids_products.append(p.product_id.id)
-
-                if product.id in ids_products:
+            suscription_template_log = self.env['sale.subscription.log'].search([('project_task_id','=',record.id)])
+            if suscription_template_log:
+                suscription_template = suscription_template_log.subscription_id
+                if suscription_template.stage_id.sequence == 20:
                     record.check_suscription_recurrent = True
                 else:
                     record.check_suscription_recurrent = False
             else:
                 record.check_suscription_recurrent = False
-
 
     def confirm_check_gadget(self):
         for record in self:

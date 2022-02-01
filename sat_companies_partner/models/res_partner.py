@@ -154,6 +154,7 @@ class ResPartner(models.Model):
         )
     ]
 
+    """
     @api.model
     def create(self, vals):
         res = super(ResPartner, self).create(vals)
@@ -170,7 +171,7 @@ class ResPartner(models.Model):
                         raise ValidationError(_(
                             'You must register a city'))
         return res
-
+    
 
     def write(self, vals):
         res = super(ResPartner, self).write(vals)
@@ -188,7 +189,7 @@ class ResPartner(models.Model):
                             'You must register a city'))
 
         return res
-
+    """
     def _validate_percentage(self):
         for record in self:
             if record.percentaje_rep > 100 or record.percentaje_mto > 100:

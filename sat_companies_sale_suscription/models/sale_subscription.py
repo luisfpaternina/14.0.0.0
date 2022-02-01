@@ -9,6 +9,11 @@ class SaleSuscriptionInherit(models.Model):
 
     active_cron_invoice = fields.Boolean()
 
+    @api.onchange('team_id')
+    def _onchange_team(self):
+        for record in self:
+            print('team')
+
     """
     @api.model
     def _cron_recurring_create_invoice(self):
