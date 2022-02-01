@@ -147,7 +147,7 @@ class ResPartner(models.Model):
         'account.payment.term',
         string="Terms telephone")
 
-
+    """
     _sql_constraints = [
         (
             'client_code_uniq',
@@ -155,6 +155,7 @@ class ResPartner(models.Model):
             'The client code is unique!'
         )
     ]
+    """
 
     """
     @api.model
