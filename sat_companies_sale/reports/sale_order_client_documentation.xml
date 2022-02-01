@@ -74,6 +74,10 @@
                                 border: 1px solid black;
                                 border-radius: 40px;
                                 }
+                                table1 {
+                                width: 100%;
+                                border: 1px solid black;
+                                }
                             </style>
                             <!--PRIMERA PAGINA! -->
                             <p align="center" t-if="p == 0">
@@ -267,6 +271,20 @@
                                             <p style="font-size:13px"></p>
                                         </td>
                                     </tr>
+                                </table>
+                                <table width="100%" t-if="p == 4">
+                                      <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Peter</td>
+                                        <td>Griffin</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Lois</td>
+                                        <td>Griffin</td>
+                                      </tr>
                                 </table>
                            </div>
                         </div>
