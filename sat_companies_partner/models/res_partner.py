@@ -111,7 +111,9 @@ class ResPartner(models.Model):
     client_code = fields.Char(
         string="Client code",
         tracking=True,
-        copy=False)
+        copy=False,
+        default='New',
+        readonly=True,)
     gadget_ids = fields.Many2many(
         'product.template',
         compute="compute_gadgets_partner",
@@ -271,3 +273,11 @@ class ResPartner(models.Model):
     @api.onchange('name')
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
+
+
+    @api.model
+    def create(self, vals):
+        if vals.get('client_code', 'New') == 'New':
+            vals['client_code'] = self.env['ir.sequence'].next_by_code('partner') or 'New'
+        result = super(ResPartner, self).create(vals)
+        return result
