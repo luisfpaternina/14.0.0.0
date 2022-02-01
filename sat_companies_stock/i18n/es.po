@@ -2075,7 +2075,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__city
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__population_id
 msgid "Population"
-msgstr "Dato población"
+msgstr "Población"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__population_name
@@ -2158,7 +2158,7 @@ msgstr "Referencia"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__responsable_zone_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__responsable_zone_id
 msgid "Responsable"
-msgstr ""
+msgstr "Responsable zona"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__route_id
