@@ -24,6 +24,7 @@
                 <t t-foreach="range(5)" t-as="p">
                     <t t-foreach="docs" t-as="o">                    
                         <div class="header">
+                            <!--ENCABEZADO -->
                             <p t-if="p == 0">
                                 <span>COMUNIDAD DE PROPIETARIOS</span><br></br>
                                 <span t-field="o.partner_id"></span><br></br>
