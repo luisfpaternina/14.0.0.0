@@ -277,8 +277,10 @@ class ResPartner(models.Model):
 
     @api.model
     def create(self, vals):
-        if vals.get('is_potential_client'):
+        if not vals.get('is_potential_client'):
             if vals.get('client_code', 'New') == 'New':
                 vals['client_code'] = self.env['ir.sequence'].next_by_code('partner') or 'New'
             result = super(ResPartner, self).create(vals)
             return result
+        else:
+            result = super(ResPartner, self).create(vals)
