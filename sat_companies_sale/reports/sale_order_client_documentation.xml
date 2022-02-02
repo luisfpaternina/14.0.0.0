@@ -55,7 +55,7 @@
                                 <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                             </p>
                             <table width="100%" t-if="p == 4">
-                                <tr>
+                                <tr style="background-color:#FF0000">
                                     <th>
                                         <h4 align="center">FICHA EXPENDIENTE</h4>
                                     </th>
