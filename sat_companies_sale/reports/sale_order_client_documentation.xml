@@ -73,6 +73,15 @@
                             <p t-if="p == 4">
                                 Tipo Contrato Anterior…………………………………………………………………………………
                             </p>
+                            <p t-if="p == 4">
+                                Pago trimestral Actual………………………………………………………………………………….
+                            </p>
+                            <p t-if="p == 4">
+                                Fecha Última Inspección………/……/……… ¿Ascensor Parado?*  SI   NO
+                            </p>
+                            <p t-if="p == 4">
+                                Estado OCA           Favorable         Favorable con defectos                  Condicionada      Negativa
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
