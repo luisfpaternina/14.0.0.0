@@ -30,7 +30,7 @@
                                 <span t-field="o.product_tmpl_id"></span>
                             </h4>
                             <table width="100%">
-                                 <t t-foreach="o.bom_line_ids" t-as="line">
+                                <t t-foreach="o.bom_line_ids" t-as="line">
                                   <tr>
                                     <th>Producto</th>
                                     <th>LdM</th>
@@ -59,6 +59,7 @@
                                         <span></span>
                                     </td>
                                   </tr>
+                                </t>
                             </table>
                        </div>
                     </div>
