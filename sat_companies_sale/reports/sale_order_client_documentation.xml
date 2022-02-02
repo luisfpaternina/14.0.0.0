@@ -82,6 +82,27 @@
                             <p t-if="p == 4">
                                 Estado OCA           Favorable         Favorable con defectos                  Condicionada      Negativa
                             </p>
+                            <h6 t-if="p == 4">
+                                DATOS COMUNIDAD
+                            </h6>
+                            <p t-if="p == 4">
+                                Comunidad……………………………………………………………………………………………………
+                            </p>
+                            <p t-if="p == 4">
+                                C. I.F*………………………………………………………  RAE*…………………………………………
+                            </p>
+                            <p t-if="p == 4">
+                                ¿Quiere recibir facturas por email?*      SI     NO
+                            </p>
+                            <h6 t-if="p == 4">
+                                Presidente
+                            </h6>
+                            <p t-if="p == 4">
+                               Nombre* ……………………………………………………………………………………………………… 
+                            </p>
+                            <p t-if="p == 4">
+                               Tlf.* ……………………………………………… Email…………………………………………………… 
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
