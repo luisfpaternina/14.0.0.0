@@ -1,5 +1,6 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
+from datetime import datetime, date
 
 class ResCompany(models.Model):
     _inherit = 'res.company'
