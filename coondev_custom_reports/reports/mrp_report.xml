@@ -26,10 +26,11 @@
                             <h3>
                                 BoM Structure Cost
                             </h3>
-                            <h3>
+                            <h4>
                                 <span t-field="o.product_tmpl_id"></span>
-                            </h3>
+                            </h4>
                             <table width="100%">
+                                 <t t-foreach="o.bom_line_ids" t-as="line">
                                   <tr>
                                     <th>Producto</th>
                                     <th>LdM</th>
@@ -39,12 +40,24 @@
                                     <th>Coste de Lista de Materiales</th>
                                   </tr>
                                   <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>
+                                        <span t-field="line.product_id"></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.product_qty"></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span t-field="line.product_id.standard_price"></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
                                   </tr>
                             </table>
                        </div>
