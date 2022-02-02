@@ -112,6 +112,9 @@
                             <p t-if="p == 4">
                                 Tlf.…………………………………………… Email*……………………………………………………
                             </p>
+                            <h5 t-if="p == 4" style="color:#59B36F;">
+                                OBSERVACIONES
+                            </h5>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
