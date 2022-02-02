@@ -224,7 +224,7 @@
                     <filter string="Contact type" name="partner_type_id" context="{'group_by':'partner_type_id'}"/>
                 </xpath>
 
-                <xpath expr="//search/filter[@name='type_person']" position="after">
+                <xpath expr="//search/filter[@name='type_company']" position="after">
                     <filter string="Delegation" name="delegation_id" domain="[('delegation_id', '!=', False)]"/>
                     <filter string="Potencial client" name="is_potential_client" domain="[('is_potential_client', '!=', False)]"/>
                     <filter string="Is admin" name="is_admin" domain="[('is_admin', '!=', False)]"/>
