@@ -57,11 +57,11 @@
                             <table width="100%" t-if="p == 4">
                                 <tr style="background-color:#59B36F">
                                     <th>
-                                        <h4 align="center">FICHA EXPENDIENTE</h4>
+                                        <h4 align="center" style="color:white;">FICHA EXPENDIENTE</h4>
                                     </th>
                                 </tr>
                             </table>
-                            <h6 t-if="p == 4">
+                            <h6 t-if="p == 4" style="color:#59B36F;">
                                 DATOS CONTRATO ANTERIOR:
                             </h6>
                             <p t-if="p == 4">
@@ -82,7 +82,7 @@
                             <p t-if="p == 4">
                                 Estado OCA           Favorable         Favorable con defectos                  Condicionada      Negativa
                             </p>
-                            <h6 t-if="p == 4">
+                            <h6 t-if="p == 4" style="color:#59B36F;">
                                 DATOS COMUNIDAD
                             </h6>
                             <p t-if="p == 4">
@@ -94,7 +94,7 @@
                             <p t-if="p == 4">
                                 ¿Quiere recibir facturas por email?*      SI     NO
                             </p>
-                            <h6 t-if="p == 4">
+                            <h6 t-if="p == 4" style="color:#59B36F;">
                                 Presidente
                             </h6>
                             <p t-if="p == 4">
@@ -103,7 +103,7 @@
                             <p t-if="p == 4">
                                Tlf.* ……………………………………………… Email…………………………………………………… 
                             </p>
-                            <p t-if="p == 4">
+                            <p t-if="p == 4" style="color:#59B36F;">
                                Administrador 
                             </p>
                             <p t-if="p == 4">
@@ -112,6 +112,9 @@
                             <p t-if="p == 4">
                                 Tlf.…………………………………………… Email*……………………………………………………
                             </p>
+                            <h5 t-if="p == 4" style="color:#59B36F;">
+                                OBSERVACIONES
+                            </h5>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
