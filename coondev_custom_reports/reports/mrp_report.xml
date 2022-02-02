@@ -56,7 +56,7 @@
                                         <span t-field="line.product_id.standard_price"></span>
                                     </td>
                                     <td>
-                                        <span></span>
+                                        <span t-field="line.total_cost"></span>
                                     </td>
                                   </tr>
                                 </t>
