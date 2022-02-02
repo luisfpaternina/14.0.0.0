@@ -5,6 +5,7 @@ from datetime import datetime, date
 class ResCompany(models.Model):
     _inherit = 'res.company'
 
+    # Variables
     terms = fields.Text(
         string="Terminos y condiciones")
     test = fields.Char(
@@ -22,6 +23,7 @@ class ResCompany(models.Model):
     days = fields.Integer(
         string="Days")
 
+    # Validar que las líneas no se pueda repetir
     @api.constrains('company_line_ids')
     def _exist_record_in_lines(self):
         for record in self:
