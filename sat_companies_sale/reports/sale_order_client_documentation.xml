@@ -64,6 +64,15 @@
                             <h6 t-if="p == 4">
                                 DATOS CONTRATO ANTERIOR:
                             </h6>
+                            <p t-if="p == 4">
+                                Empresa Mantenedora……………………………………………………………………………………
+                            </p>
+                            <p t-if="p == 4">
+                                Fecha Contrato  ………/………/………       Duración contrato…………………..años
+                            </p>
+                            <p t-if="p == 4">
+                                Tipo Contrato Anterior…………………………………………………………………………………
+                            </p>
                             <br></br>
                         </div>
                         <div class="article o_report_layout_standard">
