@@ -61,7 +61,7 @@
                                     </th>
                                 </tr>
                             </table>
-                            <h6 t-if="p == 4">
+                            <h6 t-if="p == 4" style="color:#59B36F;">
                                 DATOS CONTRATO ANTERIOR:
                             </h6>
                             <p t-if="p == 4">
