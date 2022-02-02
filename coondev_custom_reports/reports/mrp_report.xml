@@ -11,7 +11,9 @@
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
-
+                            <h3>
+                                <span t-field="o.product_tmpl_id"></span>
+                            </h3>
                        </div>
                     </div>
                     <div class="footer">
