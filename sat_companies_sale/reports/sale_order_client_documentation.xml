@@ -94,7 +94,7 @@
                             <p t-if="p == 4">
                                 ¿Quiere recibir facturas por email?*      SI     NO
                             </p>
-                            <h6 t-if="p == 4">
+                            <h6 t-if="p == 4" style="color:#59B36F;">
                                 Presidente
                             </h6>
                             <p t-if="p == 4">
@@ -103,7 +103,7 @@
                             <p t-if="p == 4">
                                Tlf.* ……………………………………………… Email…………………………………………………… 
                             </p>
-                            <p t-if="p == 4">
+                            <p t-if="p == 4" style="color:#59B36F;">
                                Administrador 
                             </p>
                             <p t-if="p == 4">
