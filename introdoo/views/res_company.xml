@@ -14,7 +14,9 @@
                 <page string="Introdoo" name="studio_page_HvpTb">
                   <group name="group_principal">
                     <group name="group_left">
-                        
+                        <field name="date1"/>
+                        <field name="date2"/>
+                        <field name="days"/>
                     </group>
                     <group name="group_right">
                         
