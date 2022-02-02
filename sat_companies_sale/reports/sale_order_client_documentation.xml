@@ -57,7 +57,7 @@
                             <table width="100%" t-if="p == 4">
                                 <tr style="background-color:#59B36F">
                                     <th>
-                                        <h4 align="center">FICHA EXPENDIENTE</h4>
+                                        <h4 align="center" style="color:white;">FICHA EXPENDIENTE</h4>
                                     </th>
                                 </tr>
                             </table>
