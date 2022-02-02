@@ -11,9 +11,42 @@
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
+                        <style>
+                            table {
+                              border-collapse: collapse;
+                              width: 100%;
+                            }
+
+                            th, td {
+                              padding: 8px;
+                              text-align: left;
+                              border-bottom: 1px solid #ddd;
+                            }
+                        </style>
+                            <h3>
+                                BoM Structure Cost
+                            </h3>
                             <h3>
                                 <span t-field="o.product_tmpl_id"></span>
                             </h3>
+                            <table width="100%">
+                                  <tr>
+                                    <th>Producto</th>
+                                    <th>LdM</th>
+                                    <th>Cantidad</th>
+                                    <th>Unidad de medida</th>
+                                    <th>Costo del producto</th>
+                                    <th>Coste de Lista de Materiales</th>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                            </table>
                        </div>
                     </div>
                     <div class="footer">
