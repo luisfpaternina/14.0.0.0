@@ -39,10 +39,13 @@
                             <group>
                                 <field name="active" widget="boolean_toggle"/>
                             </group>
-                                <field name="is_maintenance"/>
-                                <field name="is_line"/>
+                               
                             <group>
                                 <field name="is_create_task" widget="boolean_toggle"/>
+                            </group>
+                            <group>
+                                <field name="is_maintenance"/>
+                                <field name="is_line"/>
                             </group>
 
                         </group>
