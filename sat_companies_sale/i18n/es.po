@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 13:08+0000\n"
-"PO-Revision-Date: 2022-02-03 13:08+0000\n"
+"POT-Creation-Date: 2022-02-03 14:08+0000\n"
+"PO-Revision-Date: 2022-02-03 14:08+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -392,6 +392,11 @@ msgid "CONSENTIMIENTO INFORMADO"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model:ir.model,name:sat_companies_sale.model_crm_stage
+msgid "CRM Stages"
+msgstr "Etapas del CRM"
+
+#. module: sat_companies_sale
 #: model:mail.template,subject:sat_companies_sale.template_sale_sent_legal_letter
 msgid "Carta de No Defensa Jurídica"
 msgstr ""
@@ -580,6 +585,7 @@ msgstr ""
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__display_name
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__display_name
@@ -740,6 +746,7 @@ msgstr "Obtén un mejor navegador"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__id
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__id
@@ -820,6 +827,7 @@ msgstr ""
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type____last_update
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order____last_update
@@ -1066,6 +1074,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:sat_companies_sale.sale_type_servic_action
 #: model:ir.model,name:sat_companies_sale.model_crm_lead_type
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__oportunity_type_id
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__oportunity_type_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_crm_lead_type
 msgid "Oportunity type"
 msgstr "Tipo de oportunidad"
