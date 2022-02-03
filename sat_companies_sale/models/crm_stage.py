@@ -4,3 +4,7 @@ from odoo.exceptions import ValidationError
 
 class CrmStage(models.Model):
     _inherit = 'crm.stage'
+
+    oportunity_type_id = fields.Many2one(
+        'crm.lead.type',
+        string="Oportunity type")
