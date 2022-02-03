@@ -57,7 +57,8 @@ class SaleOrder(models.Model):
     date_end = fields.Datetime(
         string="Date end")
     quote_date_sent = fields.Date(
-        string="Quote date sent")
+        string="Quote date sent",
+        compute="_calculated_quote_date_sent")
 
     
     @api.onchange('product_id')
@@ -163,3 +164,12 @@ class SaleOrder(models.Model):
                 record.pdf_file_sale_contract = b64_pdf
             else:
                 record.pdf_file_sale_contract = False
+
+
+    @api.depends('state')
+    def _calculated_quote_date_sent(self):
+        for record in self:
+            if record.state == 'sent':
+                record.quote_date_sent = date.today()
+            else:
+                record.quote_date_sent = False
