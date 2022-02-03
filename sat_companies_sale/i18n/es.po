@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-14 13:12+0000\n"
-"PO-Revision-Date: 2022-01-14 13:12+0000\n"
+"POT-Creation-Date: 2022-02-03 13:08+0000\n"
+"PO-Revision-Date: 2022-02-03 13:08+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -178,6 +178,11 @@ msgid ""
 msgstr ""
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<span>COMUNIDAD DE PROPIETARIOS</span><br/>"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
 msgid ""
 "<span>Seleccione una de las opciones para proceder con su firma:</span>"
@@ -189,8 +194,127 @@ msgid "<strong><span>De una parte:</span></strong><span> </span>"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<strong>Aceptado el cliente</strong>"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Base Jurídica del Tratamiento.</strong>\n"
+"                                    ¬La base jurídica del tratamiento es la ejecución de un contrato mercantil o la prestación de un servicio, así como el cumplimiento de obligaciones fiscales y mercantiles. Además de consentimiento EXPLÍCITO para fines determinados. Consentimiento explicito para los tratamientos de datos de publicidad y uso de imágenes los datos."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_contract
 msgid "<strong>CONTRATO DE MANTENIMIENTO T - R</strong>"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Consentimiento.</strong> En ELCHE a "
+"................................................"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Decisiones automatizadas y elaboración de perfiles.</strong>\n"
+"                                    No se toman decisiones automatizadas ni se elaboran perfiles."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Derechos.</strong>\n"
+"                                    De acuerdo con la legislación vigente tiene los siguientes derechos: \n"
+"                                    - Derecho a solicitar el acceso a sus datos personales.  - Derecho a solicitar su rectificación o supresión.  - Derecho a solicitar la limitación de su tratamiento - Derecho a oponerse al tratamiento.  - Derecho a la portabilidad de los datos. \n"
+"                                    Para ejercer sus derechos, dirigiéndose por escrito con fotocopia de DNI o documento identificativo equivalente y solicitando el correspondiente formulario a SERKI INSTALACIONES Y SERVICIOS, S.L o a través de la dirección de correo contabilidad@serki.es con el Asunto “Derechos Ley Protección de Datos”. Opcionalmente, puede redirigir al interesado a la Autoridad de Control competente para obtener información adicional acerca de sus derechos. Asimismo, en caso de considerar vulnerado su derecho a la protección de datos personales, podrá interponer una reclamación ante la Agencia Española de Protección de Datos."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Destinatarios de cesiones.</strong>\n"
+"                                    ¬Se prevén cesiones a bancos, cajas de ahorro y cajas rurales, además de aquellas que están autorizadas por ley."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<strong>FIRMADO.</strong>"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Finalidad.</strong>\n"
+"                                    ¬La finalidad es la gestión de la relación mercantil, tanto desde un punto de vista administrativo y de cumplimiento de obligaciones fiscales, como desde un punto de vista comercial y de marketing (comunicaciones, información comercial y gestión sobre productos y servicios). Distribución y comunicación con carácter publicitario."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Identificación del Responsable.</strong> \n"
+"                                    Le informamos que los datos personales que Usted nos proporciona son incorporados a un tratamiento de datos personales denominado CLIENTES cuyo responsable es SERKI INSTALACIONES Y SERVICIOS, S.L conNIF B84241454 y con domicilio en AV. DE L’ALTET Nº29 BAJO, 03208 de ELCHE, ALICANTE (ESPAÑA). Puede contactar con elResponsable, bien por teléfono en el número 965422376 o bien mediante correo electrónico en el buzón contabilidad@serki.es."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<strong>NO</strong> quiero"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Plazo de Conservación.</strong>\n"
+"                                    ¬Una vez finalizada la relación contractual, o prestación de servicio el plazo de conservación de los datos será de 6 años para dar cumplimiento a obligaciones legales, fiscales y mercantiles. Desde un punto de vista comercial y de marketing los datos serán conservados indefinidamente mientras exista un interés mutuo. Respecto a los tratamientos de datos de publicidad y uso de imágenes los datos serán conservados indefinidamente mientras exista un interés mutuo. El usuario podrá ejercitar los derechos reflejados más abajo."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<strong>SI</strong> quiero"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "<strong>Serki Instalaciones y Servicios, S. L </strong>"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"<strong>Transferencias Internacionales.</strong>\n"
+"                                    ¬No se realizan transferencias internacionales."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"AVISO LEGAL: La información contenida en este correo electrónico, y en su "
+"caso en los documentos adjuntos, es información privilegiada para uso "
+"exclusivo de la persona y/o personas a las que va dirigido. No está "
+"permitido el acceso a este mensaje a cualquier otra persona  distinta a los "
+"indicados. Si Usted no es uno de los destinatarios, cualquier duplicación, "
+"reproducción, distribución, así como cualquier uso de la información "
+"contenida en él o cualquiera otra acción u omisión tomada en relación con el"
+" mismo, está prohibida y puede ser ilegal. En dicho caso, por favor, "
+"notifíquelo al remitente y proceda a la eliminación de este correo "
+"electrónico así como de sus adjuntos si los hubiere. Asimismo y en "
+"cumplimiento de la legislación española vigente en materia de protección de "
+"datos de carácter personal y del reglamento europeo RGPD 679/2016 le "
+"informamos que sus datos están siendo objeto de tratamiento por parte de "
+"SERKI INSTALACIONES Y SERVICIOS, S.L con CIF B84241454, con la finalidad del"
+" mantenimiento y gestión de relaciones comerciales y administrativas. La "
+"base jurídica del tratamiento es el cumplimiento de la legislación fiscal, "
+"mercantil y contable. No se preveen cesiones y/o transferencias "
+"internacionales de datos. Para ejercitar sus derechos puede dirigirse a "
+"SERKI INSTALACIONES Y SERVICIOS, S.L, domiciliada en Av. de l’altet nº 29, "
+"bajo,  03208, Elche (ALICANTE), o bien por email a contabilidad@serki.es, "
+"con el fin de ejercer sus derechos de acceso, rectificación, supresión "
+"(derecho al olvido), limitación de tratamiento, portabilidad de los datos, "
+"oposición, y a no ser objeto de decisiones automatizadas, indicando como "
+"Asunto: “Derechos Ley Protección de Datos”, y adjuntando fotocopia de su DNI"
 msgstr ""
 
 #. module: sat_companies_sale
@@ -210,6 +334,11 @@ msgid "Address"
 msgstr "Dirección"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Administrador"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__managed_by__admin
 msgid "Administrator"
 msgstr "Administrador"
@@ -226,6 +355,13 @@ msgid "Asesoramiento jurídico"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Asimismo les REQUIERO para que en el improrrogable plazo de 15 días nos "
+"faciliten los códigos de acceso de la maniobra del ascensor Rae nº"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.view_sale_order_inherit_sat_companies_sale
 msgid "Assignment date"
 msgstr "Fecha de asignación"
@@ -234,6 +370,26 @@ msgstr "Fecha de asignación"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_attachment_count
 msgid "Attachment Count"
 msgstr "Cuenta adjunta"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "C. I.F*………………………………………………………  RAE*…………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "CIF TITULAR"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "COMUNIDAD DE PROPIETARIOS  [DPCLI]  [POBCLI]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "CONSENTIMIENTO INFORMADO"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:mail.template,subject:sat_companies_sale.template_sale_sent_legal_letter
@@ -296,6 +452,16 @@ msgid "Companies/builders"
 msgstr "Compañias/constructoras"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Comunidad de Propietarios"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Comunidad……………………………………………………………………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model,name:sat_companies_sale.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
@@ -352,6 +518,16 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "DATOS COMUNIDAD"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "DATOS CONTRATO ANTERIOR:"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
 msgid "Data URL for your signature will go here!"
 msgstr "La URL de datos de su firma irá aquí"
@@ -367,6 +543,41 @@ msgid "Date end"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__days_maximum_stage
+msgid "Days maximum stage"
+msgstr "Días máximos"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"De conformidad con el <strong>Reglamento (UE) 2016/679</strong>, de 27 de "
+"abril de 2016, o Reglamento General de Protección de Datos (RGPD), en lo que"
+" no contradiga el mencionado Reglamento, por lo dispuesto en la <strong>Ley "
+"Orgánica 3/2018</strong> de protección de datos de carácter personal y "
+"garantías de los derechos digitales y con la Ley 34/2002, de 11 de julio, de"
+" servicios de la sociedad de la información y de comercio electrónico (LSSI-"
+"CE) deseo recibir información relacionada con SERKI INSTALACIONES Y "
+"SERVICIOS, S.L por cualquier medio facilitado a la empresa, entendiéndose "
+"medios electrónicos y medios de comunicación postales."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "De conformidad con lo dispuesto firman,"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"De no atender esta petición amistosa nos veremos obligados a instar cuantas "
+"acciones legales sean necesarias para la defensa de nuestros legítimos "
+"intereses , indicándoles que, de no facilitar dichos códigos, serán únicos "
+"responsables de cuantos costes , daños y perjuicios suponga para la "
+"comunidad la falta de acceso a la maniobra por no disponer de los mismos , "
+"que serán reclamados debidamente."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__display_name
@@ -378,6 +589,20 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_type_service__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Dn./a, "
+"............................................................................................................."
+" con DNI / NIE ......................... doy mi consentimiento expreso de "
+"acuerdo con lo expuesto en el presente documento."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model:ir.actions.report,name:sat_companies_sale.id_template_sale_client_documentation
+msgid "Documentación nuevos clientes"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
@@ -400,9 +625,82 @@ msgid "Email medium"
 msgstr "Medio de correo electrónico"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Empresa Mantenedora……………………………………………………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"En primer lugar agradecer su confianza depositada en Ascensores Serki para "
+"el mantenimiento de su ascensor. Del mismo modo queremos hacerles saber que "
+"desde que usted firma el contrato de mantenimiento, Serki pone a  "
+"disposición de su comunidad nuestros servicios jurídicos para el "
+"asesoramiento ante cualquier consecuencia que pueda ocasionar el cambio de "
+"empresa conservadora."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "En……………a……… de……………………. de………….."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Es nuestro deseo dar por concluidos sus servicios de mantenimiento del "
+"ascensor, por lo que por el presente les comunicamos formalmente que con "
+"fecha      de                de          damos por resuelto el referido "
+"contrato de mantenimiento, por lo que expresamente les requerimos a fin de "
+"que a partir de dicho día inclusive, se abstengan de entrar en la escalera "
+"de la comunidad, así como de realizar cualquier actuación en el ascensor si "
+"no cuentan con el consentimiento expreso y por escrito de la comunidad."
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Estado OCA           Favorable         Favorable con defectos"
+"                  Condicionada      Negativa"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"FDO………………………………………<br/>\n"
+"                                EN CALIDAD DE…………………………<br/>\n"
+"                                DNI………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "FICHA EXPENDIENTE"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__partner_admin_id
 msgid "Farm administrator"
 msgstr "Administrador de finca"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Fdo. Presidente de la Comunidad"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Fecha Contrato  ………/………/………       Duración contrato…………………..años"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Fecha Última Inspección………/……/……… ¿Ascensor Parado?*  SI   NO"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Firma"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_follower_ids
@@ -468,7 +766,7 @@ msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__is_admin
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_users__is_admin
 msgid "Is Admin"
-msgstr "Administrador"
+msgstr "Es administrador"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_is_follower
@@ -498,8 +796,25 @@ msgid "Item"
 msgstr "Ítem"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"La comunidad de propietarios se compromete a facilitar en todo momento y de "
+"forma inmediata la información de cualquier tipo (comunicaciones, cartas o "
+"notificaciones) que sea destinataria por parte de la anterior empresa "
+"conservadora u organismo oficial, en relación al cambio de empresa "
+"conservadora, colaborando en todo momento para un  correcto desarrollo del "
+"derecho de defensa de la comunidad ejercido a través de sus representantes, "
+"en este caso procuradores y abogados designados."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_order_maintenance_offer
 msgid "La gestión e inspección por cambio de conversador gratis"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "La inacción en la selección anterior se entenderá como NO."
 msgstr ""
 
 #. module: sat_companies_sale
@@ -538,6 +853,11 @@ msgstr "Iniciativa/Oportunidad"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__gadget_load
 msgid "Load(Kgs)"
 msgstr "Carga(kgs)"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Localidad donde se firma"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_main_attachment_id
@@ -590,6 +910,22 @@ msgid "Mecanicos de zona"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Mediante la firma del presente formulario de Orden de Domiciliación, Usted "
+"autoriza a SERKI INSTALACIONES Y SERVICIOS, S.L. a enviar órdenes a su "
+"entidad financiera, para adeudar en su cuenta los importes que se devenguen "
+"como consecuencia de la prestación de los servicios de mantenimiento y "
+"reparación de ascensores y, asimismo, autoriza a su entidad financiera para "
+"cargar en su cuenta los importes debidamente notificados por SERKI "
+"INSTALACIONES Y SERVICIOS, S.L.. Usted tiene derecho a ser reembolsado por "
+"su entidad financiera, de acuerdo con los términos y condiciones del "
+"contrato suscrito con la misma. Dicho reembolso deberá reclamarse en un "
+"plazo máximo de 8 semanas a contar desde la fecha en que se realizó el "
+"adeudo de su cuenta."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_has_error
 msgid "Message Delivery error"
 msgstr "Mensajes de error"
@@ -603,6 +939,16 @@ msgstr "Mensajes"
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__sale_order__sale_type__mounting
 msgid "Mounting"
 msgstr "Montaje"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Muy Sres. míos:"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Muy Sres. nuestros:"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__name
@@ -620,6 +966,16 @@ msgstr "Nombre tipo de oportunidad"
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__client_type__neighborhood_community
 msgid "Neighborhood community"
 msgstr "Comunidad de vecinos"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Nombre del acreedor"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Nombre………………………………………………………………………………………………………"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__nominal_speed
@@ -669,6 +1025,7 @@ msgid "Number of unread messages"
 msgstr "Número de mensajes no leídos"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_order_maintenance_offer
 msgid "OBSERVACIONES"
 msgstr ""
@@ -714,6 +1071,16 @@ msgid "Oportunity type"
 msgstr "Tipo de oportunidad"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Pago trimestral Actual…………………………………………………………………………………."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__pdf_file_sale_contract
 msgid "Pdf File Sale Contract"
 msgstr "PDF contrato"
@@ -729,9 +1096,24 @@ msgid "Population"
 msgstr "Poblración"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Por favor, complete los campos marcados con un *"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Por nuestra parte le remitiremos la factura de la forma acordada."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__managed_by__president
 msgid "President"
 msgstr "Presidente"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Presidente"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__client_type__public_organisms
@@ -747,6 +1129,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
 msgid "REF QUOTATION"
 msgstr "REFERENCIA COTIZACIÓN"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES\n"
+"                                LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__ref
@@ -767,6 +1156,25 @@ msgstr "Título del reporte"
 #. module: sat_companies_sale
 #: model:ir.actions.report,name:sat_companies_sale.id_template_sale_suspension_contract
 msgid "Resolución / Suspensión de Contrato"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"SERKI INSTALACIONES Y SERVICIOS, S.L es el Responsable del tratamiento de "
+"los datos personales proporcionados bajo su consentimiento y le informa de "
+"que estos datos serán tratados de conformidad con lo dispuesto en el "
+"Reglamento (UE) 2016/679, de 27 de abril (GDPR), y la Ley Orgánica 3/2018, "
+"de 5 de diciembre (LOPDGDD), con la finalidad de mantener una relación "
+"comercial (por interés legítimo del responsable, art. 6.1.f GDPR) y "
+"conservarlos durante no más tiempo del necesario para mantener el fin del "
+"tratamiento o mientras existan prescripciones legales que dictaminen su "
+"custodia. No se comunicarán los datos a terceros, salvo obligación legal. "
+"Asimismo, se le informa de que puede ejercer los derechos de acceso, "
+"rectificación, portabilidad y supresión de sus datos y los de limitación y "
+"oposición a su tratamiento dirigiéndose a SERKI INSTALACIONES Y SERVICIOS, "
+"S.L en AV. DEL ALTET, Nº 29. BAJO, - 03208 ELCHE (Alicante). Email: "
+"contabilidad@serki.es y el de reclamación a www.aepd.es."
 msgstr ""
 
 #. module: sat_companies_sale
@@ -827,9 +1235,19 @@ msgid "Signature URL"
 msgstr "URL de firma"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Sin nada mas, reciban un saludo."
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__client_type__family_home
 msgid "Single-family private homes"
 msgstr "Viviendas Particulares Unifamiliares"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Su número de cuenta"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
@@ -857,6 +1275,11 @@ msgid "TEST"
 msgstr "PRUEBA"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "TITULAR"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__task_user_id
 msgid "Task User id"
 msgstr "Asignar tarea a ténico"
@@ -879,6 +1302,26 @@ msgid "This is a preview of the customer portal."
 msgstr "Esta es una vista previa del portal del cliente."
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Tipo Contrato Anterior…………………………………………………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Tipo de pago"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Tlf.* ……………………………………………… Email……………………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "Tlf.…………………………………………… Email*……………………………………………………"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__type_service_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_sale_type_service
 msgid "Type Service"
@@ -893,6 +1336,23 @@ msgstr "Tipo de contrato"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
 msgstr "Tipo de servicio"
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"Una vez conocida la sentencia judicial o acuerdo extrajudicial, como "
+"consecuencia de la resolución unilateral del contrato de mantenimiento "
+"suscrito con la anterior empresa conservadora, la comunidad de propietarios "
+"o persona física o jurídica se compromete a continuar el mantenimiento con "
+"Ascensores Serki durante un periodo determinado que se acuerde en el anexo "
+"de ampliación que se firme en ese momento. A cambio, Ascensores Serki, por "
+"medio del presente documento, se compromete a asumir a su costa la "
+"indemnización a que hubiere lugar, por sentencia judicial o acuerdo "
+"extrajudicial. Cantidad de la que Ascensores Serki no se hace responsable en"
+" el caso de resolución anticipada del contrato de mantenimiento suscrito con"
+" Ascensores Serki por parte del cliente, teniendo que abonar este dichas "
+"cantidades."
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_unread
@@ -930,6 +1390,36 @@ msgid "Well done!"
 msgstr "Bien hecho!"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"[DOMCLI]\n"
+"                                    [DPCLI]  [POBCLI]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "[DPCLI]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"[NOMEC]<br/>\n"
+"                                    [DOMEC]<br/>\n"
+"                                    [DPEC][POBEC]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "[POBCLI]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "[POBCLI],       de                        de"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.view_crm_lead_type_form
 msgid "crm_lead_type_form"
 msgstr ""
@@ -948,4 +1438,16 @@ msgstr ""
 #. module: sat_companies_sale
 #: model:ir.model,name:sat_companies_sale.model_sale_type_service
 msgid "sale.type.service"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid ""
+"sito en [DPCLI]  [POBCLI]  \n"
+"                                    dado que éstos  pertenecen al titular del mismo, la comunidad de propietarios [DPCLI]  [POBCLI]"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
+msgid "¿Quiere recibir facturas por email?*      SI     NO"
 msgstr ""
