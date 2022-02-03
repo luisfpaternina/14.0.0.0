@@ -28,6 +28,10 @@ class SaleOrderType(models.Model):
         'project.task',
         string="Tasks",
         tracking=True)
+    is_maintenance = fields.Boolean(
+        string="Is maintenance")
+    is_line = fields.Boolean(
+        string="Is line")
 
 
     @api.onchange('name')
