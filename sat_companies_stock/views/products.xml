@@ -271,13 +271,13 @@
                 <page string="Photos">
                     <group>
                         <group>
-                            <field name="photo1"/>
+                            <field name="photo1" widget="image"/>
                         </group>
                         <group>
-                            <field name="photo2"/>
+                            <field name="photo2" widget="image"/>
                         </group>
                         <group>
-                            <field name="photo3"/>
+                            <field name="photo3" widget="image"/>
                         </group>
                     </group>
                 </page>
