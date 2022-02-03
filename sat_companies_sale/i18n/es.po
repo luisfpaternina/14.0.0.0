@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 14:08+0000\n"
-"PO-Revision-Date: 2022-02-03 14:08+0000\n"
+"POT-Creation-Date: 2022-02-03 19:32+0000\n"
+"PO-Revision-Date: 2022-02-03 19:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1128,6 +1128,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__client_type__public_organisms
 msgid "Public organisms"
 msgstr "Organismos publicos"
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__quote_date_sent
+msgid "Quote date sent"
+msgstr "Fecha presupuesto enviado"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__rae
