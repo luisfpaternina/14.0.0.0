@@ -32,7 +32,8 @@ class SaleOrderType(models.Model):
         string="Is maintenance",
         compute="_compute_check_is_maintenance")
     is_line = fields.Boolean(
-        string="Is line")
+        string="Is line",
+        compute="_compute_check_is_maintenance")
 
 
     @api.onchange('name')
@@ -44,3 +45,4 @@ class SaleOrderType(models.Model):
     def _compute_check_is_maintenance(self):
         for record in self:
             record.is_maintenance = True if record.name == 'MANTENIMIENTO' else False
+            record.is_line = True if record.name == 'LINEA' else False
