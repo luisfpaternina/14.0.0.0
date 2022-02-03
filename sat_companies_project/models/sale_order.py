@@ -53,7 +53,7 @@ class SaleOrder(models.Model):
             raise ValidationError(_("Verify the type of client if it is potential"))
             return res
 
-    @api.onchange('partner_id')
+    @api.onchange('partner_id','sale_type_id')
     def onchange_partner(self):
         for record in self:
             if record.sale_type_id.is_maintenance:
