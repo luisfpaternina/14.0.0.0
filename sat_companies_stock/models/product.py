@@ -460,6 +460,7 @@ class ProductTemplate(models.Model):
     photo3 = fields.Binary(
         string="Photo 3")
 
+
     @api.onchange('partner_id')
     def _onchange_partner_admin_id(self):
         if self.partner_id:
