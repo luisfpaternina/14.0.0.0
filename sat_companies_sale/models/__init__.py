@@ -8,3 +8,4 @@ from . import sale_type_service
 from . import sale_check_type_contract
 from . import sale_order_line
 from . import res_partner
+from . import crm_stage
