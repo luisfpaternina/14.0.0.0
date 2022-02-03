@@ -29,7 +29,8 @@ class SaleOrderType(models.Model):
         string="Tasks",
         tracking=True)
     is_maintenance = fields.Boolean(
-        string="Is maintenance")
+        string="Is maintenance",
+        compute="_compute_check_is_maintenance")
     is_line = fields.Boolean(
         string="Is line")
 
@@ -37,3 +38,9 @@ class SaleOrderType(models.Model):
     @api.onchange('name')
     def _upper_name(self):        
         self.name = self.name.upper() if self.name else False
+
+
+    @api.depends('name')
+    def _compute_check_is_maintenance(self):
+        for record in self:
+            record.is_maintenance = True if record.name == 'MANTENIMIENTO' else False
