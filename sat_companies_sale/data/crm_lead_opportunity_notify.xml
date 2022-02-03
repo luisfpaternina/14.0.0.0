@@ -7,8 +7,6 @@
             <field name="subject">Notificación de oportunidad</field>
             <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
             <field name="email_to">${object.partner_id.id}</field>
-            <field name="filter_pre_domain">[["type","=","opportunity"]]</field>
-            <field name="filter_domain">[["type","=","opportunity"]]</field>
             <field name="body_html" type="xml">
                 <div>
                     <strong><p align="center">Notificación de oportunidad</p></strong>
