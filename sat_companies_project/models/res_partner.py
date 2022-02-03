@@ -12,6 +12,12 @@ class ResPartner(models.Model):
     is_potential_client = fields.Boolean(
         string="Is a potential client",
         tracking=True)
+    payment_term_maintenance_id = fields.Many2one(
+        'account.payment.term',
+        string="Terms maintenance sale")
+    payment_term_tel_id = fields.Many2one(
+        'account.payment.term',
+        string="Terms telephone sale")
 
 
     @api.onchange('company_type')
