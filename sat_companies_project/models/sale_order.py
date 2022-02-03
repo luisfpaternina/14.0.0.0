@@ -52,3 +52,11 @@ class SaleOrder(models.Model):
         if self.is_potential_client:
             raise ValidationError(_("Verify the type of client if it is potential"))
             return res
+
+    @api.onchange('partner_id')
+    def onchange_partner(self):
+        for record in self:
+            if record.sale_type_id.is_maintenance:
+                record.payment_term_id = record.partner_id.payment_term_maintenance_id
+            elif record.sale_type_id.is_line:
+                record.payment_term_id = record.partner_id.payment_term_tel_id
