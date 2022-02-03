@@ -453,7 +453,12 @@ class ProductTemplate(models.Model):
         string="Partner type")
     is_community = fields.Boolean(
         string="Is community")
-
+    photo1 = fields.Binary(
+        string="Photo 1")
+    photo2 = fields.Binary(
+        string="Photo 2")
+    photo3 = fields.Binary(
+        string="Photo 3")
 
     @api.onchange('partner_id')
     def _onchange_partner_admin_id(self):
