@@ -36,7 +36,7 @@
                                 <field name="active" widget="boolean_toggle"/>
                             </group>
                             <group>
-                                
+                                <field name="days_maximum_stage"/>
                             </group>
                         </group>
                     </sheet>
