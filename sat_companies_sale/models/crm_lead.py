@@ -36,7 +36,8 @@ class CrmLead(models.Model):
         'res.partner',
         string="Farm administrator")
     quote_date_sent_min = fields.Date(
-        string="Quote date sent min")
+        string="Quote date sent min",
+        compute="_compute_quote_date_sent_min")
 
 
     @api.depends('medium_id')
@@ -59,29 +60,15 @@ class CrmLead(models.Model):
             else:
                 record.is_external = False
 
-    """
-    @api.onchange('order_ids','name','team_id')
-    def min_date_orders(self):
+
+
+    def _compute_quote_date_sent_min(self):
         for record in self:
-            logging.info("ENTRO A LA FUNCIONNNNNNNNNNNNN ***************************************")
             dt_orders = []
+            min_date = False
             for line in record.order_ids:
                 dt_orders.append(line.quote_date_sent)
             if dt_orders:
                 min_date = min(dt_orders)
-                logging.info("33333333333333333")
-                logging.info(min_date)
-    """
-
-    @api.onchange('name')
-    def _function_calculated_date(self):
-        logging.info("Testing........................................................")
-        dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
-        if dates:
-            logging.info("#####################")
-            logging.info(dates)
-            self.quote_date_sent_min = min(dates)
-            logging.info("+++++++++++++++++++++++")
-            logging.info(self.quote_date_sent_min)
-        else:
-            self.quote_date_sent_min = False
+            
+            record.quote_date_sent_min = min_date
