@@ -77,8 +77,11 @@ class CrmLead(models.Model):
     def _function_calculated_date(self):
         logging.info("Testing........................................................")
         dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
-        logging.info("#####################")
-        logging.info(dates)
-        self.quote_date_sent_min = dates[-1]
-        logging.info("+++++++++++++++++++++++")
-        logging.info(self.quote_date_sent_min)
+        if dates:
+            logging.info("#####################")
+            logging.info(dates)
+            self.quote_date_sent_min = dates[-1]
+            logging.info("+++++++++++++++++++++++")
+            logging.info(self.quote_date_sent_min)
+        else:
+            self.quote_date_sent_min = False
