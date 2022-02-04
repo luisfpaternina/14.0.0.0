@@ -59,7 +59,7 @@ class CrmLead(models.Model):
             else:
                 record.is_external = False
 
-
+    """
     @api.onchange('order_ids','name','team_id')
     def min_date_orders(self):
         for record in self:
@@ -71,3 +71,4 @@ class CrmLead(models.Model):
                 min_date = min(dt_orders)
                 logging.info("33333333333333333")
                 logging.info(min_date)
+    """
