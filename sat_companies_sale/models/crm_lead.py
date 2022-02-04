@@ -68,7 +68,7 @@ class CrmLead(models.Model):
             for line in record.order_ids:
                 logging.info("recorrer el forrrrrrrrrr ++++++++++++++++++++++++++++++++++++++++++++++++")
                 line.name
-                dt_order_ids.append(line)
+                dt_order_ids.append(line.quote_date_sent)
                 logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
                 logging.info(dt_order_ids)
                 logging.info(line.name)
