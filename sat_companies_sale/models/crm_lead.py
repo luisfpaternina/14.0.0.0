@@ -65,6 +65,7 @@ class CrmLead(models.Model):
         logging.info("ENTRO A LA FUNCIONNNNNNNNNNNNN ***************************************")
         dt_order_ids = []
         for line in self.order_ids:
+            logging.info("recorrer el forrrrrrrrrr ++++++++++++++++++++++++++++++++++++++++++++++++")
             line.name
             dt_order_ids.append(line)
             logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
