@@ -65,7 +65,7 @@ class CrmLead(models.Model):
         for record in self:
             logging.info("ENTRO A LA FUNCIONNNNNNNNNNNNN ***************************************")
             dt_order_ids = []
-            for line in record..order_ids:
+            for line in record.order_ids:
                 logging.info("recorrer el forrrrrrrrrr ++++++++++++++++++++++++++++++++++++++++++++++++")
                 line.name
                 dt_order_ids.append(line)
