@@ -61,7 +61,6 @@ class CrmLead(models.Model):
                 record.is_external = False
 
 
-
     def _compute_quote_date_sent_min(self):
         for record in self:
             dt_orders = []
