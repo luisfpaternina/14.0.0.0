@@ -80,7 +80,7 @@ class CrmLead(models.Model):
         if dates:
             logging.info("#####################")
             logging.info(dates)
-            self.quote_date_sent_min = dates[-1]
+            self.quote_date_sent_min = min(dates)
             logging.info("+++++++++++++++++++++++")
             logging.info(self.quote_date_sent_min)
         else:
