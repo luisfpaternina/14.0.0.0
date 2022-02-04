@@ -73,3 +73,8 @@ class CrmLead(models.Model):
                 logging.info(dt_order_ids)
                 logging.info(line.name)
                 logging.info(line.quote_date_sent)
+                if line.quote_date_sent < dt_order_ids:
+                    dt_order_ids = line.quote_date_sent
+                return dt_order_ids
+                logging.info("RETURNNNNNNNNNNNNNNNNNNNNNNN")
+                logging.info(dt_order_ids)
