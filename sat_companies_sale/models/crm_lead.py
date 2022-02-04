@@ -67,3 +67,4 @@ class CrmLead(models.Model):
             if line.state == 'sent':
                 logging.info("//////////////////////////////////////////")
                 logging(line.name)
+                self.quote_date_sent_min = date.today()
