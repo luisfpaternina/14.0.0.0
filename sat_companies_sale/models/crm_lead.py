@@ -79,3 +79,6 @@ class CrmLead(models.Model):
         dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
         logging.info("#####################")
         logging.info(dates)
+        self.quote_date_sent_min = dates[-1]
+        logging.info("+++++++++++++++++++++++")
+        logging.info(self.quote_date_sent_min)
