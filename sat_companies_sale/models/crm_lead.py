@@ -75,6 +75,7 @@ class CrmLead(models.Model):
 
     @api.onchange('name')
     def _function_calculated_date(self):
+        logging.info("Testing........................................................")
         dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
         logging.info("#####################")
         logging.info(dates)
