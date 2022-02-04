@@ -36,7 +36,8 @@ class CrmLead(models.Model):
         'res.partner',
         string="Farm administrator")
     quote_date_sent_min = fields.Date(
-        string="Quote date sent min")
+        string="Quote date sent min",
+        compute="_compute_quote_date_sent_min")
 
 
     @api.depends('medium_id')
@@ -73,15 +74,20 @@ class CrmLead(models.Model):
                 logging.info(min_date)
     """
 
-    @api.onchange('name')
-    def _function_calculated_date(self):
-        logging.info("Testing........................................................")
+    def _compute_quote_date_sent_min(self):
+        """
         dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
         if dates:
-            logging.info("#####################")
-            logging.info(dates)
             self.quote_date_sent_min = min(dates)
-            logging.info("+++++++++++++++++++++++")
-            logging.info(self.quote_date_sent_min)
         else:
             self.quote_date_sent_min = False
+        """
+        for record in self:
+            dt_orders = []
+            min_date = False
+            for line in record.order_ids:
+                dt_orders.append(line.quote_date_sent)
+            if dt_orders:
+                min_date = min(dt_orders)
+            
+            record.quote_date_sent_min = min_date
