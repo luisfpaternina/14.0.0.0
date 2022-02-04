@@ -60,28 +60,9 @@ class CrmLead(models.Model):
             else:
                 record.is_external = False
 
-    """
-    @api.onchange('order_ids','name','team_id')
-    def min_date_orders(self):
-        for record in self:
-            logging.info("ENTRO A LA FUNCIONNNNNNNNNNNNN ***************************************")
-            dt_orders = []
-            for line in record.order_ids:
-                dt_orders.append(line.quote_date_sent)
-            if dt_orders:
-                min_date = min(dt_orders)
-                logging.info("33333333333333333")
-                logging.info(min_date)
-    """
+
 
     def _compute_quote_date_sent_min(self):
-        """
-        dates = sorted(self.order_ids,key=lambda x: x.quote_date_sent)
-        if dates:
-            self.quote_date_sent_min = min(dates)
-        else:
-            self.quote_date_sent_min = False
-        """
         for record in self:
             dt_orders = []
             min_date = False
