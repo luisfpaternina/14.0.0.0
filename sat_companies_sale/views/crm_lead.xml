@@ -15,7 +15,7 @@
                 <field name="managed_by"/>
                 <field name="quote_date_sent_min"/>
                 <field name="order_ids">
-                    <tree default_order='create_date'>
+                    <tree>
                         <field name="name"/>
                     </tree>
                 </field>
