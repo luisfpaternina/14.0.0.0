@@ -72,3 +72,4 @@ class CrmLead(models.Model):
                 logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
                 logging.info(dt_order_ids)
                 logging.info(line.name)
+                logging.info(line.quote_date_sent)
