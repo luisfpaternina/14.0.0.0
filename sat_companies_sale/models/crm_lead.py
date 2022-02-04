@@ -60,7 +60,7 @@ class CrmLead(models.Model):
                 record.is_external = False
 
 
-    @api.onchange('order_ids')
+    @api.onchange('order_ids','quotation_count')
     def _min_date(self):
         date_order_ids = []
         for line in self.order_ids:
