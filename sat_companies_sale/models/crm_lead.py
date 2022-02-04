@@ -73,3 +73,10 @@ class CrmLead(models.Model):
                 logging.info(dt_order_ids)
                 logging.info(line.name)
                 logging.info(line.quote_date_sent)
+                menor = dt_order_ids[0]
+                for element in dt_order_ids:
+                    if element < menor:
+                        menor = element
+                return menor
+                logging.info("menorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
+                logging.info(f"Del arreglo {dt_order_ids} el menor es {menor}")
