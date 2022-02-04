@@ -2,6 +2,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import datetime, date
+import logging
 
 
 class CrmLead(models.Model):
@@ -35,6 +36,8 @@ class CrmLead(models.Model):
     partner_admin_id = fields.Many2one(
         'res.partner',
         string="Farm administrator")
+    quote_date_sent_min = fields.Date(
+        string="Quote date sent min")
 
 
     @api.depends('medium_id')
@@ -56,3 +59,12 @@ class CrmLead(models.Model):
                 record.is_external = True
             else:
                 record.is_external = False
+
+
+    @api.depends('order_ids')
+    def _min_date(self):
+        date_order_ids = []
+        for line in self.order_ids:
+            line.quote_date_sent
+            logging.info("//////////////////////////////////////////")
+            logging(line.quote_date_sent)
