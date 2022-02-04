@@ -64,6 +64,6 @@ class CrmLead(models.Model):
     def _min_date(self):
         date_order_ids = []
         for line in self.order_ids:
-            if line.name:
+            if line.state == 'sent':
                 logging.info("//////////////////////////////////////////")
                 logging(line.name)
