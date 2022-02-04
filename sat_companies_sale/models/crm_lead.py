@@ -60,11 +60,9 @@ class CrmLead(models.Model):
                 record.is_external = False
 
 
-    @api.onchange('order_ids','quotation_count')
-    def _min_date(self):
-        date_order_ids = []
-        for line in self.order_ids:
-            if line.state == 'sent':
-                logging.info("//////////////////////////////////////////")
-                logging(line.name)
-                self.quote_date_sent_min = date.today()
+    def min_date_orders(self):
+        dt_order_ids = []
+        for line in order_ids:
+            line.name
+            dt_order_ids.append(line)
+            logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
