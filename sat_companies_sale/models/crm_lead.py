@@ -62,7 +62,7 @@ class CrmLead(models.Model):
     @api.onchange('order_ids','name','team_id')
     def min_date_orders(self):
         dt_order_ids = []
-        for line in order_ids:
+        for line in self.order_ids:
             line.name
             dt_order_ids.append(line)
             logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
