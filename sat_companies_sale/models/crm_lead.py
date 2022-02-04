@@ -4,7 +4,6 @@ from odoo.exceptions import ValidationError
 from datetime import datetime, date
 import logging
 
-
 class CrmLead(models.Model):
     _inherit = 'crm.lead'
 
