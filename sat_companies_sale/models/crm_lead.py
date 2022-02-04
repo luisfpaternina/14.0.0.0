@@ -64,12 +64,10 @@ class CrmLead(models.Model):
     def min_date_orders(self):
         for record in self:
             logging.info("ENTRO A LA FUNCIONNNNNNNNNNNNN ***************************************")
-            dt_order_ids = []
+            dt_orders = []
             for line in record.order_ids:
-                logging.info("recorrer el forrrrrrrrrr ++++++++++++++++++++++++++++++++++++++++++++++++")
-                line.name
-                dt_order_ids.append(line.quote_date_sent)
-                logging.info("----------- RECORRER PEDIDOS DE CRM -----------------")
-                logging.info(dt_order_ids)
-                logging.info(line.name)
-                logging.info(line.quote_date_sent)
+                dt_orders.append(line.quote_date_sent)
+            if dt_orders:
+                min_date = min(dt_orders)
+                logging.info("33333333333333333")
+                logging.info(min_date)
