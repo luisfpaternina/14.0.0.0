@@ -57,8 +57,7 @@ class SaleOrder(models.Model):
     date_end = fields.Datetime(
         string="Date end")
     quote_date_sent = fields.Date(
-        string="Quote date sent",
-        compute="_calculated_quote_date_sent")
+        string="Quote date sent")
     quote_date_sent_min = fields.Date(
         string="Quote date sent min")
 
@@ -67,7 +66,7 @@ class SaleOrder(models.Model):
     def onchange_check_product(self):
         for record in self:
             if record.product_id.employee_notice_id.user_id:
-                record.task_user_id=record.product_id.employee_notice_id.user_id
+                record.task_user_id = record.product_id.employee_notice_id.user_id
 
 
     @api.depends('product_id')
@@ -168,7 +167,7 @@ class SaleOrder(models.Model):
                 record.pdf_file_sale_contract = False
 
 
-    @api.depends('state')
+    @api.onchange('state','partner_id')
     def _calculated_quote_date_sent(self):
         for record in self:
             if record.state == 'sent':
