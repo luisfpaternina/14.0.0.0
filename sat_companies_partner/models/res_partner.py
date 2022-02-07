@@ -146,6 +146,8 @@ class ResPartner(models.Model):
     payment_term_tel_id = fields.Many2one(
         'account.payment.term',
         string="Terms telephone")
+    has_account = fields.Boolean(
+        string="Has a account")
 
 
     _sql_constraints = [
