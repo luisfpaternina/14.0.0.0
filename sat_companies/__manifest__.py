@@ -33,6 +33,7 @@
         'views/res_company.xml',
         'views/account_move_line.xml',
         'reports/account_debt_letter.xml',
+        'reports/invoice.xml',
                    
     ],
     'installable': True
