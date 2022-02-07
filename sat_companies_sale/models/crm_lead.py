@@ -52,12 +52,11 @@ class CrmLead(models.Model):
         string="Validate days")
 
 
-    @api.onchange('stage_id')
+    @api.onchange('stage_id','name')
     def _onchange_opportunity_type(self):
         if self.stage_id:
             self.oportunity_type_id = self.stage_id.oportunity_type_id
-        else:
-            self.oportunity_type_id = False
+        return False
 
 
     @api.onchange('stage_id','oportunity_type_id')
