@@ -50,7 +50,7 @@ class CrmLead(models.Model):
         string="Int stage days")
 
 
-    @api.onchange('stage_days','opportunity_days','stage_id','name')
+    @api.onchange('oportunity_type_id')
     def _get_days(self):
         if self.opportunity_days and self.stage_days:
             self.int_stage_days = self.stage_days
