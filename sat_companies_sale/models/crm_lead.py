@@ -39,8 +39,8 @@ class CrmLead(models.Model):
         string="Quote date sent min",
         compute="_compute_quote_date_sent_min")
     opportunity_days = fields.Integer(
-        string="Opportunity days")
-
+        string="Opportunity days",
+        compute="_calculated_days")
 
 
     @api.depends('medium_id')
@@ -74,3 +74,12 @@ class CrmLead(models.Model):
                 min_date = min(dt_orders)
             
             record.quote_date_sent_min = min_date
+
+
+    @api.depends('quote_date_sent_min')
+    def _calculated_days(self):
+        for record in self:
+            if record.quote_date_sent_min:
+                record.opportunity_days = (record.quote_date_sent_min - date.today()).days
+            else:
+                record.quote_date_sent_min = False
