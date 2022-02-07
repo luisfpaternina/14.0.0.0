@@ -172,6 +172,6 @@ class SaleOrder(models.Model):
     def _calculated_quote_date_sent(self):
         for record in self:
             if record.state == 'sent':
-                record.quote_date_sent = date.now()
+                record.quote_date_sent = datetime.now()
             else:
                 record.quote_date_sent = False
