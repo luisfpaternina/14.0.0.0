@@ -48,13 +48,8 @@ class CrmLead(models.Model):
         string="Int opportunity days")
     int_stage_days = fields.Integer(
         string="Int stage days")
-
-
-    @api.onchange('oportunity_type_id')
-    def _get_days(self):
-        if self.opportunity_days and self.stage_days:
-            self.int_stage_days = self.stage_days
-            self.int_opportunity_days = self.opportunity_days
+    is_validate_days = fields.Boolean(
+        string="Validate days")
 
 
     @api.depends('medium_id')
