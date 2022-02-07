@@ -38,6 +38,9 @@ class CrmLead(models.Model):
     quote_date_sent_min = fields.Date(
         string="Quote date sent min",
         compute="_compute_quote_date_sent_min")
+    opportunity_days = fields.Integer(
+        string="Opportunity days")
+
 
 
     @api.depends('medium_id')
