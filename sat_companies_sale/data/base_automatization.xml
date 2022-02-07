@@ -21,5 +21,16 @@
         <field name="filter_pre_domain">[["type","=","opportunity"]]</field>
         <field name="filter_domain">["|",["medium_id.name","=","Website"],["medium_id.name","=","Email"]]</field>
     </record>
+
+    <record id="automatization_sat_companies_crm_lead_max_days" model="base.automation">
+        <field name="name">Notificación responsable del departamento</field>
+        <field name="model_id" ref="crm.model_crm_lead"/>
+        <field name="state">email</field>
+        <field name="trigger">on_create_or_write</field>
+        <field name="active" eval="True"/>
+        <field name="template_id" ref="sat_companies_sale.template_crm_lead_max_days_notify"/>
+        <field name="filter_pre_domain">[["type","=","opportunity"]]</field>
+        <field name="filter_domain">["|",["medium_id.name","=","Website"],["medium_id.name","=","Email"]]</field>
+    </record>
     
 </odoo>
