@@ -17,7 +17,8 @@ class CrmLead(models.Model):
         tracking=True)
     oportunity_type_id = fields.Many2one(
         'crm.lead.type',
-        string="Oportunity type")
+        string="Oportunity type",
+        related="stage_id.oportunity_type_id")
     client_type = fields.Selection(
         [('neighborhood_community','Neighborhood community'),
         ('companies','Companies/builders'),
@@ -50,13 +51,6 @@ class CrmLead(models.Model):
         string="Int stage days")
     is_validate_days = fields.Boolean(
         string="Validate days")
-
-
-    @api.onchange('stage_id','name')
-    def _onchange_opportunity_type(self):
-        if self.stage_id:
-            self.oportunity_type_id = self.stage_id.oportunity_type_id
-        return False
 
 
     @api.onchange('stage_id','oportunity_type_id')
