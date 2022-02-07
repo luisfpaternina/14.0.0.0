@@ -57,7 +57,8 @@ class SaleOrder(models.Model):
     date_end = fields.Datetime(
         string="Date end")
     quote_date_sent = fields.Date(
-        string="Quote date sent")
+        string="Quote date sent",
+        compute="_calculated_quote_date_sent")
     quote_date_sent_min = fields.Date(
         string="Quote date sent min")
 
@@ -167,10 +168,10 @@ class SaleOrder(models.Model):
                 record.pdf_file_sale_contract = False
 
 
-    @api.onchange('state','partner_id')
+    @api.depends('state')
     def _calculated_quote_date_sent(self):
         for record in self:
             if record.state == 'sent':
-                record.quote_date_sent = date.today()
+                record.quote_date_sent = date.now()
             else:
                 record.quote_date_sent = False
