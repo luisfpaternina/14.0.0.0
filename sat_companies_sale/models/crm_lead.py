@@ -41,6 +41,8 @@ class CrmLead(models.Model):
     opportunity_days = fields.Integer(
         string="Opportunity days",
         compute="_calculated_days")
+    stage_days = fields.Integer(
+        string="Stage days")
 
 
     @api.depends('medium_id')
