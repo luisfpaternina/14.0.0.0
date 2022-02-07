@@ -30,7 +30,7 @@
         <field name="active" eval="True"/>
         <field name="template_id" ref="sat_companies_sale.template_crm_lead_max_days_notify"/>
         <field name="filter_pre_domain">[["type","=","opportunity"]]</field>
-        <field name="filter_domain">["|",["medium_id.name","=","Website"],["medium_id.name","=","Email"]]</field>
+        <field name="filter_domain">[["is_validate_days","=",True]]</field>
     </record>
     
 </odoo>
