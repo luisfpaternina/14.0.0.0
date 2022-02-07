@@ -303,7 +303,8 @@ class ResPartner(models.Model):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
             vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
         result = super(ResPartner, self).write(vals)
-        if not record.is_admin and not record.is_maintainer\
+        for record in self:
+            if not record.is_admin and not record.is_maintainer\
                 and not record.is_oca and not record.is_potential_client:
                     if not record.vat:
                         raise ValidationError(_(
@@ -314,4 +315,5 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
+
         return result
