@@ -80,6 +80,6 @@ class CrmLead(models.Model):
     def _calculated_days(self):
         for record in self:
             if record.quote_date_sent_min:
-                record.opportunity_days = (datetime.date.today() - record.quote_date_sent_min).days
+                record.opportunity_days = (datetime.date.now() - record.quote_date_sent_min).days
             else:
                 record.opportunity_days = 0
