@@ -170,8 +170,9 @@ class SaleOrder(models.Model):
 
     @api.depends('state')
     def _calculated_quote_date_sent(self):
+        today = date.today()
         for record in self:
             if record.state == 'sent':
-                record.quote_date_sent = datetime.now()
+                record.quote_date_sent = today
             else:
                 record.quote_date_sent = False

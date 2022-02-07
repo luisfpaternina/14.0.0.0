@@ -78,8 +78,9 @@ class CrmLead(models.Model):
 
     @api.depends('quote_date_sent_min')
     def _calculated_days(self):
+        today = date.today()
         for record in self:
             if record.quote_date_sent_min:
-                record.opportunity_days = (datetime.date.now() - record.quote_date_sent_min).days
+                record.opportunity_days = (today - record.quote_date_sent_min).days
             else:
                 record.opportunity_days = 0
