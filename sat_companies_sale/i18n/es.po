@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 19:32+0000\n"
-"PO-Revision-Date: 2022-02-03 19:32+0000\n"
+"POT-Creation-Date: 2022-02-07 12:45+0000\n"
+"PO-Revision-Date: 2022-02-07 12:45+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -540,12 +540,12 @@ msgstr "La URL de datos de su firma irá aquí"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__date_begin
 msgid "Date begin"
-msgstr ""
+msgstr "Fecha inicio"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__date_end
 msgid "Date end"
-msgstr ""
+msgstr "Fecha fin"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__days_maximum_stage
@@ -1080,6 +1080,11 @@ msgid "Oportunity type"
 msgstr "Tipo de oportunidad"
 
 #. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__opportunity_days
+msgid "Opportunity days"
+msgstr "Días tipo de oportunidad"
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
 msgid "Orden de domiciliación de <strong>DEBITO DIRECTO SEPA</strong>"
 msgstr ""
@@ -1133,6 +1138,12 @@ msgstr "Organismos publicos"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__quote_date_sent
 msgid "Quote date sent"
 msgstr "Fecha presupuesto enviado"
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__quote_date_sent_min
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__quote_date_sent_min
+msgid "Quote date sent min"
+msgstr "Fecha presupuesto enviado min"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__rae
@@ -1259,6 +1270,11 @@ msgid "Single-family private homes"
 msgstr "Viviendas Particulares Unifamiliares"
 
 #. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__stage_days
+msgid "Stage days"
+msgstr "Días máximos etapa"
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
 msgid "Su número de cuenta"
 msgstr ""
@@ -1303,7 +1319,7 @@ msgstr "Asignar tarea a ténico"
 #: code:addons/sat_companies_sale/models/sale_order.py:0
 #, python-format
 msgid "The item should be one per line"
-msgstr ""
+msgstr "No se puede agregar el mismo registro!"
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
