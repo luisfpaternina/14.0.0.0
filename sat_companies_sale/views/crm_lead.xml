@@ -16,6 +16,8 @@
                 <field name="quote_date_sent_min"/>
                 <field name="opportunity_days"/>
                 <field name="stage_days"/>
+                <field name="int_opportunity_days"/>
+                <field name="int_stage_days"/>
             </xpath>
         </field>
     </record>
