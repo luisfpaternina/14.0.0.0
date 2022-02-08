@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-31 11:36+0000\n"
-"PO-Revision-Date: 2022-01-31 11:36+0000\n"
+"POT-Creation-Date: 2022-02-08 10:50+0000\n"
+"PO-Revision-Date: 2022-02-08 10:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -190,6 +190,7 @@ msgstr "Delegaciones"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_crm_lead__display_name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_template__display_name
+#: model:ir.model.fields,field_description:sat_companies_partner.field_purchase_order__display_name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__display_name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_bank__display_name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_communities__display_name
@@ -268,7 +269,7 @@ msgstr "Aparatos"
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 msgid "Gagdets"
-msgstr "Relación de aparatos"
+msgstr "Aparatos"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__percentaje_mto
@@ -288,6 +289,15 @@ msgid "Group By"
 msgstr "Agrupado por"
 
 #. module: sat_companies_partner
+#: model:ir.model.fields,field_description:sat_companies_partner.field_account_bank_statement_line__has_account
+#: model:ir.model.fields,field_description:sat_companies_partner.field_account_move__has_account
+#: model:ir.model.fields,field_description:sat_companies_partner.field_account_payment__has_account
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__has_account
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__has_account
+msgid "Has a account"
+msgstr ""
+
+#. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__high_date
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__high_date
 msgid "High date"
@@ -298,6 +308,7 @@ msgstr "Fecha alta"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move_line__id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_crm_lead__id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_template__id
+#: model:ir.model.fields,field_description:sat_companies_partner.field_purchase_order__id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_bank__id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_communities__id
@@ -362,6 +373,7 @@ msgstr "Es O.C.A"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move_line__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_payment__is_potential_client
+#: model:ir.model.fields,field_description:sat_companies_partner.field_purchase_order__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__is_potential_client
 msgid "Is a potential client"
@@ -407,6 +419,7 @@ msgstr "Apunte contable"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:sat_companies_partner.field_crm_lead____last_update
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_template____last_update
+#: model:ir.model.fields,field_description:sat_companies_partner.field_purchase_order____last_update
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner____last_update
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_bank____last_update
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_communities____last_update
@@ -654,6 +667,11 @@ msgid "Product Template"
 msgstr "Plantilla de producto"
 
 #. module: sat_companies_partner
+#: model:ir.model,name:sat_companies_partner.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__resource_calendar_id
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 msgid "Resource calendar"
@@ -686,14 +704,14 @@ msgstr "Provincia"
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__payment_term_maintenance_id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__payment_term_maintenance_id
-msgid "Terms maintenance"
-msgstr "Plazos de pago mantenimiento"
+msgid "Terms maintenance sale"
+msgstr ""
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__payment_term_tel_id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__payment_term_tel_id
-msgid "Terms telephone"
-msgstr "Plazos de pago telefonía"
+msgid "Terms telephone sale"
+msgstr ""
 
 #. module: sat_companies_partner
 #: model:ir.model.constraint,message:sat_companies_partner.constraint_res_partner_client_code_uniq
@@ -760,6 +778,18 @@ msgstr "Validar"
 #, python-format
 msgid "Validate potencial client"
 msgstr "Verificar si el cliente es potencial!"
+
+#. module: sat_companies_partner
+#: code:addons/sat_companies_partner/models/account_move.py:0
+#, python-format
+msgid "Validate potencial client has account!"
+msgstr "El contacto debe tener al menos una cuenta bancaría registrada!"
+
+#. module: sat_companies_partner
+#: code:addons/sat_companies_partner/models/purchase_order.py:0
+#, python-format
+msgid "Validate potential client in partner"
+msgstr ""
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
