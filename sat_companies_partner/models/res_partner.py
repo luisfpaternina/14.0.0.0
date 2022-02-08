@@ -151,6 +151,17 @@ class ResPartner(models.Model):
         compute="_validate_has_account")
 
 
+    @api.constrains(
+        'name',
+        'partner_id',
+        'bank_ids')
+    def _validate_partner_has_account(self):
+        for record in self:
+            if record.has_account:
+                raise ValidationError(_(
+                    'Validate potencial client has account!'))
+
+
     @api.depends(
         'name',
         'is_potential_client',
