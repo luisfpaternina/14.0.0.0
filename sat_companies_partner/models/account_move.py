@@ -32,9 +32,9 @@ class AccountMove(models.Model):
         return super(AccountMove, self).write(values)
 
 
-    def action_post(self, values):
+    def action_post(self):
         for record in self:
             if record.is_potential_client:
                 raise ValidationError(_(
                     'Validate potencial client!'))
-        return super(AccountMove, self).action_post(values)
+        return super(AccountMove, self).action_post()
