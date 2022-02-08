@@ -10,3 +10,5 @@ class AccountMove(models.Model):
         string="Is a potential client")
     is_validate = fields.Boolean(
         string="Validate")
+    has_account = fields.Boolean(
+        string="Has a account")
