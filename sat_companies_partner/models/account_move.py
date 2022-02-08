@@ -30,3 +30,11 @@ class AccountMove(models.Model):
                 raise ValidationError(_(
                     'Validate potencial client has account!'))
         return super(AccountMove, self).write(values)
+
+
+    def action_post(self, values):
+        for record in self:
+            if record.is_potential_client:
+                raise ValidationError(_(
+                    'Validate potencial client!'))
+        return super(AccountMove, self).action_post(values)
