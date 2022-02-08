@@ -147,7 +147,16 @@ class ResPartner(models.Model):
         'account.payment.term',
         string="Terms telephone")
     has_account = fields.Boolean(
-        string="Has a account")
+        string="Has a account",
+        compute="_validate_has_account")
+
+
+    @api.depends('name','is_potential_client','bank_ids')
+    def _validate_has_account(self):
+        for record in self:
+            if record.bank_ids:
+                record.has_account = True
+            return False
 
 
     _sql_constraints = [
