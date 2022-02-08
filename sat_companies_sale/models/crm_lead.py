@@ -89,7 +89,8 @@ class CrmLead(models.Model):
                 dt_orders.append(line.quote_date_sent)
             if dt_orders:
                 min_date = min(dt_orders)
-            
+                logging.info("=============================")
+                logging.info(min_date)
             record.quote_date_sent_min = min_date
 
 
