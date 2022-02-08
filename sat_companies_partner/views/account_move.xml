@@ -14,8 +14,12 @@
                 <field name="has_account"/>
             </xpath>
 
-            <xpath expr="//form/header/button[(@id='action_confirm')]" position="attributes">
-                <attribute name="attrs">{'invisible':[('has_account', '=', True)]}</attribute>
+            <xpath expr="//form/header/button[(@name='action_confirm')]" position="attributes">
+                <attribute name="attrs">{'invisible':[('is_potential_client', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//form/header/button[1]" position="attributes">
+                <attribute name="attrs">{'invisible':[('is_potential_client', '=', True)]}</attribute>
             </xpath>
 
         </field>
