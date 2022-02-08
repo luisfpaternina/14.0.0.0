@@ -158,9 +158,9 @@ class ResPartner(models.Model):
     def _validate_has_account(self):
         for record in self:
             if record.bank_ids:
-                record.has_account = True
-            else:
                 record.has_account = False
+            else:
+                record.has_account = True
 
 
     _sql_constraints = [
