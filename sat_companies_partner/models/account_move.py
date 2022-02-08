@@ -13,3 +13,11 @@ class AccountMove(models.Model):
     has_account = fields.Boolean(
         string="Has a account",
         related="partner_id.has_account")
+
+
+    @api.constrains('percentaje_mto', 'percentaje_rep')
+    def _validate_has_account(self):
+        for record in self:
+            if record.has_account:
+                raise ValidationError(_(
+                    'Validate potencial client has account!'))
