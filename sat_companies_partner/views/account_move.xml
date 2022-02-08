@@ -18,7 +18,7 @@
                 <attribute name="attrs">{'invisible':[('is_potential_client', '=', True)]}</attribute>
             </xpath>
 
-            <xpath expr="//form/header/button[1]" position="attributes">
+            <xpath expr="//form/header/button[2]" position="attributes">
                 <attribute name="attrs">{'invisible':[('is_potential_client', '=', True)]}</attribute>
             </xpath>
 
