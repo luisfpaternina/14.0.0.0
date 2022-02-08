@@ -8,6 +8,7 @@
 
             <xpath expr="//form[1]/sheet[1]/notebook[1]/page[2]/field[@name='line_ids']/tree[1]/field[@name='account_id']" position="after">
                 <field name="is_potential_client" invisible="1"/>
+                <field name="has_account"/>
             </xpath>
 
         </field>
