@@ -86,7 +86,8 @@ class CrmLead(models.Model):
             dt_orders = []
             min_date = False
             for line in record.order_ids:
-                dt_orders.append(line.quote_date_sent)
+                if line.quote_date_sent:
+                    dt_orders.append(line.quote_date_sent)
             if dt_orders:
                 min_date = min(dt_orders)
                 max_date = max(dt_orders)
