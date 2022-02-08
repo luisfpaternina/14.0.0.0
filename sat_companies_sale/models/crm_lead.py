@@ -88,6 +88,7 @@ class CrmLead(models.Model):
             for line in record.order_ids:
                 if line.quote_date_sent:
                     dt_orders.append(line.quote_date_sent)
+                    logging.info("=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=")
             if dt_orders:
                 min_date = min(dt_orders)
                 max_date = max(dt_orders)
