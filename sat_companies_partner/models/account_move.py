@@ -16,7 +16,7 @@ class AccountMove(models.Model):
         related="partner_id.has_account")
 
 
-    @api.constrains('percentaje_mto', 'percentaje_rep')
+    @api.constrains('name', 'partner_id')
     def _validate_has_account(self):
         for record in self:
             if record.has_account:
