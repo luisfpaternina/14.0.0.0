@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-08 11:03+0000\n"
-"PO-Revision-Date: 2022-02-08 11:03+0000\n"
+"POT-Creation-Date: 2022-02-08 14:35+0000\n"
+"PO-Revision-Date: 2022-02-08 14:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -781,10 +781,16 @@ msgstr "Verificar si el cliente es potencial!"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/account_move.py:0
-#: code:addons/sat_companies_partner/models/res_partner.py:0
+#: code:addons/sat_companies_partner/models/account_move.py:0
 #, python-format
 msgid "Validate potencial client has account!"
 msgstr "El contacto debe tener al menos una cuenta bancaría registrada!"
+
+#. module: sat_companies_partner
+#: code:addons/sat_companies_partner/models/account_move.py:0
+#, python-format
+msgid "Validate potencial client!"
+msgstr "Validar si el cliente es potencial!"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/purchase_order.py:0
