@@ -175,4 +175,4 @@ class SaleOrder(models.Model):
             if record.state == 'sent':
                 record.quote_date_sent = today
             else:
-                record.quote_date_sent = False
+                print("Presupuestos sin enviar...!")
