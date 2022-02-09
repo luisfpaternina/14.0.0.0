@@ -8,9 +8,11 @@ class PurchaseOrder(models.Model):
 
     order_type_id = fields.Many2one(
         'purchase.order.type',
-        string="Purchase order type")
+        string="Purchase order type",
+        tracking=True)
     is_validate_reception = fields.Boolean(
-        string="Validate reception")
+        string="Validate reception",
+        tracking=True)
 
 
     @api.onchange('date_planned')
