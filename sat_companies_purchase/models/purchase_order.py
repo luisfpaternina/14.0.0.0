@@ -35,4 +35,6 @@ class PurchaseOrder(models.Model):
     def _onchage_validate_reception(self):
         for record in self:
             if record.is_validate_reception:
-                record.is_validator = True else False
+                record.is_validator = True
+            else:
+                record.is_validator = False
