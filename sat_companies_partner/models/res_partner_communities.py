@@ -16,6 +16,9 @@ class ResPartnerCommunities(models.Model):
     partner_community_id = fields.Many2one(
         'res.partner',
         string="Community")
+    is_community = fields.Boolean(
+        string="Is community",
+        related="partner_community_id.is_community")
     
 
     @api.onchange('name')
