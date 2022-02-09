@@ -24,6 +24,7 @@
        
         'security/ir.model.access.csv',
         'views/purchase_order_type.xml',
+        'views/purchase_order.xml',
         'reports/purchase_order.xml',
         
     ],
