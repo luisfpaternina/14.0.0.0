@@ -8,7 +8,7 @@
 
             <xpath expr="//field[(@name='partner_ref')]" position="after"> 
                 <field name="order_type_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
-                <field name="is_validate_reception"/>
+                <field name="is_validate_reception" invisible="1"/>
             </xpath>
 
         </field> 
