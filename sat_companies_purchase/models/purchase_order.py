@@ -9,3 +9,5 @@ class PurchaseOrder(models.Model):
     order_type_id = fields.Many2one(
         'purchase.order.type',
         string="Purchase order type")
+    is_validate_reception = fields.Boolean(
+        string="Validate reception")
