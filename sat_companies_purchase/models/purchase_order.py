@@ -12,15 +12,27 @@ class PurchaseOrder(models.Model):
         tracking=True)
     is_validate_reception = fields.Boolean(
         string="Validate reception",
-        tracking=True)
+        tracking=True,
+        compute="_compute_date_planned")
     is_validator = fields.Boolean(
         string="Validate")
 
 
-    @api.onchange('date_planned')
-    def _onchange_date_planned(self):
+    @api.depends('date_planned')
+    def _compute_date_planned(self):
         now = datetime.now()
         for record in self:
             if record.date_planned:
                 if record.date_planned >= now:
                     record.is_validate_reception = True
+                else:
+                    record.is_validate_reception = False
+            else:
+                record.is_validate_reception = False
+
+
+    @api.onchange('date_planned','is_validate_reception')
+    def _onchage_validate_reception(self):
+        for record in self:
+            if record.is_validate_reception:
+                if record.is_validator = True else False
