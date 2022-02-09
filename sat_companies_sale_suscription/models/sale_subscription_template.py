@@ -14,10 +14,11 @@ class SaleSuscriptionTemplateInherit(models.Model):
     type_contract = fields.Selection([
         ('normal','Normal'),
         ('risk','All risk')],string="Type of contract",tracking=True)
-    
-    gadgets_contract_type_id = fields.Many2one('stock.gadgets.contract.type')
-    exclude_months = fields.Boolean('Exlude Months')
-    
+    gadgets_contract_type_id = fields.Many2one(
+        'stock.gadgets.contract.type',
+        string="Subscription type")
+    exclude_months = fields.Boolean(
+        'Exlude Months')
     jan = fields.Boolean('January')
     feb = fields.Boolean('February')
     mar = fields.Boolean('March')
