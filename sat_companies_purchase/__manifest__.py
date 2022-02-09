@@ -23,7 +23,7 @@
     'data': [
        
         'security/ir.model.access.csv',
-        'views/purchase_order_type',
+        'views/purchase_order_type.xml',
         'reports/purchase_order.xml',
         
     ],
