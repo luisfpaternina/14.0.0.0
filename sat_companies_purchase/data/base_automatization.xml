@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <record id="automatization_po_material_not_arrived" model="base.automation">
+    <record id="automatization_po_material_has_not_arrived" model="base.automation">
         <field name="name">Pedido de compra no ha llegado el material</field>
         <field name="model_id" ref="purchase.model_purchase_order"/>
         <field name="state">email</field>
