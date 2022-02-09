@@ -16,6 +16,7 @@
                 <field name="partner_type_id" options="{'no_create': True, 'no_create_edit':True}" invisible="1"/>
                 <field name="is_potential_client" invisible="True"/>
                 <field name="is_community" invisible="True"/>
+                <field name="is_maker" invisible="True"/>
             </xpath>
             
             <xpath expr="//field[(@name='street')]" position="attributes">
