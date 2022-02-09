@@ -410,7 +410,7 @@ msgstr "Mantenedora"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__is_maker
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__is_maker
 msgid "Is maker"
-msgstr "Fabricante"
+msgstr "Es fabricante"
 
 #. module: sat_companies_partner
 #: model:ir.model,name:sat_companies_partner.model_account_move
