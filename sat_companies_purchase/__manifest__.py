@@ -1,7 +1,7 @@
 {
     'name': 'SAT COMPANIES PURCHASE',
 
-    'version': '14.0.1',
+    'version': '14.0.1.0',
 
     'author': "Process Control",
 
@@ -22,7 +22,7 @@
 
     'data': [
        
-       
+        'security/ir.model.access.csv',
         'reports/purchase_order.xml',
         
     ],
