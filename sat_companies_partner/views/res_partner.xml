@@ -189,7 +189,7 @@
                 <page name="comunity_partner" string="Comunities" attrs="{'invisible': [('is_admin', '=', False)]}">
                     <field name="comunities_ids">
                         <tree editable="botttom">
-                            <field name="partner_community_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
+                            <field name="partner_community_id" options="{'no_create': True, 'no_create_edit':True}" required="1" domain = "[('is_community','=',True)]"/>
                         </tree>
                     </field>
                 </page>
