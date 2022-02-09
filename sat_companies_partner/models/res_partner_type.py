@@ -15,6 +15,8 @@ class ResPartnerType(models.Model):
         tracking=True)
     is_community = fields.Boolean(
         string="Is community")
+    is_maker = fields.Boolean(
+        string="Is maker")
 
 
     @api.onchange('name')
