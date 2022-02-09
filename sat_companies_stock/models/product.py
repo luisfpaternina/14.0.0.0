@@ -256,7 +256,8 @@ class ProductTemplate(models.Model):
         string="December")
     delegation_id = fields.Many2one(
         'res.partner.delegation',
-        string="Delegation")
+        string="Delegation",
+        related="zone_id.delegation_id")
     delegation_name = fields.Char(
         string="Delegation name",
         related="delegation_id.name")
