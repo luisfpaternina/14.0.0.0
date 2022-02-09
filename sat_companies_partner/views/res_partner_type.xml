@@ -35,6 +35,9 @@
                             <group>
                                 <field name="is_community"/>
                             </group>
+                            <group>
+                                <field name="is_maker"/>
+                            </group>
                         </group>
                     </sheet>
                     <div class="oe_chatter">

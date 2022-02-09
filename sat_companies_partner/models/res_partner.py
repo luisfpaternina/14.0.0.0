@@ -149,6 +149,8 @@ class ResPartner(models.Model):
     has_account = fields.Boolean(
         string="Has a account",
         compute="_validate_has_account")
+    is_maker = fields.Boolean(
+        string="Is maker")
 
 
     @api.depends(
