@@ -13,6 +13,8 @@ class PurchaseOrder(models.Model):
     is_validate_reception = fields.Boolean(
         string="Validate reception",
         tracking=True)
+    is_validator = fields.Boolean(
+        string="Validate")
 
 
     @api.onchange('date_planned')
