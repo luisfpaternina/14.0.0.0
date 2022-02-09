@@ -25,6 +25,7 @@
         'security/ir.model.access.csv',
         'data/purchase.order.type.csv',
         'data/po_material_not_arrived.xml',
+        'data/base_automatization.xml',
         'views/purchase_order_type.xml',
         'views/purchase_order.xml',
         'reports/purchase_order.xml',
