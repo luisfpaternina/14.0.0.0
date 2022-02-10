@@ -96,10 +96,13 @@ class ProjectTaskInherit(models.Model):
     ot_type_id = fields.Many2one(
         'sale.order.type',
         string="Tipo OT")
+
+
     @api.onchange('categ_udn_id')
     def related_type_ot(self):
         for record in self:
             record.ot_type_id = record.categ_udn_id.ot_type_id
+
 
     def compute_check_suscription_recurrent(self):
         for record in self:
@@ -112,6 +115,7 @@ class ProjectTaskInherit(models.Model):
                     record.check_suscription_recurrent = False
             else:
                 record.check_suscription_recurrent = False
+
 
     def confirm_check_gadget(self):
         for record in self:
