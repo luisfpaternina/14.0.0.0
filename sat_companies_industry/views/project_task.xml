@@ -71,6 +71,7 @@
                             <field name="planned_date_begin" string="Begin prev"/>
                             <field name="actual_start_date"/>
                             <field name="prev_end_date"/>
+                            <field name="planned_date_end" string="End prev"/>
                             <field name="actual_end_date"/>
                             <field name="verification_date"/>
                         </group>
