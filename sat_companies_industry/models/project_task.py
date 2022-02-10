@@ -120,6 +120,13 @@ class ProjectTask(models.Model):
         related="zone_id.name")
 
 
+    @api.onchange('planned_date_begin')
+    def _onchange_date_begind(self):
+        for record in self:
+            if record.planned_date_begin:
+                record.prev_start_date = record.planned_date_begin
+
+
     @api.onchange('contact_person')
     def _capitalizate_name(self):        
         self.contact_person = self.contact_person.title() if self.contact_person else False
