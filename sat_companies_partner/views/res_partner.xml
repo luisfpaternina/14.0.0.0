@@ -188,18 +188,36 @@
 
             <xpath expr="//notebook" position="inside">
                 <page name="comunity_partner" string="Comunities" attrs="{'invisible': [('is_admin', '=', False)]}">
+                    <group>
+                        <field name="gadget_communitie_ids" string="Comunidades relacionadas">
+                            <tree editable="botttom">
+                                <field name="partner_id" string="Name"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <!--
                     <field name="comunities_ids">
                         <tree editable="botttom">
                             <field name="partner_community_id" options="{'no_create': True, 'no_create_edit':True}" required="1" domain = "[('is_community','=',True)]"/>
                         </tree>
                     </field>
+                    -->
                 </page>
                 <page name="comunity_partner" string="Comunities" attrs="{'invisible': [('is_maintainer', '=', False)]}">
+                    <group>
+                        <field name="gadget_communitie_ids" string="Comunidades relacionadas">
+                            <tree editable="botttom">
+                                <field name="partner_id" string="Name"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <!--
                     <field name="comunities_ids">
                         <tree editable="botttom">
                             <field name="partner_community_id" options="{'no_create': True, 'no_create_edit':True}" required="1" domain = "[('is_community','=',True)]"/>
                         </tree>
                     </field>
+                    -->
                 </page>
             </xpath>
 
