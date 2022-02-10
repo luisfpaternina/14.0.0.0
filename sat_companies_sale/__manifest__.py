@@ -49,4 +49,3 @@
     ],
     'installable': True
 }
-
