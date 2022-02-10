@@ -17,7 +17,7 @@
                                         <span style="font-size:60px">RAE:</span><span t-field="o.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Foso</span><br></br>
                                         <span t-field="o.name" style="font-size:60px"></span><br></br>
-                                        <span t-field="o.partner_id.city"></span>
+                                        <span t-field="o.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>
@@ -28,7 +28,7 @@
                                         <span style="font-size:60px">RAE:</span><span t-field="o.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Cabina</span><br></br>
                                         <span t-field="o.name" style="font-size:60px"></span><br></br>
-                                         <span t-field="o.partner_id.city"></span>
+                                         <span t-field="o.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>
@@ -39,7 +39,7 @@
                                         <span style="font-size:60px">RAE:</span><span t-field="o.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Máquina</span><br></br>
                                         <span t-field="o.name" style="font-size:60px"></span><br></br>
-                                         <span t-field="o.partner_id.city"></span>
+                                         <span t-field="o.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>

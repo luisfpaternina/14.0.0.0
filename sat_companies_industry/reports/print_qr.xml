@@ -16,7 +16,8 @@
                                     <div>
                                         <span style="font-size:60px">RAE:</span><span t-field="o.product_id.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.product_id.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Foso</span><br></br>
-                                        <span t-field="o.product_id" style="font-size:60px"></span>
+                                        <span t-field="o.product_id" style="font-size:60px"></span><br></br>
+                                        <span t-field="o.product_id.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>
@@ -26,7 +27,8 @@
                                     <div>
                                         <span style="font-size:60px">RAE:</span><span t-field="o.product_id.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.product_id.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Cabina</span><br></br>
-                                        <span t-field="o.product_id" style="font-size:60px"></span>
+                                        <span t-field="o.product_id" style="font-size:60px"></span><br></br>
+                                        <span t-field="o.product_id.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>
@@ -36,7 +38,8 @@
                                     <div>
                                         <span style="font-size:60px">RAE:</span><span t-field="o.product_id.rae" style="font-size:60px"></span><br></br>
                                         <span t-field="o.product_id.delegation_id" style="font-size:60px"></span><span> </span><span style="font-size:60px">Máquina</span><br></br>
-                                        <span t-field="o.product_id" style="font-size:60px"></span>
+                                        <span t-field="o.product_id" style="font-size:60px"></span><br></br>
+                                        <span t-field="o.product_id.partner_id.city" style="font-size:60px"></span>
                                     </div>
                                 </center>
                             </t>
