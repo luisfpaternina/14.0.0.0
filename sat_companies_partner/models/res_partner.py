@@ -155,26 +155,6 @@ class ResPartner(models.Model):
         related="partner_type_id.is_maker")
 
 
-    @api.onchange('phone')
-    def compute_comunities(self):
-        for record in self:
-            products = self.env['product.template'].search([('partner_admin_id','=',record.id)])
-            ids = [x.id for x in products.partner_id]
-
-            l = []
-            for id in ids:
-                
-                vals =(0,0,{
-                    'name': '1313123',
-                    'partner_community_id': id,
-                    #'partner_id': record.id.origin
-                })
-
-                l.append(vals)
-            
-            record.comunities_ids = l
-
-
     @api.depends(
         'name',
         'is_potential_client',
