@@ -27,7 +27,7 @@
                             <tree editable="botttom">
                                 <field name="minute_point_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
                                 <field name="minute_point_description"/>
-                                <field name="type_deffect_id" required="1"/>
+                                <field name="type_deffect_id"/>
                                 <field name="is_reviewed"/>
                             </tree>
                         </field>
