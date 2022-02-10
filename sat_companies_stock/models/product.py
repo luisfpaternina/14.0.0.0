@@ -27,10 +27,6 @@ class ProductTemplate(models.Model):
     code = fields.Char(
         string="Code",
         tracking=True)
-    partner_id = fields.Many2one(
-        'res.partner',
-        string="Client",
-        tracking=True)
     domicile = fields.Char(
         string="Domicile",
         tracking=True)

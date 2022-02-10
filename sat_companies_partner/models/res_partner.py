@@ -153,26 +153,15 @@ class ResPartner(models.Model):
     is_maker = fields.Boolean(
         string="Is maker",
         related="partner_type_id.is_maker")
+    gadget_communitie_ids = fields.Many2many(
+        'product.template',
+        compute="compute_gadget_communitie",
+        string='Gadgets')
 
 
-    @api.onchange('phone')
-    def compute_comunities(self):
+    def compute_gadget_communitie(self):
         for record in self:
-            products = self.env['product.template'].search([('partner_admin_id','=',record.id)])
-            ids = [x.id for x in products.partner_id]
-
-            l = []
-            for id in ids:
-                
-                vals =(0,0,{
-                    'name': '1313123',
-                    'partner_community_id': id,
-                    #'partner_id': record.id.origin
-                })
-
-                l.append(vals)
-            
-            record.comunities_ids = l
+            record.gadget_communitie_ids = record.gadget_ids
 
 
     @api.depends(
@@ -194,44 +183,6 @@ class ResPartner(models.Model):
             'The client code is unique!'
         )
     ]
-
-
-    """
-    @api.model
-    def create(self, vals):
-        res = super(ResPartner, self).create(vals)
-        for record in self:
-            if not record.is_admin and not record.is_maintainer\
-                and not record.is_oca and not record.is_potential_client:
-                    if not record.vat:
-                        raise ValidationError(_(
-                            'You must register an identification number'))
-                    if not record.bank_ids:
-                        raise ValidationError(_(
-                            'You must register a Bank account'))
-                    if not record.city:
-                        raise ValidationError(_(
-                            'You must register a city'))
-        return res
-    
-
-    def write(self, vals):
-        res = super(ResPartner, self).write(vals)
-        for record in self:
-            if not record.is_admin and not record.is_maintainer\
-                and not record.is_oca and not record.is_potential_client:
-                    if not record.vat:
-                        raise ValidationError(_(
-                            'You must register an identification number'))
-                    if not record.bank_ids:
-                        raise ValidationError(_(
-                            'You must register a Bank account'))
-                    if not record.city:
-                        raise ValidationError(_(
-                            'You must register a city'))
-
-        return res
-    """
 
     def _validate_percentage(self):
         for record in self:
@@ -315,7 +266,7 @@ class ResPartner(models.Model):
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
 
-    """
+
     @api.model
     def create(self, vals):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
@@ -354,4 +305,3 @@ class ResPartner(models.Model):
                             'You must register a city'))
 
         return result
-    """
