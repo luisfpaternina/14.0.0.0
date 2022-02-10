@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-13 10:01+0000\n"
-"PO-Revision-Date: 2022-01-13 10:01+0000\n"
+"POT-Creation-Date: 2022-02-10 09:09+0000\n"
+"PO-Revision-Date: 2022-02-10 09:09+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -113,6 +113,11 @@ msgstr "Atchivos Adjuntos"
 #. module: sat_companies_project
 #: model:mail.template,subject:sat_companies_project.project_template_new_task
 msgid "Aviso nuevo servicio externo"
+msgstr ""
+
+#. module: sat_companies_project
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
+msgid "Cabine"
 msgstr ""
 
 #. module: sat_companies_project
@@ -368,6 +373,16 @@ msgid "Is a project existing ?"
 msgstr "Proyecto existente"
 
 #. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_sale_order_type__is_line
+msgid "Is line"
+msgstr ""
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_sale_order_type__is_maintenance
+msgid "Is maintenance"
+msgstr ""
+
+#. module: sat_companies_project
 #: model:ir.model,name:sat_companies_project.model_account_move
 msgid "Journal Entry"
 msgstr "Asiento contable"
@@ -399,6 +414,11 @@ msgstr "Última actualización por"
 #: model:ir.model.fields,field_description:sat_companies_project.field_wizard_sale_order_type__write_date
 msgid "Last Updated on"
 msgstr "Última actualización en"
+
+#. module: sat_companies_project
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
+msgid "Machine"
+msgstr ""
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__machine_confirm
@@ -504,6 +524,11 @@ msgid "Order Lines"
 msgstr "Líneas de orden"
 
 #. module: sat_companies_project
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
+msgid "Pit"
+msgstr ""
+
+#. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__pit_confirm
 msgid "Pit confirm"
 msgstr "Foso confimación"
@@ -556,6 +581,11 @@ msgid "R.A.E"
 msgstr ""
 
 #. module: sat_companies_project
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
+msgid "RAE:"
+msgstr ""
+
+#. module: sat_companies_project
 #: model_terms:ir.ui.view,arch_db:sat_companies_project.wizard_sale_order_type_form
 msgid "Related Lines"
 msgstr "Relacionar líneas"
@@ -569,7 +599,7 @@ msgstr "Error de entrega de SMS"
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_project__sale_order_id
 msgid "Sale Order"
-msgstr "Presupuesto"
+msgstr ""
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_project__sale_type_origin_id
@@ -626,8 +656,14 @@ msgstr "Enviar factura PRO-FORMA"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_sale_order_type__project_stage_ids
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.view_sale_order_typet_form
 msgid "Stages"
 msgstr "Etapas"
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_project_project__start_date_project
+msgid "Start date project"
+msgstr ""
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__state_check_qr
@@ -641,8 +677,14 @@ msgstr "Suscripción recurrente"
 
 #. module: sat_companies_project
 #: model:ir.model,name:sat_companies_project.model_project_task
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.view_sale_order_typet_form
 msgid "Task"
 msgstr "Tarea"
+
+#. module: sat_companies_project
+#: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
+msgid "Task State"
+msgstr "Estado tarea"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,help:sat_companies_project.field_sale_order_line__task_id
@@ -658,6 +700,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_project.field_sale_order_type__project_task_ids
 msgid "Tasks"
 msgstr "Tareas"
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_res_partner__payment_term_maintenance_id
+#: model:ir.model.fields,field_description:sat_companies_project.field_res_users__payment_term_maintenance_id
+msgid "Terms maintenance sale"
+msgstr ""
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_res_partner__payment_term_tel_id
+#: model:ir.model.fields,field_description:sat_companies_project.field_res_users__payment_term_tel_id
+msgid "Terms telephone sale"
+msgstr ""
 
 #. module: sat_companies_project
 #: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
@@ -717,7 +771,7 @@ msgstr "Conteo mensajes no leídos"
 #: code:addons/sat_companies_project/models/stock_picking.py:0
 #, python-format
 msgid "Validate potential client in partner"
-msgstr "Validar si el cliente es potencial"
+msgstr ""
 
 #. module: sat_companies_project
 #: code:addons/sat_companies_project/models/sale_order.py:0

@@ -89,13 +89,13 @@ class ProjectTask(models.Model):
         'hr.employee',
         string="Supervisor",
         related="product_id.employee_notice_id")
-    prev_start_date = fields.Date(
+    prev_start_date = fields.Datetime(
         string="Prev start date")
-    actual_start_date = fields.Date(
+    actual_start_date = fields.Datetime(
         string="Actual start date")
-    prev_end_date = fields.Date(
+    prev_end_date = fields.Datetime(
         string="Prev end date")
-    actual_end_date = fields.Date(
+    actual_end_date = fields.Datetime(
         string="Actual end date")
     verification_date = fields.Date(
         string="Verification date")
