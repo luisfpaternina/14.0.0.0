@@ -49,6 +49,76 @@
                             class="oe_highlight"/>
                     </footer>
                 </page>
+                <page name="task_state" string="Task State">
+                    <group>
+                        <field name="state_check_qr" widget="statusbar"/>
+                    </group>
+                    <group>
+                        <field name="check_pit" readonly="1"/>
+                        <field name="check_cabine" readonly="1"/>
+                        <field name="check_machine" readonly="1"/>
+                        <!--<field name="url_home" invisible="True"/>-->
+                    </group>
+                    <group colspan="3">
+                        <group colspan="1" col="2">
+                            <field name="qr_pit_image" widget="image" style="width: 62mm; height: 62mm;"/>
+                            <field name="qr_pit"/>
+                        </group>
+                        <group colspan="1" col="1">
+                            <br></br>
+                            <br></br>
+                            <span style="padding: 5px; float: left">RAE: <field name="rae_gadget" nolabel="1" readonly="1"/></span>
+                            <span style="padding: 5px; float: left">
+                                <field name="to_gadget"
+                                    nolabel="1"
+                                    readonly="1"
+                                    options="{'no_open': true, 'no_quick_create': true ,'no_create_edit': true,'no_create':true}"
+                                /> Pit</span>
+                            <field style="padding: 5px; float: left" name="to_gadget_location" nolabel="1" readonly="1"/>
+                            <field style="padding: 5px; float: left" name="delegation_location" nolabel="1" readonly="1"/>
+                        </group>
+                    </group>
+                    <separator/>
+                    <group colspan="3">
+                        <group colspan="1" col="2">
+                            <field name="qr_cabine_image" widget="image" style="width: 62mm; height: 62mm;"/>
+                            <field name="qr_cabine"/>
+                        </group>
+                        <group colspan="1" col="1">
+                            <br></br>
+                            <br></br>
+                            <span style="padding: 5px; float: left">RAE: <field name="rae_gadget" nolabel="1" readonly="1"/></span>
+                            <span style="padding: 5px; float: left">
+                                <field name="to_gadget"
+                                    nolabel="1"
+                                    readonly="1"
+                                    options="{'no_open': true, 'no_quick_create': true ,'no_create_edit': true,'no_create':true}"
+                                    /> Cabine</span>
+                            <field style="padding: 5px; float: left" name="to_gadget_location" nolabel="1" readonly="1"/>
+                            <field style="padding: 5px; float: left" name="delegation_location" nolabel="1" readonly="1"/>
+                        </group>
+                    </group>
+                    <separator/>
+                    <group colspan="3">
+                        <group colspan="1" col="2">
+                            <field name="qr_machine_image" widget="image" style="width: 62mm; height: 62mm;"/>
+                            <field name="qr_machine"/>
+                        </group>
+                        <group colspan="1" col="1">
+                            <br></br>
+                            <br></br>
+                            <span style="padding: 5px; float: left">RAE: <field name="rae_gadget" nolabel="1" readonly="1"/></span>
+                            <span style="padding: 5px; float: left">
+                                <field name="to_gadget"
+                                    nolabel="1"
+                                    readonly="1"
+                                    options="{'no_open': true, 'no_quick_create': true ,'no_create_edit': true,'no_create':true}"
+                                /> Machine</span>
+                            <field style="padding: 5px; float: left" name="to_gadget_location" nolabel="1" readonly="1"/>
+                            <field style="padding: 5px; float: left" name="delegation_location" nolabel="1" readonly="1"/>
+                        </group>
+                    </group>
+                </page>
                 <!--
                 <page name="order_lines_quotation" string="Lines quotations">
                     <group>
