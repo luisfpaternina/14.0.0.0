@@ -103,7 +103,8 @@ class ResPartner(models.Model):
         tracking=True)
     comunities_ids = fields.One2many(
         'res.partner.communities',
-        'partner_id'
+        'partner_id',
+        #compute="_compute_comunities"
     )
     is_oca = fields.Boolean(
         string="O.C.A",
@@ -152,6 +153,26 @@ class ResPartner(models.Model):
     is_maker = fields.Boolean(
         string="Is maker",
         related="partner_type_id.is_maker")
+
+
+    @api.onchange('phone')
+    def compute_comunities(self):
+        for record in self:
+            products = self.env['product.template'].search([('partner_admin_id','=',record.id)])
+            ids = [x.id for x in products.partner_id]
+
+            l = []
+            for id in ids:
+                
+                vals =(0,0,{
+                    'name': '1313123',
+                    'partner_community_id': id,
+                    #'partner_id': record.id.origin
+                })
+
+                l.append(vals)
+            
+            record.comunities_ids = l
 
 
     @api.depends(
@@ -294,7 +315,7 @@ class ResPartner(models.Model):
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
 
-
+    """
     @api.model
     def create(self, vals):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
@@ -333,3 +354,4 @@ class ResPartner(models.Model):
                             'You must register a city'))
 
         return result
+    """
