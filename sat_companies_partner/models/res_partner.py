@@ -176,43 +176,6 @@ class ResPartner(models.Model):
     ]
 
 
-    """
-    @api.model
-    def create(self, vals):
-        res = super(ResPartner, self).create(vals)
-        for record in self:
-            if not record.is_admin and not record.is_maintainer\
-                and not record.is_oca and not record.is_potential_client:
-                    if not record.vat:
-                        raise ValidationError(_(
-                            'You must register an identification number'))
-                    if not record.bank_ids:
-                        raise ValidationError(_(
-                            'You must register a Bank account'))
-                    if not record.city:
-                        raise ValidationError(_(
-                            'You must register a city'))
-        return res
-    
-
-    def write(self, vals):
-        res = super(ResPartner, self).write(vals)
-        for record in self:
-            if not record.is_admin and not record.is_maintainer\
-                and not record.is_oca and not record.is_potential_client:
-                    if not record.vat:
-                        raise ValidationError(_(
-                            'You must register an identification number'))
-                    if not record.bank_ids:
-                        raise ValidationError(_(
-                            'You must register a Bank account'))
-                    if not record.city:
-                        raise ValidationError(_(
-                            'You must register a city'))
-
-        return res
-    """
-
     def _validate_percentage(self):
         for record in self:
             if record.percentaje_rep > 100 or record.percentaje_mto > 100:
