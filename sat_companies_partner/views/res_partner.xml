@@ -236,7 +236,6 @@
                     <field name="population_id"/>
                     <field name="user_partner_contact_id"/>
                     <field name="is_admin"/>
-                    <field name="is_community"/>
                     <field name="partner_type_id"/>
                 </field>
                
@@ -251,6 +250,7 @@
                     <filter string="Is admin" name="is_admin" domain="[('is_admin', '!=', False)]"/>
                     <filter string="Is O.C.A" name="is_oca" domain="[('is_oca', '!=', False)]"/>
                     <filter string="Is maintainer" name="is_maintainer" domain="[('is_maintainer', '!=', False)]"/>
+                    <filter string="Es comunidad" name="is_community" domain="[('is_community', '!=', False)]"/>
                     <filter string="Partner type" name="partner_type_id" domain="[('partner_type_id', '!=', False)]"/>
                 </xpath>
 
