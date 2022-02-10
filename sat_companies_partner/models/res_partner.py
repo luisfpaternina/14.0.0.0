@@ -162,6 +162,14 @@ class ResPartner(models.Model):
         string="Is a community")
 
 
+    @api.onchange('is_acommunity')
+    def _onchange_community(self):
+        if self.is_community:
+            self.is_acommunity = True
+        else:
+            self.is_acommunity = False
+
+
     def compute_gadget_communitie(self):
         for record in self:
             record.gadget_communitie_ids = record.gadget_ids
