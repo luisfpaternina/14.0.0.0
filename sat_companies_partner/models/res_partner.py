@@ -158,6 +158,8 @@ class ResPartner(models.Model):
         'product.template',
         compute="compute_gadget_communitie",
         string='Gadgets')
+    is_acommunity = fields.Boolean(
+        string="Is a community")
 
 
     def compute_gadget_communitie(self):
