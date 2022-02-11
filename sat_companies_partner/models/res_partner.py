@@ -282,6 +282,7 @@ class ResPartner(models.Model):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
             vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
         result = super(ResPartner, self).create(vals)
+        """
         for record in self:
             if not record.is_admin and not record.is_maintainer\
                 and not record.is_oca and not record.is_potential_client:
@@ -294,6 +295,7 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
+        """
         return result
     
 
@@ -315,3 +317,24 @@ class ResPartner(models.Model):
                             'You must register a city'))
 
         return result
+
+
+    @api.constrains(
+        'name',
+        'bank_ids',
+        'vat',
+        'city',
+        'street')
+    def validate_fields(self):
+        for record in self:
+            if not record.is_admin and not record.is_maintainer\
+                and not record.is_oca and not record.is_potential_client:
+                    if not record.vat:
+                        raise ValidationError(_(
+                            'You must register an identification number'))
+                    if not record.bank_ids:
+                        raise ValidationError(_(
+                            'You must register a Bank account'))
+                    if not record.city:
+                        raise ValidationError(_(
+                            'You must register a city'))
