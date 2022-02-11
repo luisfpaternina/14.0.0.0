@@ -321,7 +321,7 @@ class ResPartner(models.Model):
 
         return result
 
-
+    """
     @api.constrains(
         'name',
         'bank_ids',
@@ -341,3 +341,4 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
+    """
