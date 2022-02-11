@@ -277,6 +277,7 @@ class ResPartner(models.Model):
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
 
+
     @api.model
     def create(self, vals):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
