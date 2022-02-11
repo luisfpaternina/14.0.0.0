@@ -65,7 +65,7 @@
                         </group>
                       </group>
                     </page>
-                    <page string="Note" groups="hr.group_hr_manager">
+                    <page string="Notes" groups="hr.group_hr_manager">
                         <group>
                             <field name="employee_notes"/>
                         </group>
