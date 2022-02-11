@@ -82,7 +82,8 @@ class ResPartner(models.Model):
         tracking=True)
     is_potential_client = fields.Boolean(
         string="Is a potential client",
-        tracking=True)
+        tracking=True,
+        default=True)
     fiscal_name = fields.Char(
         string="Fiscal name",
         tracking=True)
@@ -321,7 +322,7 @@ class ResPartner(models.Model):
 
         return result
 
-    """
+    
     @api.constrains(
         'name',
         'bank_ids',
@@ -341,4 +342,4 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
-    """
+    
