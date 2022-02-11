@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-09 18:53+0000\n"
-"PO-Revision-Date: 2022-02-09 18:53+0000\n"
+"POT-Creation-Date: 2022-02-11 10:26+0000\n"
+"PO-Revision-Date: 2022-02-11 10:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -75,6 +75,12 @@ msgid "C.Mantenimiento"
 msgstr ""
 
 #. module: sat_companies_partner
+#: model:ir.model.fields,field_description:sat_companies_partner.field_product_product__partner_id
+#: model:ir.model.fields,field_description:sat_companies_partner.field_product_template__partner_id
+msgid "Client"
+msgstr "Cliente"
+
+#. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__client_code
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__client_code
 msgid "Client code"
@@ -112,6 +118,11 @@ msgstr "Comunidades"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__partner_community_id
 msgid "Community"
 msgstr "Comunidad"
+
+#. module: sat_companies_partner
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
+msgid "Comunidades relacionadas"
+msgstr ""
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__comunities_ids
@@ -208,6 +219,11 @@ msgid "Email"
 msgstr "Correo"
 
 #. module: sat_companies_partner
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.custom_view_res_partner_search
+msgid "Es comunidad"
+msgstr ""
+
+#. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__fax
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__fax
 msgid "Fax"
@@ -256,10 +272,12 @@ msgstr "Administrador de aparatos"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__gadget_client_ids
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__gadget_communitie_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__gadget_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__gadget_maintener_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__gadget_oca_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__gadget_client_ids
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__gadget_communitie_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__gadget_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__gadget_maintener_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__gadget_oca_ids
@@ -369,6 +387,12 @@ msgid "Is O.C.A"
 msgstr "Es O.C.A"
 
 #. module: sat_companies_partner
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__is_acommunity
+#: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__is_acommunity
+msgid "Is a community"
+msgstr ""
+
+#. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_bank_statement_line__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_account_move_line__is_potential_client
@@ -471,7 +495,7 @@ msgstr "Fecha baja"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_population__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Adjunto"
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
@@ -542,13 +566,14 @@ msgstr "Error en la entrega"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_population__message_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mjs"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_communities__name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_delegation__name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_population__name
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__name
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.view_res_partner_communities_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.view_res_partner_type_form
 msgid "Name"
@@ -817,7 +842,7 @@ msgstr "Consultor web"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_population__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensajes del sitio web"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,help:sat_companies_partner.field_res_partner_communities__website_message_ids
