@@ -91,6 +91,8 @@ class HrEmployeePublic(models.Model):
         required=True,
         copy=False,
         default='New')
+    employee_notes = fields.Text(
+        string="Notes")
 
     
     @api.model

@@ -91,6 +91,8 @@ class HrEmployee(models.Model):
     delegation_name = fields.Char(
         string="Delegation name",
         related="delegation_id.name")
+    employee_notes = fields.Text(
+        string="Notes")
 
 
     _sql_constraints = [
