@@ -11,7 +11,7 @@ class ProjectTask(models.Model):
         'maintenance.minute.point',
         string="Minute point")
     checklist_line_ids = fields.One2many(
-        'project.task.ot.checklist.line',
+        'project.task.checklist.minute',
         'task_id',
         string="checklist lines")
     checklist_ids = fields.Many2many(

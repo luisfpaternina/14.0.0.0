@@ -65,6 +65,11 @@
                         </group>
                       </group>
                     </page>
+                    <page string="Notes" groups="hr.group_hr_manager">
+                        <group>
+                            <field name="employee_notes"/>
+                        </group>
+                    </page>
                 </xpath>
 
                 <xpath expr="//field[@name='job_title']" position="attributes">

@@ -82,7 +82,8 @@ class ResPartner(models.Model):
         tracking=True)
     is_potential_client = fields.Boolean(
         string="Is a potential client",
-        tracking=True)
+        tracking=True,
+        default=True)
     fiscal_name = fields.Char(
         string="Fiscal name",
         tracking=True)
@@ -158,6 +159,16 @@ class ResPartner(models.Model):
         'product.template',
         compute="compute_gadget_communitie",
         string='Gadgets')
+    is_acommunity = fields.Boolean(
+        string="Is a community")
+
+
+    @api.onchange('is_acommunity')
+    def _onchange_community(self):
+        if self.is_community:
+            self.is_acommunity = True
+        else:
+            self.is_acommunity = False
 
 
 
@@ -272,6 +283,7 @@ class ResPartner(models.Model):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
             vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
         result = super(ResPartner, self).create(vals)
+        """
         for record in self:
             if not record.is_admin and not record.is_maintainer\
                 and not record.is_oca and not record.is_potential_client:
@@ -284,6 +296,7 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
+        """
         return result
     
 
@@ -291,6 +304,7 @@ class ResPartner(models.Model):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
             vals['client_code'] = self.env['ir.sequence'].next_by_code('partner')
         result = super(ResPartner, self).write(vals)
+        """
         for record in self:
             if not record.is_admin and not record.is_maintainer\
                 and not record.is_oca and not record.is_potential_client:
@@ -303,5 +317,27 @@ class ResPartner(models.Model):
                     if not record.city:
                         raise ValidationError(_(
                             'You must register a city'))
+        """
 
         return result
+
+    
+    @api.constrains(
+        'name',
+        'bank_ids',
+        'vat',
+        'city',
+        'street')
+    def validate_fields(self):
+        for record in self:
+            if not record.is_admin and not record.is_maintainer\
+                and not record.is_oca and not record.is_potential_client:
+                    if not record.vat:
+                        raise ValidationError(_(
+                            'You must register an identification number'))
+                    if not record.bank_ids:
+                        raise ValidationError(_(
+                            'You must register a Bank account'))
+                    if not record.city:
+                        raise ValidationError(_(
+                            'You must register a city'))
