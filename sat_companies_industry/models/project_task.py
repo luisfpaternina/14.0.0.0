@@ -118,6 +118,10 @@ class ProjectTask(models.Model):
     zone_name = fields.Char(
         string="Zone name",
         related="zone_id.name")
+    checklist_minute line_ids = fields.One2many(
+        'project.task.checklist.minute',
+        'task_id',
+        string="checklist minute lines")
 
 
     @api.onchange('contact_person')
@@ -131,7 +135,7 @@ class ProjectTask(models.Model):
             dt = datetime.datetime.today()
             record.month_date = dt.month
 
-    
+
     @api.onchange('checklist_ot_ids')
     def _onchange_checklist(self):
         self.checklist_ot_ids.onchange_checklist()
