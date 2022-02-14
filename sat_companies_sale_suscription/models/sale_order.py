@@ -10,6 +10,16 @@ class SaleOrderTemplateInherit(models.Model):
         'stock.gadgets.contract.type')
     acc_number = fields.Char(
         string="Acc number")
+    check_contract_type = fields.Boolean(compute="_compute_check_contract_type")
+
+    def _compute_check_contract_type(self):
+        for record in self:
+            if record.sale_type_id.code == '01':
+                record.check_contract_type = True
+            else:
+                record.check_contract_type = False
+
+
 
 
     @api.onchange('partner_id')

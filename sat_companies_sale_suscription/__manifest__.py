@@ -15,6 +15,7 @@
 
         'sat_companies',
         'sale_subscription',
+        'sat_companies_sale',
         'sat_companies_project'
     ],
 

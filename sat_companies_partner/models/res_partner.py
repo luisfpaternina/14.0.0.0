@@ -171,10 +171,10 @@ class ResPartner(models.Model):
             self.is_acommunity = False
 
 
+
     def compute_gadget_communitie(self):
         for record in self:
             record.gadget_communitie_ids = record.gadget_ids
-
 
     @api.depends(
         'name',
@@ -277,7 +277,6 @@ class ResPartner(models.Model):
     @api.onchange('name')
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
-
 
     @api.model
     def create(self, vals):
