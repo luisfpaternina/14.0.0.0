@@ -118,10 +118,6 @@ class ProjectTask(models.Model):
     zone_name = fields.Char(
         string="Zone name",
         related="zone_id.name")
-    checklist_minute line_ids = fields.One2many(
-        'project.task.checklist.minute',
-        'task_id',
-        string="checklist minute lines")
 
 
     @api.onchange('contact_person')
