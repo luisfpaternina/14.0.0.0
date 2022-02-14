@@ -160,14 +160,11 @@ class ResPartner(models.Model):
         string='Gadgets')
 
 
-<<<<<<< HEAD
+
     def compute_gadget_communitie(self):
         for record in self:
             record.gadget_communitie_ids = record.gadget_ids
 
-
-=======
->>>>>>> a69c1c6feb36b80a0204c35a089011600240662e
     @api.depends(
         'name',
         'is_potential_client',
@@ -188,10 +185,6 @@ class ResPartner(models.Model):
         )
     ]
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a69c1c6feb36b80a0204c35a089011600240662e
     def _validate_percentage(self):
         for record in self:
             if record.percentaje_rep > 100 or record.percentaje_mto > 100:
@@ -274,11 +267,6 @@ class ResPartner(models.Model):
     def _upper_contact_name(self):        
         self.name = self.name.upper() if self.name else False
 
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> a69c1c6feb36b80a0204c35a089011600240662e
     @api.model
     def create(self, vals):
         if vals.get('client_code', 'New') == 'New' and vals.get('is_potential_client')==False:
