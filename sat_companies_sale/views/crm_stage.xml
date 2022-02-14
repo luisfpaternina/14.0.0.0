@@ -9,7 +9,7 @@
             <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
                 <group name="principal_group">
                   <group name="gp_left">
-                      
+                      <field name="oportunity_type_id"/>
                   </group>
                   <group name="gp_right">
                       
