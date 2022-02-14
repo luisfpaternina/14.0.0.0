@@ -7,4 +7,4 @@ from . import project_task_ot_checklist_line
 from . import project_task_inspection
 from . import maintenance_type_deffect
 from . import project_task_ot_checklist_location
-from . import multiple_labels
+from . import project_task_ot_checklist_minute
