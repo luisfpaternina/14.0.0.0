@@ -22,12 +22,20 @@ class SaleSuscriptionInherit(models.Model):
         return res
     """
 
+    """
+    def _active_cron_invoice(self,active_cron):
+        active_cron = True
+        return active_cron
+    """
+
+
     def _recurring_create_invoice(self):
         res = super(SaleSuscriptionInherit, self)._recurring_create_invoice()
         for record in self:
             month_exclude = False
+            active_cron = record._active_cron_invoice(active_cron)
             if record.template_id.exclude_months == True:
-                if record.active_cron_invoice == True:
+                if active_cron == True:
                     date_today = datetime.now().month
                 else:
                     date_today = record.recurring_next_date.month
@@ -95,6 +103,6 @@ class SaleSuscriptionInherit(models.Model):
                     #res._recompute_dynamic_lines(recompute_all_taxes=True, recompute_tax_base_amount=True)
                     #res._recompute_tax_lines(recompute_tax_base_amount=False)
 
-            record.active_cron_invoice = False
+            active_cron = False
 
         return res
