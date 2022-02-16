@@ -327,7 +327,8 @@ class ResPartner(models.Model):
         'bank_ids',
         'vat',
         'city',
-        'street')
+        'street',
+        'is_potential_client')
     def validate_fields(self):
         for record in self:
             if not record.is_admin and not record.is_maintainer\
