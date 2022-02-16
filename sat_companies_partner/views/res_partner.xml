@@ -255,6 +255,7 @@
                     <filter string="Is O.C.A" name="is_oca" domain="[('is_oca', '!=', False)]"/>
                     <filter string="Is maintainer" name="is_maintainer" domain="[('is_maintainer', '!=', False)]"/>
                     <filter string="Es comunidad" name="is_community" domain="[('is_community', '!=', False)]"/>
+                    <filter string="Is maker" name="is_maker" domain="[('is_maker', '!=', False)]"/>
                     <filter string="Partner type" name="partner_type_id" domain="[('partner_type_id', '!=', False)]"/>
                 </xpath>
 
