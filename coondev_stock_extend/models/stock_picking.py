@@ -17,4 +17,4 @@ class StockPicking(models.Model):
                 locations = self.env['stock.location'].search([('is_transfer','=', record.is_transfer)])
                 logging.info("?????????????????")
                 logging.info(locations)
-                return {'domain': {'location_dest_id': [('id', 'in', locations)]}}
+                return {'domain': {'location_dest_id': [('is_transfer', '=', locations.is_transfer)]}}
