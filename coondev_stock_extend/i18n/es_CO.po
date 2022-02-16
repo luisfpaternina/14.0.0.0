@@ -1,0 +1,74 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* coondev_stock_extend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-31 16:50+0000\n"
+"PO-Revision-Date: 2021-12-31 16:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: coondev_stock_extend
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_location__display_name
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking_type__display_name
+msgid "Display Name"
+msgstr "Nombre Público"
+
+#. module: coondev_stock_extend
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking_type__res_groups_id
+msgid "Groups"
+msgstr "Grupo de acceso"
+
+#. module: coondev_stock_extend
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_location__id
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking__id
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking_type__id
+msgid "ID"
+msgstr ""
+
+#. module: coondev_stock_extend
+#: model:ir.model,name:coondev_stock_extend.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicaciones de Inventario"
+
+#. module: coondev_stock_extend
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_location__is_transfer
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking__is_transfer
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking_type__is_transfer
+msgid "Is transfer"
+msgstr "Translado"
+
+#. module: coondev_stock_extend
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_location____last_update
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:coondev_stock_extend.field_stock_picking_type____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: coondev_stock_extend
+#: model:res.groups,name:coondev_stock_extend.stock_picking_validate_manager_group
+msgid "Manager Validate stock"
+msgstr "Validar inventario"
+
+#. module: coondev_stock_extend
+#: model:res.groups,comment:coondev_stock_extend.stock_picking_validate_manager_group
+msgid "Manager validate stock Permission Group"
+msgstr "Administrador para validar inventario"
+
+#. module: coondev_stock_extend
+#: model:ir.model,name:coondev_stock_extend.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tipo de Nota de Entrega"
+
+#. module: coondev_stock_extend
+#: model:ir.model,name:coondev_stock_extend.model_stock_picking
+msgid "Transfer"
+msgstr "Albarán"
