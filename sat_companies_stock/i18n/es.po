@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-03 10:59+0000\n"
-"PO-Revision-Date: 2022-02-03 10:59+0000\n"
+"POT-Creation-Date: 2022-02-16 10:26+0000\n"
+"PO-Revision-Date: 2022-02-16 10:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -356,6 +356,13 @@ msgid ""
 msgstr ""
 
 #. module: sat_companies_stock
+#: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_sale_subsicription_sat_companies_stock
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\" attrs=\"{'invisible': [('product_id', '=', False)]}\"/>"
+msgstr ""
+
+#. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.report_print_technical_data
 msgid "<strong style=\"font-size:15px\">Código aparato:</strong><span> </span>"
 msgstr ""
@@ -487,11 +494,16 @@ msgid "April"
 msgstr "Abril"
 
 #. module: sat_companies_stock
+#: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_sale_subsicription_sat_companies_stock
+msgid "Assignment date"
+msgstr "Fecha planeada"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__assistance_type_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__assistance_type_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__assistance_type_id
 msgid "Assistance type"
-msgstr ""
+msgstr "Tipo asignación"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__message_attachment_count
@@ -553,13 +565,11 @@ msgid "Billing"
 msgstr "Facturar apt"
 
 #. module: sat_companies_stock
-#: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_gadgets_billing_period
 #: model:ir.model,name:sat_companies_stock.model_stock_gadgets_billing_period
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__billing_period_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__billing_period_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__billing_period
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__billing_period_id
-#: model:ir.ui.menu,name:sat_companies_stock.menu_gadgets_billing_period
 msgid "Billing period"
 msgstr "Periodo de facturación"
 
@@ -576,10 +586,9 @@ msgid "Cabine phone"
 msgstr "Teléfono cabina"
 
 #. module: sat_companies_stock
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__partner_id
-#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__partner_id
-msgid "Client"
-msgstr "Cliente"
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__check_contract_type
+msgid "Check Contract Type"
+msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_cockpit_type
@@ -629,6 +638,9 @@ msgstr "Contrato"
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_gadgets_contract_type
 #: model:ir.model,name:sat_companies_stock.model_stock_gadgets_contract_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__gadget_contract_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__gadget_contract_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__gadget_contract_type
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__type_contract_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__type_contract_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__gadget_contract_type
@@ -652,14 +664,12 @@ msgstr "Polea contrapeso"
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_key
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_keypad
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_lock
-#: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_maintenance_frequency
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_maneuvering_table
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_state_record
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_bench
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_cockpit_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_elevator_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_gadgets
-#: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_gadgets_billing_period
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_gadgets_contract_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_gadgets_increase_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_stock_gadgets_state
@@ -736,6 +746,22 @@ msgid "DATOS TÉCNICOS"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__date_end
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__date_end
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__date_end
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__date_end
+msgid "Date End asingned"
+msgstr ""
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__date_begin
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__date_begin
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__date_begin
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__date_begin
+msgid "Date asigned"
+msgstr ""
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__correction_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__correction_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__correction_date
@@ -773,6 +799,7 @@ msgid "Delegation name"
 msgstr "Nombre delegación"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__display_name
@@ -991,11 +1018,24 @@ msgid "GSM model"
 msgstr "Modelo GSM"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__gadgest_contract_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__gadgest_contract_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__gadgest_contract_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__gadgest_contract_type_id
+msgid "Gadgest Contract Type"
+msgstr "Tipo contrato"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__gadget_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__gadget_id
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_product_template_only_form_view_sat
 msgid "Gadget"
 msgstr "Aparato"
+
+#. module: sat_companies_stock
+#: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_sale_subsicription_sat_companies_stock
+msgid "Gadget information"
+msgstr "Información aparato"
 
 #. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_product_template_only_form_view_sat
@@ -1016,6 +1056,10 @@ msgstr "Estado aparato"
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_gadgets
 #: model:ir.model,name:sat_companies_stock.model_stock_gadgets
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__product_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__product_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__product_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__product_id
 #: model:ir.ui.menu,name:sat_companies_stock.menu_gadgets
 msgid "Gadgets"
 msgstr "Aparatos"
@@ -1090,6 +1134,7 @@ msgid "High date call center"
 msgstr "Fecha alta call center"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__id
@@ -1249,6 +1294,11 @@ msgid "Increse type"
 msgstr "Tipo aumento"
 
 #. module: sat_companies_stock
+#: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_sale_subsicription_sat_companies_stock
+msgid "Information project"
+msgstr "Información proyecto"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__years_inspection
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__years_inspection
 msgid "Inspection years"
@@ -1298,9 +1348,12 @@ msgid "Is Follower"
 msgstr "Es Seguidor"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__is_potential_client
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__is_potential_client
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__is_potential_client
 msgid "Is a potential client"
-msgstr "Es cliente potencial"
+msgstr "Cliente potencial"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_cabin_puffer
@@ -1378,6 +1431,11 @@ msgid "January"
 msgstr "Enero"
 
 #. module: sat_companies_stock
+#: model:ir.model,name:sat_companies_stock.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_july
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_july
 msgid "July"
@@ -1436,6 +1494,7 @@ msgid "Landing lock type"
 msgstr "Tipo cerradura rellano"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench____last_update
@@ -1631,11 +1690,9 @@ msgid "Main Attachment"
 msgstr ""
 
 #. module: sat_companies_stock
-#: model:ir.actions.act_window,name:sat_companies_stock.action_view_maintenance_frequency
 #: model:ir.model,name:sat_companies_stock.model_stock_maintenance_frequency
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__maintenance_frequency_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__maintenance_frequency_id
-#: model:ir.ui.menu,name:sat_companies_stock.menu_stock_maintenance_frequency
 msgid "Maintenance frequency"
 msgstr "Frecuncia de mantenimiento"
 
@@ -1797,7 +1854,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_cockpit_push_type_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_cockpit_type_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_elevator_type_form
-#: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_billing_period_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_contract_type_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_increase_type_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_state_form
@@ -1808,7 +1864,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_key_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_keypad_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_lock_form
-#: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_maintenance_frequency_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_maneuvering_table_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_shipment_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_soil_type_form
@@ -2231,6 +2286,14 @@ msgid "SMS Delivery error"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__sale_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__sale_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__sale_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__sale_type_id
+msgid "Sale Type"
+msgstr "Tipo presupuesto/OT"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_september
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_september
 msgid "September"
@@ -2308,6 +2371,14 @@ msgid "Subscription"
 msgstr "Suscripción"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__task_user_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__task_user_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__task_user_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_sale_subscription__task_user_id
+msgid "Task User"
+msgstr "Técnico"
+
+#. module: sat_companies_stock
 #: model:ir.ui.menu,name:sat_companies_stock.menu_technical_data
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_product_template_only_form_view_sat
 msgid "Technical data"
@@ -2331,7 +2402,7 @@ msgstr "Polea tensora(cm)"
 #: code:addons/sat_companies_stock/models/stock_gadgets.py:0
 #, python-format
 msgid "The contract start date cannot be greater than the end date"
-msgstr ""
+msgstr "Fecha final no puede ser menor a la inicial!"
 
 #. module: sat_companies_stock
 #: code:addons/sat_companies_stock/models/.ipynb_checkpoints/product-checkpoint.py:0
@@ -2497,7 +2568,7 @@ msgstr "Usabilidad"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__gadget_state
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__gadget_state
 msgid "Validate active"
-msgstr ""
+msgstr "Validar activo"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_validate_date
