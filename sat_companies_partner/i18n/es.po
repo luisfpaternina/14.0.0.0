@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-11 10:26+0000\n"
-"PO-Revision-Date: 2022-02-11 10:26+0000\n"
+"POT-Creation-Date: 2022-02-16 14:17+0000\n"
+"PO-Revision-Date: 2022-02-16 14:17+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -118,6 +118,11 @@ msgstr "Comunidades"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__partner_community_id
 msgid "Community"
 msgstr "Comunidad"
+
+#. module: sat_companies_partner
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
+msgid "Comunidad"
+msgstr ""
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
@@ -433,6 +438,7 @@ msgstr "Mantenedora"
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__is_maker
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner_type__is_maker
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__is_maker
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.custom_view_res_partner_search
 msgid "Is maker"
 msgstr "Es fabricante"
 
@@ -854,20 +860,17 @@ msgstr ""
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/res_partner.py:0
-#: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register a Bank account"
 msgstr "La cuenta bancaría es obligatoria para clientes no potenciales"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/res_partner.py:0
-#: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register a city"
 msgstr "La ciudad es obligatoria para clientes no potenciales"
 
 #. module: sat_companies_partner
-#: code:addons/sat_companies_partner/models/res_partner.py:0
 #: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register an identification number"
