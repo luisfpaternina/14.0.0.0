@@ -14,6 +14,8 @@
     'depends': [
 
         'sale_management',
+        'account',
+        'project',
         'stock',
         'purchase',
         'contacts',
@@ -27,6 +29,7 @@
        
         'security/security.xml',
         'security/ir.model.access.csv',
+        #'views/account_move_views.xml',
         'views/products.xml',
         'views/stock_gadgets.xml',
         'views/stock_gadgets_state.xml',
@@ -51,6 +54,7 @@
         'views/stock_gsm_model.xml',
         'views/stock_landing_key.xml',
         'views/stock_state_record.xml',
+        #'wizard/wizard_sale_subscription_view.xml',
         'reports/technical_data_template.xml',
         
     ],

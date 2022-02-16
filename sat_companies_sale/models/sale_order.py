@@ -62,12 +62,15 @@ class SaleOrder(models.Model):
     quote_date_sent_min = fields.Date(
         string="Quote date sent min")
 
-    
     @api.onchange('product_id')
     def onchange_check_product(self):
         for record in self:
             if record.product_id.employee_notice_id.user_id:
                 record.task_user_id = record.product_id.employee_notice_id.user_id
+            sale_type = record.product_id.subscription_template_id.sale_type_id
+            gadgets_contract = record.product_id.subscription_template_id.gadgets_contract_type_id
+            record.sale_type_id = sale_type
+            record.gadgets_contract_type_id = gadgets_contract
 
 
     @api.depends('product_id')
