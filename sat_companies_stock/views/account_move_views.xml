@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="inherit_view_sale_subsicription_sat_companies_stock" model="ir.ui.view">
-        <field name="name">sale.subscription.form.</field>
-        <field name="model">sale.subscription</field>
-        <field name="inherit_id" ref="sale_subscription.sale_subscription_view_form"/>
+    <record id="view_account_move_inherit_product" model="ir.ui.view">
+        <field name="name">account.move.inherit.product</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <!--
-            <xpath expr="//form/header/button[@name='start_subscription']" position="attributes">
-                <attribute name="name">set_wizard_sale_subscription</attribute>
-            </xpath>
-            -->
-            <xpath expr="//form/sheet/group[1]" position="after">
+            <xpath expr="//form/sheet/group[1]/group[2]" position="after">
                 <group name="dates_group">
-                    <field name="check_contract_type" invisible="True"/>
                     <group name="group_left" string="Gadget information">
                         <field name="product_id" domain = "[('is_gadget','=',True),('partner_id','=',partner_id)]" required="True"/>
-                        <field name="task_user_id"/>
+                        <field name="task_user_id" attrs="{'invisible': [('check_product', '!=', True)],'required': [('check_product', '!=', False)]}"/>
                         <label for="date_begin" string="Assignment date" attrs="{'invisible': [('product_id', '=', False)]}"/>
                         <div class="w-100">
                             <div class="o_row">
@@ -27,16 +21,10 @@
                     </group>
                     <group name="group_right" string="Information project">
                         <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
-                        <field name="gadgest_contract_type_id" attrs="{'invisible': [('check_contract_type', '!=', True)],'required': [('check_contract_type', '!=', False)]}"/>
                     </group>
 
                 </group>
             </xpath>
-            <xpath expr="//field[(@name='team_id')]" position="after">
-                <field name="gadget_contract_type" options="{'no_create': True, 'no_create_edit':True}"/>
-                <field name="is_potential_client" invisible="1"/>
-            </xpath>
-        </field>
+        </field> 
     </record>
-     
-</odoo>     
+</odoo>

@@ -457,6 +457,11 @@ class ProductTemplate(models.Model):
     photo3 = fields.Binary(
         string="Photo 3")
 
+    @api.onchange('is_gadget')
+    def _onchange_is_gadget(self):
+        for record in self:
+            if record.is_gadget == True:
+                record.type = 'consu'
 
     @api.onchange('partner_id')
     def _onchange_partner_admin_id(self):
