@@ -7,7 +7,8 @@ from pytz import timezone
 class SaleSuscriptionInherit(models.Model):
     _inherit = 'sale.subscription'
 
-    active_cron_invoice = fields.Boolean()
+    active_cron_invoice = fields.Boolean(
+        string="Active cron")
     gadget_contract_type = fields.Many2one(
         'stock.gadgets.contract.type',
         string="Contract type")
@@ -15,16 +16,26 @@ class SaleSuscriptionInherit(models.Model):
         string="Is a potential client",
         tracking=True,
         related="partner_id.is_potential_client")
-    
-    product_id = fields.Many2one('product.template', 'Gadgets')
-    task_user_id = fields.Many2one('res.users')
-    sale_type_id = fields.Many2one('sale.order.type')
-    gadgest_contract_type_id = fields.Many2one('stock.gadgets.contract.type')
-    date_begin = fields.Datetime(string = 'Date asigned')
-    date_end = fields.Datetime(string = 'Date End asingned')
-
+    product_id = fields.Many2one(
+        'product.template',
+        'Gadgets')
+    task_user_id = fields.Many2one(
+        'res.users')
+    sale_type_id = fields.Many2one(
+        'sale.order.type')
+    gadgest_contract_type_id = fields.Many2one(
+        'stock.gadgets.contract.type')
+    date_begin = fields.Datetime(
+        string = 'Date asigned')
+    date_end = fields.Datetime(
+        string = 'Date End asingned')
     check_contract_type = fields.Boolean(
         compute="_compute_check_contract_type",
+        )
+    type_service_id = fields.One2many(
+        'sale.check.type.contract',
+        'order_id',
+        string='Type service'
         )
 
     def start_subscription(self):
