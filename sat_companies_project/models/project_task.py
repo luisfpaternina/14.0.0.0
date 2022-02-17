@@ -96,6 +96,9 @@ class ProjectTaskInherit(models.Model):
     ot_type_id = fields.Many2one(
         'sale.order.type',
         string="Tipo OT")
+    gadgest_contract_type_id = fields.Many2one(
+        'stock.gadgets.contract.type',
+        string="Tipo OT")
 
 
     @api.onchange('categ_udn_id')

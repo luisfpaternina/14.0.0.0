@@ -16,6 +16,7 @@
         'sat_companies',
         'sale_subscription',
         'sat_companies_sale',
+        'sat_companies_stock',
         'sat_companies_project'
     ],
 
@@ -25,6 +26,7 @@
         'data/product_template_data.xml',
         'views/sale_suscription_template_view.xml',
         'views/sale_order_template.xml',
+        'views/sale_subscription.xml',
         'views/sale_order_view.xml',
         'views/res_partner.xml',
         
