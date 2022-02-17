@@ -37,7 +37,6 @@
         'views/stock_gadgets_use.xml',
         'views/stock_gadgets_contract_type.xml',
         'views/stock_gadgets_increase_type.xml',
-        'views/sale_subscription.xml',
         'views/stock_elevator_type.xml',
         'views/stock_soil_type.xml',
         'views/stock_cockpit_keypad.xml',
