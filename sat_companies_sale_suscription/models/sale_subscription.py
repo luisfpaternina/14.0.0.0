@@ -33,7 +33,7 @@ class SaleSuscriptionInherit(models.Model):
             project_fsm = self.env.ref('industry_fsm.fsm_project', raise_if_not_found=False)
 
             new_task = self.env['project.task'].sudo().create({
-                'name': 'GENERADO DESDE SUBSCRIPTION',
+                'name': record.name,
                 'partner_id': record.partner_id.id,
                 'ot_type_id': record.sale_type_id.id,
                 'gadgest_contract_type_id': record.gadgest_contract_type_id.id,
