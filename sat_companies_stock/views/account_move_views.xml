@@ -5,8 +5,9 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//form/sheet/group[1]/group[2]" position="after">
+            <xpath expr="//form/sheet/group[1]" position="after">
                 <group name="dates_group">
+                    <field name="check_contract_type" invisible="True"/>
                     <group name="group_left" string="Gadget information">
                         <field name="check_product" invisible="True"/>
                         <field name="product_id" domain = "[('is_gadget','=',True),('partner_id','=',partner_id)]" required="True"/>
@@ -22,8 +23,8 @@
                     </group>
                     <group name="group_right" string="Information project">
                         <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
+                        <field name="gadgets_contract_type_id" attrs="{'invisible': [('check_contract_type', '=', False)]}"/>
                     </group>
-
                 </group>
             </xpath>
         </field> 
