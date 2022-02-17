@@ -21,6 +21,16 @@ class AccountMove(models.Model):
         string="Is a potential client",
         tracking=True,
         related="partner_id.is_potential_client")
+    check_product = fields.Boolean(
+        compute='compute_check_product')
+
+    @api.depends('product_id')
+    def compute_check_product(self):
+        for record in self:
+            if record.product_id:
+                record.check_product=True
+            else:
+                record.check_product=False
 
     @api.onchange('product_id')
     def onchange_check_product(self):

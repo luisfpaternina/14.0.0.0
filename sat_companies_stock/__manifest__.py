@@ -29,7 +29,7 @@
        
         'security/security.xml',
         'security/ir.model.access.csv',
-        #'views/account_move_views.xml',
+        'views/account_move_views.xml',
         'views/products.xml',
         'views/stock_gadgets.xml',
         'views/stock_gadgets_state.xml',
@@ -37,7 +37,6 @@
         'views/stock_gadgets_use.xml',
         'views/stock_gadgets_contract_type.xml',
         'views/stock_gadgets_increase_type.xml',
-        'views/sale_subscription.xml',
         'views/stock_elevator_type.xml',
         'views/stock_soil_type.xml',
         'views/stock_cockpit_keypad.xml',
@@ -54,7 +53,6 @@
         'views/stock_gsm_model.xml',
         'views/stock_landing_key.xml',
         'views/stock_state_record.xml',
-        #'wizard/wizard_sale_subscription_view.xml',
         'reports/technical_data_template.xml',
         
     ],
