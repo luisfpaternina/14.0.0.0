@@ -38,6 +38,7 @@ class SaleSuscriptionInherit(models.Model):
         string='Type service'
         )
 
+
     def start_subscription(self):
         res = super(SaleSuscriptionInherit, self).start_subscription()
         for record in self:
@@ -63,6 +64,7 @@ class SaleSuscriptionInherit(models.Model):
             """
         return res
 
+
     @api.onchange('product_id')
     def onchange_check_product(self):
         for record in self:
@@ -73,6 +75,7 @@ class SaleSuscriptionInherit(models.Model):
             record.sale_type_id = sale_type
             record.gadgest_contract_type_id = gadgets_contract
 
+
     @api.depends('sale_type_id')
     def _compute_check_contract_type(self):
         for record in self:
@@ -81,6 +84,7 @@ class SaleSuscriptionInherit(models.Model):
                 record.check_contract_type = True
             else:
                 record.check_contract_type = False
+
 
     @api.constrains('partner_id')
     def _validate_is_potential_client(self):
