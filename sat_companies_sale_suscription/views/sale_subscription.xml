@@ -31,12 +31,7 @@
             <xpath expr="//form[1]/sheet[1]/div[not(@name)][3]/notebook[1]" position="inside">
                 <page string="Contract dates" name="contract_dates_page">
                   <group>
-                    <field name="type_service_id">
-                        <tree string="Check type Contract Service" editable="bottom">
-                            <field name="item" readonly="True" force_save="True"/>
-                            <field name="type_service_id"/>
-                        </tree>
-                    </field>
+                    
                   </group>
                 </page>
             </xpath>
