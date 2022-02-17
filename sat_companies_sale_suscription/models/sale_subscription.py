@@ -56,9 +56,11 @@ class SaleSuscriptionInherit(models.Model):
                 'is_fsm': True
 
             })
+            """
             if record.recurring_invoice_line_ids:
                 for line in record.recurring_invoice_line_ids.order_line:
                     line.task_id = new_task.id
+            """
         return res
 
     @api.onchange('product_id')
