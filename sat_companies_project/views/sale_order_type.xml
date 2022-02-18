@@ -94,6 +94,13 @@
             />
         
         <menuitem 
+            id="menu_sale_order_type_subscription" 
+            name="Tipo de presupuesto/OT" 
+            parent="sale_subscription.menu_sale_subscription_config"
+            action="action_view_sale_order_type"
+            />
+        
+        <menuitem 
             id="menu_sale_order_type_field_service" 
             name="Sale type Field service" 
             parent="industry_fsm.fsm_menu_settings"

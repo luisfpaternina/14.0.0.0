@@ -1077,7 +1077,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__oportunity_type_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_crm_lead_type
 msgid "Oportunity type"
-msgstr "Tipo de oportunidad"
+msgstr "Datos de contrato"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__opportunity_days
@@ -1355,7 +1355,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__type_service_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_sale_type_service
 msgid "Type Service"
-msgstr "Tipo de servicio"
+msgstr "Datos del contrato"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_subscription__type_contract
@@ -1365,7 +1365,7 @@ msgstr "Tipo de contrato"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
-msgstr "Tipo de servicio"
+msgstr "Datos del contrato"
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
