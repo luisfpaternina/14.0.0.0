@@ -75,6 +75,18 @@
             parent="industry_fsm.fsm_menu_settings"
             action="sat_companies_project.action_view_categ_udn"
             />
-
+        <menuitem 
+            id="menu_project_task_categ_udn_subscription" 
+            name="Categoría Udn/OT" 
+            parent="sale_subscription.menu_sale_subscription_config"
+            action="sat_companies_project.action_view_categ_udn"
+            />
+        
+        <menuitem 
+            id="menu_project_task_categ_udn_sale" 
+            name="Categoría Udn/OT" 
+            parent="sale.menu_sale_config"
+            action="sat_companies_project.action_view_categ_udn"
+            />
     </data>
 </odoo> 

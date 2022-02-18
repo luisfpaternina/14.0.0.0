@@ -35,6 +35,15 @@
                   </group>
                 </page>
             </xpath>
+            <xpath expr="//form[1]/sheet[1]/div[not(@name)][3]/notebook[1]/page[3]" position="after">
+                <page  string="Customer Signature" name="customer_signature" >
+                    <group>
+                        <field name="signed_by"/>
+                        <field name="signed_on"/>
+                        <field name="signature" widget="image"/>
+                    </group>
+                </page>
+            </xpath>
 
             <!--
             <xpath expr="//field[(@name='team_id')]" position="after">
