@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-07 12:45+0000\n"
-"PO-Revision-Date: 2022-02-07 12:45+0000\n"
+"POT-Creation-Date: 2022-02-20 22:33+0000\n"
+"PO-Revision-Date: 2022-02-20 22:33+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -82,6 +82,16 @@ msgid ""
 "<?xml version=\"1.0\"?>\n"
 "<div>\n"
 "                    <strong><p align=\"center\">Notificación de oportunidad</p></strong>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: sat_companies_sale
+#: model:mail.template,body_html:sat_companies_sale.template_crm_lead_max_days_notify
+msgid ""
+"<?xml version=\"1.0\"?>\n"
+"<div>\n"
+"                    <strong><p align=\"center\">Notificación responsable del departamento</p></strong>\n"
 "                </div>\n"
 "            "
 msgstr ""
@@ -587,6 +597,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__display_name
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_advance_payment_inv__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__display_name
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__display_name
@@ -748,6 +759,7 @@ msgstr "Obtén un mejor navegador"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__id
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_advance_payment_inv__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__id
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__id
@@ -768,6 +780,16 @@ msgstr "Si está marcada, los mensajes nuevos requieren su atención."
 #: model:ir.model.fields,help:sat_companies_sale.field_crm_lead_type__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__int_opportunity_days
+msgid "Int opportunity days"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__int_stage_days
+msgid "Int stage days"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner__is_admin
@@ -829,6 +851,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_res_partner____last_update
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_advance_payment_inv____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order____last_update
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line____last_update
@@ -1008,6 +1031,13 @@ msgid "Notificación de oportunidad"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model:base.automation,name:sat_companies_sale.automatization_sat_companies_crm_lead_max_days
+#: model:ir.actions.server,name:sat_companies_sale.automatization_sat_companies_crm_lead_max_days_ir_actions_server
+#: model:mail.template,subject:sat_companies_sale.template_crm_lead_max_days_notify
+msgid "Notificación responsable del departamento"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Número de acciones"
@@ -1077,7 +1107,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__oportunity_type_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_crm_lead_type
 msgid "Oportunity type"
-msgstr "Datos de contrato"
+msgstr "Tipo de oportunidad"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__opportunity_days
@@ -1220,6 +1250,11 @@ msgid "Sale type"
 msgstr "Tipo de presupuesto"
 
 #. module: sat_companies_sale
+#: model:ir.model,name:sat_companies_sale.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Ventas. Anticipo pago factura"
+
+#. module: sat_companies_sale
 #: model:ir.model,name:sat_companies_sale.model_sale_order
 msgid "Sales Order"
 msgstr "Pedido de venta"
@@ -1319,7 +1354,7 @@ msgstr "Asignar tarea a ténico"
 #: code:addons/sat_companies_sale/models/sale_order.py:0
 #, python-format
 msgid "The item should be one per line"
-msgstr "No se puede agregar el mismo registro!"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
@@ -1355,7 +1390,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__type_service_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_sale_type_service
 msgid "Type Service"
-msgstr "Datos del contrato"
+msgstr "Tipo de servicio"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_subscription__type_contract
@@ -1365,7 +1400,7 @@ msgstr "Tipo de contrato"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
-msgstr "Datos del contrato"
+msgstr "Tipo de servicio"
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
@@ -1398,6 +1433,11 @@ msgstr "Contador de mensajes no leídos"
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
 msgid "Upload File"
 msgstr "Cargar archivo"
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__is_validate_days
+msgid "Validate days"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead_type__website_message_ids
