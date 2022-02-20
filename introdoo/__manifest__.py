@@ -35,6 +35,7 @@
     
         'security/ir.model.access.csv',
         'views/res_company.xml',
+        'views/res_config_settings.xml',
         'wizard/wizard.xml',
         'data/base_automatization.xml',           
     ],
