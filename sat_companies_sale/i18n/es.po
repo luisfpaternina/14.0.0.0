@@ -1454,7 +1454,7 @@ msgstr "Tipo de contrato"
 #: model:ir.actions.act_window,name:sat_companies_sale.sale_type_servic_action
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
-msgstr "Tipo de oportunidad"
+msgstr "Tipo de servicio"
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
