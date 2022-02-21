@@ -37,10 +37,21 @@ class SaleSuscriptionInherit(models.Model):
         'order_id',
         string='Type service'
         )
-    
-    signature = fields.Image('Signature', help='Signature received through the portal.', copy=False, attachment=True, max_width=1024, max_height=1024)
-    signed_by = fields.Char('Signed By', help='Name of the person that signed the SO.', copy=False)
-    signed_on = fields.Datetime('Signed On', help='Date of the signature.', copy=False)
+    signature = fields.Image(
+        'Signature',
+        help='Signature received through the portal.',
+        copy=False,
+        attachment=True,
+        max_width=1024,
+        max_height=1024)
+    signed_by = fields.Char(
+        'Signed By',
+        help='Name of the person that signed the SO.',
+        copy=False)
+    signed_on = fields.Datetime(
+        'Signed On',
+        help='Date of the signature.',
+        copy=False)
 
     @api.onchange('partner_id')
     def onchange_partner_id(self):
