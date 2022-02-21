@@ -11,8 +11,3 @@ class SaleSubscription(models.Model):
     type_contract = fields.Selection([
         ('normal','Normal'),
         ('all_risk','All risk')],string="Type of contract",tracking=True)
-    type_service_id = fields.One2many(
-        'sale.check.type.contract',
-        'suscription_id',
-        string='Type service'
-        )
