@@ -99,6 +99,9 @@ class ProjectTaskInherit(models.Model):
     gadgest_contract_type_id = fields.Many2one(
         'stock.gadgets.contract.type',
         string="Tipo Suscripción")
+    payment_term_ot_id = fields.Many2one(
+        'account.payment.term',
+        string="Payment term")
 
 
     @api.onchange('categ_udn_id')
