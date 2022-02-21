@@ -269,7 +269,7 @@ msgstr "Tipo presupuesto/OT"
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_order_template__sale_type_id
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription_template__sale_type_id
 msgid "Sale type"
-msgstr "Tipo venta"
+msgstr "Tipo presupuesto/OT"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model,name:sat_companies_sale_suscription.model_sale_order
