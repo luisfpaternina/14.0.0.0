@@ -54,6 +54,12 @@ class SaleSuscriptionInherit(models.Model):
         copy=False)
 
 
+    @api.onchange('product_id')
+    def _template_gadget(self):
+        for record in self:
+            record.template_id = record.product_id.subscription_template_id
+
+
     @api.onchange('partner_id')
     def onchange_partner_id(self):
         res = super(SaleSuscriptionInherit, self).onchange_partner_id()
