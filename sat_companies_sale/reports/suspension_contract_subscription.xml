@@ -3,7 +3,7 @@
     <data>
         
 
-        <template id="report_custom_template_sale_suspension_contract">
+        <template id="report_subscription_suspension_contract">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">                    
                     <div class="header">
@@ -30,11 +30,11 @@
         </template>
 
         <report
-                id="id_template_sale_suspension_contract"
+                id="id_subscription_suspension_contract"
                 string="Resolución / Suspensión de Contrato"
-                model="sale.order"
+                model="sale.subscription"
                 report_type="qweb-pdf"
-                name="sat_companies_sale.report_custom_template_sale_suspension_contract"
+                name="sat_companies_sale.report_subscription_suspension_contract"
         />
 
     </data>
