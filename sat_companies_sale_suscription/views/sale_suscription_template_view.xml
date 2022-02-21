@@ -8,6 +8,8 @@
             <xpath expr="//form/sheet/notebook/page/group[1]/group[1]/field[@name='payment_mode']" position="after">
                 <field name="sale_type_id"/>
                 <field name="gadgets_contract_type_id"/>
+                <field name="days_number"/>
+                <field name="days_between_visits"/>
             </xpath>
             <xpath expr="//form/sheet/notebook/page/group[1]/group[2]/group[1]/field[@name='code']" position="after">
 
