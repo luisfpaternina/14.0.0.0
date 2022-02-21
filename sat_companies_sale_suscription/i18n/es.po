@@ -46,7 +46,7 @@ msgstr "Abril"
 #. module: sat_companies_sale_suscription
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale_suscription.sale_subscription_inherit_form
 msgid "Assignment date"
-msgstr ""
+msgstr "Fecha planeada"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription_template__aug
