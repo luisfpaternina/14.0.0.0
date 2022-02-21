@@ -104,6 +104,7 @@
                     </group>
                 </page>
             </xpath>
+            
             <xpath expr="//field[(@name='partner_id')]" position="after">
                 <field name="product_id" options="{'no_create': True, 'no_create_edit':True}" domain = "[('is_gadget','=',True),('partner_id','=',partner_id)]"/>
                 <field name="categ_udn_id"  options="{'no_create': True, 'no_create_edit':True}"/>
@@ -111,6 +112,7 @@
                 <field name="ot_date" invisible="1"/>
                 <field name="month_date" invisible="1"/>
             </xpath>
+
             <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
                 <group>
                   <group>
@@ -121,6 +123,11 @@
                   </group>
                 </group>
             </xpath>
+
+            <xpath expr="//field[(@name='tag_ids')]" position="after">
+                <field name="payment_term_ot_id"  options="{'no_create': True, 'no_create_edit':True}"/>
+            </xpath>
+            
         </field>
     </record>
 </odoo>     
