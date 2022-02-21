@@ -161,6 +161,8 @@ class ResPartner(models.Model):
         string='Gadgets')
     is_acommunity = fields.Boolean(
         string="Is a community")
+    is_billing_administrator = fields.Boolean(
+        string="Is billing administrator")
 
 
     @api.onchange('is_acommunity')
