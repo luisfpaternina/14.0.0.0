@@ -4,6 +4,8 @@ from odoo.exceptions import ValidationError
 
 class SaleTypeService(models.Model):
     _name = 'sale.type.service'
+     _inherit = 'mail.thread'
+    _description = 'Sale type service'
 
     name = fields.Char(
         string="Name")
