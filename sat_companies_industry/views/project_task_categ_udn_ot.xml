@@ -77,9 +77,17 @@
             />
 
         <menuitem 
-            id="menu_project_task_categ_udn_sale" 
+            id="menu_categ_udn_sale" 
             name="Categorty udn" 
             parent="sale.menu_sale_config"
+            action="sat_companies_industry.action_view_categ_udn"
+            sequence="60"
+            />
+
+        <menuitem 
+            id="menu_categ_udn_suscription" 
+            name="Categorty udn" 
+            parent="sale_subscription.menu_sale_subscription_config"
             action="sat_companies_industry.action_view_categ_udn"
             sequence="60"
             />
