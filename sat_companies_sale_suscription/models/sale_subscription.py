@@ -53,6 +53,7 @@ class SaleSuscriptionInherit(models.Model):
         help='Date of the signature.',
         copy=False)
 
+
     @api.onchange('partner_id')
     def onchange_partner_id(self):
         res = super(SaleSuscriptionInherit, self).onchange_partner_id()
