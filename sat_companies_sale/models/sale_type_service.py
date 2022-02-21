@@ -18,6 +18,8 @@ class SaleTypeService(models.Model):
     suscription_id = fields.Many2one(
         'sale.subscription',
         string="Suscription")
+    type_description = fields.Text(
+        string="Description")
 
 
     @api.onchange('name')
