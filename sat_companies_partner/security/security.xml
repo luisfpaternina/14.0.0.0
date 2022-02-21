@@ -27,7 +27,7 @@
 	        <field name="comment">Manager communities Permission Group</field>
 	    </record>
 
-	    <record id="res_partner_billing administrator_group" model="res.groups">
+	    <record id="res_partner_billing_administrator_group" model="res.groups">
 	        <field name="name">Manager billing administrator</field>
 	        <field name="comment">Manager billing administrator Permission Group</field>
 	    </record>
