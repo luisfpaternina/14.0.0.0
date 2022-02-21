@@ -41,6 +41,7 @@
         'reports/sale_order_contract.xml',
         'reports/sale_order_client_documentation.xml',
         'reports/contract_subscription.xml',
+        'reports/maintenance_offer_subscription.xml',
         'data/sale_order_sent_email_data.xml',
         'data/sale_order_maintenance_offer.xml',
         'data/crm_lead_opportunity_notify.xml',
