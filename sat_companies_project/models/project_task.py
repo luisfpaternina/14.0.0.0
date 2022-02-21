@@ -104,6 +104,17 @@ class ProjectTaskInherit(models.Model):
         string="Payment term")
 
 
+    @api.onchange('partner_id')
+    def _payment_terms(self):
+        for record in self:
+            if record.ot_type_id.is_maintenance:
+                record.payment_term_ot_id = record.partner_id.payment_term_maintenance_id
+            elif record.ot_type_id.is_line:
+                record.payment_term_ot_id = record.partner_id.payment_term_tel_id
+            else:
+                record.payment_term_ot_id = record.partner_id.property_payment_term_id
+
+
     @api.onchange('categ_udn_id')
     def related_type_ot(self):
         for record in self:
