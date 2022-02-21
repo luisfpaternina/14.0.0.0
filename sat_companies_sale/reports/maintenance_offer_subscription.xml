@@ -2,7 +2,7 @@
 <odoo>
     <data>
 
-        <record id="paperformat_report_custom_template_sale_order_maintenance_offer" model="report.paperformat">
+        <record id="paperformat_report_custom_template_maintenance_offer" model="report.paperformat">
           <field name="name">Formato de papel Oferta de mantenimiento</field>
           <field name="default" eval="True"/>
           <field name="format">A4</field>
