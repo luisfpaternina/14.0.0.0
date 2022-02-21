@@ -104,7 +104,7 @@ class ProjectTaskInherit(models.Model):
         string="Payment term")
 
 
-    @api.onchange('partner_id')
+    @api.onchange('partner_id','ot_type_id')
     def _payment_terms(self):
         for record in self:
             if record.ot_type_id.is_maintenance:
