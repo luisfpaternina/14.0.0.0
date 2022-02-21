@@ -17,6 +17,8 @@
         'industry_fsm',
         'project',
         'base_automation',
+        'sale_management',
+        'sale_subscription',
         'sat_companies_stock',
 
     ],
