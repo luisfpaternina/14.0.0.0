@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-18 04:26+0000\n"
-"PO-Revision-Date: 2022-02-18 04:26+0000\n"
+"POT-Creation-Date: 2022-02-21 14:25+0000\n"
+"PO-Revision-Date: 2022-02-21 14:25+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -139,8 +139,6 @@ msgstr ""
 #. module: sat_companies_project
 #: model:ir.actions.act_window,name:sat_companies_project.action_view_categ_udn
 #: model:ir.ui.menu,name:sat_companies_project.menu_project_task_categ_udn
-#: model:ir.ui.menu,name:sat_companies_project.menu_project_task_categ_udn_sale
-#: model:ir.ui.menu,name:sat_companies_project.menu_project_task_categ_udn_subscription
 msgid "Categorty udn"
 msgstr "Categoría Udn/OT"
 
@@ -148,6 +146,12 @@ msgstr "Categoría Udn/OT"
 #: model:ir.model,name:sat_companies_project.model_project_task_categ_udn
 msgid "Category Udn OT"
 msgstr "Categoria/UdN OT"
+
+#. module: sat_companies_project
+#: model:ir.ui.menu,name:sat_companies_project.menu_project_task_categ_udn_sale
+#: model:ir.ui.menu,name:sat_companies_project.menu_project_task_categ_udn_subscription
+msgid "Categoría Udn/OT"
+msgstr ""
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__check_cabine
@@ -518,12 +522,17 @@ msgstr "Número de mensajes no leídos"
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task_categ_udn__ot_type_id
 msgid "OT type"
-msgstr "Tipo de presupuesto/OT"
+msgstr "Tipo OT"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__order_lines
 msgid "Order Lines"
 msgstr "Líneas de orden"
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_project_task__payment_term_ot_id
+msgid "Payment term"
+msgstr "Plazos de pago"
 
 #. module: sat_companies_project
 #: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
@@ -601,7 +610,7 @@ msgstr "Error de entrega de SMS"
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_project__sale_order_id
 msgid "Sale Order"
-msgstr ""
+msgstr "Pedido"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_project__sale_type_origin_id
@@ -637,11 +646,6 @@ msgid "Sale type Field service"
 msgstr "Tipo de presupuesto/OT"
 
 #. module: sat_companies_project
-#: model:ir.ui.menu,name:sat_companies_project.menu_sale_order_type_subscription
-msgid "Sale type OT"
-msgstr "Tipo de presupuesto/OT"
-
-#. module: sat_companies_project
 #: model:ir.model,name:sat_companies_project.model_sale_order
 msgid "Sales Order"
 msgstr "Pedido de venta"
@@ -670,7 +674,7 @@ msgstr "Etapas"
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_project__start_date_project
 msgid "Start date project"
-msgstr ""
+msgstr "Fecha inicio proyecto"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__state_check_qr
@@ -712,13 +716,13 @@ msgstr "Tareas"
 #: model:ir.model.fields,field_description:sat_companies_project.field_res_partner__payment_term_maintenance_id
 #: model:ir.model.fields,field_description:sat_companies_project.field_res_users__payment_term_maintenance_id
 msgid "Terms maintenance sale"
-msgstr ""
+msgstr "Plazos de pago mantenimiento"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_res_partner__payment_term_tel_id
 #: model:ir.model.fields,field_description:sat_companies_project.field_res_users__payment_term_tel_id
 msgid "Terms telephone sale"
-msgstr ""
+msgstr "Plazos de pago línea"
 
 #. module: sat_companies_project
 #: model_terms:ir.ui.view,arch_db:sat_companies_project.project_task_inherit_form_view
@@ -736,9 +740,18 @@ msgid "The Pit has been checked"
 msgstr "El foso ha sido inspeccionado"
 
 #. module: sat_companies_project
-#: model:ir.model.fields,field_description:sat_companies_project.field_project_task__gadgest_contract_type_id
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task__ot_type_id
 msgid "Tipo OT"
+msgstr ""
+
+#. module: sat_companies_project
+#: model:ir.model.fields,field_description:sat_companies_project.field_project_task__gadgest_contract_type_id
+msgid "Tipo Suscripción"
+msgstr ""
+
+#. module: sat_companies_project
+#: model:ir.ui.menu,name:sat_companies_project.menu_sale_order_type_subscription
+msgid "Tipo de presupuesto/OT"
 msgstr ""
 
 #. module: sat_companies_project
