@@ -32,11 +32,6 @@ class SaleSuscriptionInherit(models.Model):
     check_contract_type = fields.Boolean(
         compute="_compute_check_contract_type",
         )
-    type_service_id = fields.One2many(
-        'sale.check.type.contract',
-        'order_id',
-        string='Type service'
-        )
     signature = fields.Image(
         'Signature',
         help='Signature received through the portal.',
