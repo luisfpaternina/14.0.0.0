@@ -19,18 +19,34 @@ class SaleSuscriptionTemplateInherit(models.Model):
         string="Subscription type")
     exclude_months = fields.Boolean(
         'Exlude Months')
-    jan = fields.Boolean('January')
-    feb = fields.Boolean('February')
-    mar = fields.Boolean('March')
-    apr = fields.Boolean('April')
-    may = fields.Boolean('May')
-    jun = fields.Boolean('June')
-    jul = fields.Boolean('July')
-    aug = fields.Boolean('Auguts')
-    sep = fields.Boolean('September')
-    oct = fields.Boolean('October')
-    nov = fields.Boolean('November')
-    dec = fields.Boolean('December')
+    jan = fields.Boolean(
+        'January')
+    feb = fields.Boolean(
+        'February')
+    mar = fields.Boolean(
+        'March')
+    apr = fields.Boolean(
+        'April')
+    may = fields.Boolean(
+        'May')
+    jun = fields.Boolean(
+        'June')
+    jul = fields.Boolean(
+        'July')
+    aug = fields.Boolean(
+        'Auguts')
+    sep = fields.Boolean(
+        'September')
+    oct = fields.Boolean(
+        'October')
+    nov = fields.Boolean(
+        'November')
+    dec = fields.Boolean(
+        'December')
+    days_number = fields.Integer(
+        string="Days number")
+    days_between_visits = fields.Integer(
+        string="Days between visits")
 
     """
     sale_order_template_id = fields.Many2one(
