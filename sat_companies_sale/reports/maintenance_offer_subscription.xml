@@ -61,9 +61,9 @@
         </template>
 
         <report
-                id="id_template_sale_order_maintenance_offer"
+                id="id_template_subscription_maintenance_offer"
                 string="Oferta de mantenimiento"
-                model="sale.order"
+                model="sale.subscription"
                 report_type="qweb-pdf"
                 name="sat_companies_sale.report_subscription_maintenance_offer"
         />
