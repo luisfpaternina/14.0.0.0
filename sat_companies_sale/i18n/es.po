@@ -1146,7 +1146,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__oportunity_type_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_crm_lead_type
 msgid "Oportunity type"
-msgstr "Tipo de oportunidad"
+msgstr "Tipo"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__opportunity_days
