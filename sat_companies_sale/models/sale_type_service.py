@@ -15,3 +15,6 @@ class SaleTypeService(models.Model):
     order_id = fields.Many2one(
         'sale.order',
         string="Sale Order")
+    suscription_id = fields.Many2one(
+        'sale.subscription',
+        string="Suscription")
