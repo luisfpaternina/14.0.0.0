@@ -118,6 +118,9 @@ class ProjectTask(models.Model):
     zone_name = fields.Char(
         string="Zone name",
         related="zone_id.name")
+    payment_term_ot_id = fields.Many2one(
+        'account.payment.term',
+        string="Payment term")
 
 
     @api.onchange('contact_person')
