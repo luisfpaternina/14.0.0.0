@@ -72,7 +72,7 @@ msgstr "Contacto"
 #. module: sat_companies_sale_suscription
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale_suscription.sale_subscription_inherit_form
 msgid "Contract dates"
-msgstr ""
+msgstr "Datos del contrato"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription__gadget_contract_type
