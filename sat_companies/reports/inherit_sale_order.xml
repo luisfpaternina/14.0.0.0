@@ -2,7 +2,15 @@
  <odoo>
    <data> 
       <template id="sat_companies_invoice_report"  inherit_id="sale.report_saleorder_document">
-
+         <xpath expr="/t/t/div/h2" position="after">
+            <div class="row address">
+               <div class="col-5"/>
+                  <div class="col-5 offset-2">
+                     <strong>Aparato:</strong>
+                  </div>
+               </div>
+            </div>
+         </xpath>
       </template>
    </data>
 </odoo>
