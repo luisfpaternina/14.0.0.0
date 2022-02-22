@@ -86,7 +86,7 @@
                               <span t-field="o.partner_id.vat"></span>
                           </div>
                           <div id="cuadro2">
-                              <strong>Ascensor:<span> </span><span t-field="o.product_id"></span></strong><br></br>
+                              <strong>Ascensor:</strong><span> </span><span t-field="o.product_id"></span><br></br>
                               <strong>R.A.E:</strong><span> </span><span t-field="o.product_id.rae"></span>
                           </div>
                           <div id="espacio"></div>
