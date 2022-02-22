@@ -27,3 +27,11 @@ class AccountMove(models.Model):
     is_potential_client = fields.Boolean(
         string="Is a potential client",
         tracking=True)
+    payment_state = fields.Selection(selection=[
+        ('not_paid', 'Not Paid'),
+        ('in_payment', 'In Payment'),
+        ('paid', 'Paid'),
+        ('partial', 'Partially Paid'),
+        ('reversed', 'Reversed'),
+        ('invoicing_legacy', 'Invoicing App Legacy')],
+        string="Payment Status", store=True, readonly=False, copy=False, tracking=True)
