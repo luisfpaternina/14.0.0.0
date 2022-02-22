@@ -14,11 +14,16 @@ class AccountMove(models.Model):
         'account.move.unpaid',
         string="Unpaids",
         tracking=True)
-    qr_image = fields.Binary("QR Code")
-    qr_in_report = fields.Boolean('Show QR in Report')
-    invoice_qr_code = fields.Char('QR Code')
-    qr_code = fields.Binary('QR Code Image')
-    qr_code_name = fields.Char(default="qr_code.png")
+    qr_image = fields.Binary(
+        "QR Code")
+    qr_in_report = fields.Boolean(
+        'Show QR in Report')
+    invoice_qr_code = fields.Char(
+        'QR Code')
+    qr_code = fields.Binary(
+        'QR Code Image')
+    qr_code_name = fields.Char(
+        default="qr_code.png")
     is_potential_client = fields.Boolean(
         string="Is a potential client",
         tracking=True)
