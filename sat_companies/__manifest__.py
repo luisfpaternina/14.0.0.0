@@ -21,7 +21,7 @@
         'crm',
         'base',
         'base_automation',
-        'hr_holidays'
+        'hr_holidays',
         'sat_companies_stock',
 
     ],
