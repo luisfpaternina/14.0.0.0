@@ -86,7 +86,8 @@
                               <span t-field="o.partner_id.vat"></span>
                           </div>
                           <div id="cuadro2">
-                              
+                              <strong><span t-field="o.product_id"></span></strong><br></br>
+                              <span t-field="o.product_id.rae"></span>
                           </div>
                           <div id="espacio"></div>
                           <table style="width:100%">
