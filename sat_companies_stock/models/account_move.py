@@ -8,13 +8,19 @@ import logging
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    product_id = fields.Many2one('product.template', 'Gadgets')
+    product_id = fields.Many2one(
+        'product.template',
+        'Gadgets')
     gadgets_contract_type_id = fields.Many2one(
         'stock.gadgets.contract.type')
-    task_user_id = fields.Many2one('res.users')
-    sale_type_id = fields.Many2one('sale.order.type')
-    date_begin = fields.Datetime(string = 'Date asigned')
-    date_end = fields.Datetime(string = 'Date End asingned')
+    task_user_id = fields.Many2one(
+        'res.users')
+    sale_type_id = fields.Many2one(
+        'sale.order.type')
+    date_begin = fields.Datetime(
+        string = 'Date asigned')
+    date_end = fields.Datetime(
+        string = 'Date End asingned')
     gadget_contract_type = fields.Many2one(
         'stock.gadgets.contract.type',
         string="Contract type")
@@ -24,7 +30,12 @@ class AccountMove(models.Model):
         related="partner_id.is_potential_client")
     check_product = fields.Boolean(
         compute='compute_check_product')
-    check_contract_type = fields.Boolean(compute="_compute_check_contract_type")
+    check_contract_type = fields.Boolean(
+        compute="_compute_check_contract_type")
+    rae = fields.Char(
+        string="R.A.E",
+        related="product_id.rae")
+
 
     @api.depends('sale_type_id')
     def _compute_check_contract_type(self):
