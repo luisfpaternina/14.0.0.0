@@ -30,7 +30,6 @@
        
         'security/security.xml',
         'security/ir.model.access.csv',
-        #'views/account_move.xml',
         'views/res_company.xml',
         'views/account_move_line.xml',
         'reports/account_debt_letter.xml',
