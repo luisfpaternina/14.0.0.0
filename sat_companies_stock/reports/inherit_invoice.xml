@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <odoo>
+   <data> 
+      <template id="sat_companies_invoice_report"  inherit_id="account.report_invoice_document_with_payments">
+
+         <div id="informations" position="replace">
+            <div id="informations" class="row mt8 mb8">
+               <div class="col-6">
+                  <!--Agregar campos con información de aparatos -->
+                  <strong><span>Aparato:</span></strong><span> </span><span></span>
+                  <br></br>
+                  <strong><span>R.A.E:</span></strong><span> </span><span></span>
+               </div>
+            </div>
+         </div>
+
+      </template>
+   </data>
+</odoo>

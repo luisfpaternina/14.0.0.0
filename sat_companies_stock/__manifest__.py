@@ -54,6 +54,7 @@
         'views/stock_landing_key.xml',
         'views/stock_state_record.xml',
         'reports/technical_data_template.xml',
+        'reports/inherit_invoice.xml',
         
     ],
     'installable': True
