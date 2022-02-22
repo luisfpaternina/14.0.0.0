@@ -61,6 +61,10 @@ class SaleOrder(models.Model):
         compute="_calculated_quote_date_sent")
     quote_date_sent_min = fields.Date(
         string="Quote date sent min")
+    rae = fields.Char(
+        string="R.A.E",
+        related="product_id.rae")
+
 
     @api.onchange('product_id')
     def onchange_check_product(self):
