@@ -22,6 +22,7 @@
         'base',
         'base_automation',
         'hr_holidays'
+        'sat_companies_stock',
 
     ],
 
