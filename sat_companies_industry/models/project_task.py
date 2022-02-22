@@ -118,6 +118,9 @@ class ProjectTask(models.Model):
     zone_name = fields.Char(
         string="Zone name",
         related="zone_id.name")
+    rae = fields.Char(
+        string="R.A.E",
+        related="product_id.rae")
 
 
     @api.onchange('contact_person')
