@@ -1065,7 +1065,7 @@ msgstr "Aparatos"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__gadgets_contract_type_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__gadgets_contract_type_id
 msgid "Gadgets Contract Type"
-msgstr ""
+msgstr "Tipo de contrato"
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_gadgets_state
