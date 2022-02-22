@@ -27,7 +27,9 @@
                           <table width="100%">
                               <tr>
                                   <td>Presupuesto nº</td>
-                                  <td>2</td>
+                                  <td><span t-field="o.name"></span></td>
+                                  <td>Fecha</td>
+                                  <td><span t-field="o.create_date"></span></td>
                               </tr>
                           </table>
                        </div>
