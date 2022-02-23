@@ -64,10 +64,10 @@
                             </tr>
                          </table>
                          <br></br>
-                         <table width="100%" t-if="p == 0">
+                         <table t-if="p == 0">
                             <tr>
                                 <th>
-                                    <h6 align="center">
+                                    <h6>
                                         <span> A </span>
                                         <span> S </span>
                                         <span> C </span>
@@ -104,7 +104,8 @@
                                 </th>
                             </tr>
                          </table>
-                         <strong> Unidades:______________   Tipo:_____ </strong>
+                         <br></br>
+                         <strong t-if="p == 0"> Unidades:______________   Tipo:_____ </strong>
                        </div>
                     </div>
                     <div class="footer">
