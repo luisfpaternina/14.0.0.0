@@ -18,7 +18,7 @@
                             </tr> 
                         </table>
                         <!-- PAGINA # 2-->
-                        <table width="100%" t-if="p == 1">
+                        <table width="100%" t-if="p == 1" class="table table-bordered">
                              <tr>
                                 <td>Modelo</td>
                                 <td>
