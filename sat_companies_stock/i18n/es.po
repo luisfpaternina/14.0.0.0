@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-22 13:11+0000\n"
-"PO-Revision-Date: 2022-02-22 13:11+0000\n"
+"POT-Creation-Date: 2022-02-23 14:07+0000\n"
+"PO-Revision-Date: 2022-02-23 14:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -356,13 +356,6 @@ msgid ""
 msgstr ""
 
 #. module: sat_companies_stock
-#: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_account_move_inherit_product
-msgid ""
-"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
-"title=\"Arrow\" attrs=\"{'invisible': [('product_id', '=', False)]}\"/>"
-msgstr ""
-
-#. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.report_print_technical_data
 msgid "<strong style=\"font-size:15px\">Código aparato:</strong><span> </span>"
 msgstr ""
@@ -492,11 +485,6 @@ msgstr "Todo riesgo"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_april
 msgid "April"
 msgstr "Abril"
-
-#. module: sat_companies_stock
-#: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_account_move_inherit_product
-msgid "Assignment date"
-msgstr "Fecha planeada"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__assistance_type_id
@@ -1032,7 +1020,7 @@ msgstr "Aparato"
 #. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_account_move_inherit_product
 msgid "Gadget information"
-msgstr ""
+msgstr "Información aparato"
 
 #. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_product_template_only_form_view_sat
@@ -1298,7 +1286,7 @@ msgstr "Tipo aumento"
 #. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_account_move_inherit_product
 msgid "Information project"
-msgstr ""
+msgstr "Información contrato"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__years_inspection
@@ -2174,6 +2162,13 @@ msgid "Product Template"
 msgstr "Plantilla de producto"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,help:sat_companies_stock.field_account_bank_statement_line__subscription_template_id
+#: model:ir.model.fields,help:sat_companies_stock.field_account_move__subscription_template_id
+#: model:ir.model.fields,help:sat_companies_stock.field_account_payment__subscription_template_id
+msgid "Product will be included in a selected template"
+msgstr ""
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__qr_cabine_image
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__qr_cabine_image
 msgid "QR CODE IMAGE CABINE"
@@ -2370,6 +2365,13 @@ msgstr "Tipo cerradura rellano"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__stop_numbers
 msgid "Stops numbers"
 msgstr "N° paradas"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__subscription_template_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__subscription_template_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__subscription_template_id
+msgid "Subscription template"
+msgstr "Plantilla de suscripción"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__task_user_id
