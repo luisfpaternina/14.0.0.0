@@ -13,7 +13,7 @@
                             }
                         </style>
                         <!-- PAGINA # 1 LOGOS-->
-                        <table class="one" align="left" border="1"  width="50%" t-if="p == 0"> 
+                        <table class="one" align="left" border="0"  width="50%" t-if="p == 0"> 
                             <tr> 
                                 <td>
                                     <p align="justify">

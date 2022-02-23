@@ -208,7 +208,7 @@
 
         <report
                 id="id_report_template_invoice"
-                string="Factura Serki"
+                string="Factura personalizada"
                 model="account.move"
                 report_type="qweb-pdf"
                 name="sat_companies.report_template_invoice"
