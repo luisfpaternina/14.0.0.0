@@ -20,7 +20,16 @@
             </xpath>
 
             <xpath expr="//form/header/button[8]" position="after">
-                <button name="action_get_attachment" type="object" string="Send Email to Contact" invisible="1"/>
+                <field name="contract_send" invisible="True"/>
+                <button name="action_get_attachment"
+                        type="object"
+                        string="Send Email to Contact"
+                        invisible="True"/>
+                <button name="action_contract_send"
+                        type="object"
+                        class="oe_highlight"
+                        string="Send Contrat to signature"
+                        attrs="{'invisible': [('contract_send', '=', True)]}"/>
             </xpath>
 
             <xpath expr="//form/sheet/group[1]/group[2]/field[(@name='payment_term_id')]" position="after"> 

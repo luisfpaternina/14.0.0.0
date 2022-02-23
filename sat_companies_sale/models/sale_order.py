@@ -41,7 +41,7 @@ class SaleOrder(models.Model):
         string="Signature URL")
     check_signature = fields.Boolean(
         string="Check signature")
-    is_forecast_made = fields.Boolean(
+    is_forecast_made = fields.Boolean(  
         string="Forecast Made")
     product_id = fields.Many2one(
         'product.template',
@@ -64,6 +64,7 @@ class SaleOrder(models.Model):
     rae = fields.Char(
         string="R.A.E",
         related="product_id.rae")
+    contract_send = fields.Boolean()
 
 
     @api.onchange('product_id')
@@ -129,6 +130,7 @@ class SaleOrder(models.Model):
     
 
     def action_contract_send(self):
+        self.contract_send = True
         self.ensure_one()
         template = self.env.ref('sat_companies_sale.email_contract_signature')
         lang = self.env.context.get('lang')
