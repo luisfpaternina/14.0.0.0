@@ -45,6 +45,8 @@
                                   <td colspan="3">
                                       <span t-field="o.product_id.city"></span>
                                       <span> </span>
+                                      <span>/</span>
+                                      <span> </span>
                                       <span t-field="o.product_id.partner_id.state_id"></span>
                                   </td>
                               </tr>
