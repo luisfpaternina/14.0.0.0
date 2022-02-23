@@ -27,6 +27,7 @@ class SaleContractController(http.Controller):
             return sales.pdf_file_sale_contract.report_action(self)
         else:
             return False
+
     @http.route(['/get_sale'], type='json', auth='public', website=True)
     def get_sale(self):
         sales = http.request.env['sale.order'].sudo().search([], limit=6)
