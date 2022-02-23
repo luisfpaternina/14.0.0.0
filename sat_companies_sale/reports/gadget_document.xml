@@ -31,6 +31,12 @@
                                   <td>Fecha</td>
                                   <td><span t-field="o.create_date"></span></td>
                               </tr>
+                              <tr>
+                                  <td>Domicilio de la obra</td>
+                                  <td>REF.SB33SP</td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
                           </table>
                        </div>
                     </div>
