@@ -32,7 +32,21 @@
                              </tr>
                              <tr>
                                  <td>Carga útil:</td>
-                                 <td></td>
+                                 <td>
+                                     <span t-field="o.product_id.gadget_load"></span>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>Personas:</td>
+                                 <td>
+                                     <span t-field="product_id.people_numbers"></span>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>Número de paradas:</td>
+                                 <td>
+                                     <span t-field="o.product_id.stop_numbers"></span>
+                                 </td>
                              </tr>
                         </table>
                     </div>
