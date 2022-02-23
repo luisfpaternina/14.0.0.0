@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-21 20:44+0000\n"
-"PO-Revision-Date: 2022-02-21 20:44+0000\n"
+"POT-Creation-Date: 2022-02-23 10:50+0000\n"
+"PO-Revision-Date: 2022-02-23 10:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -151,7 +151,6 @@ msgid ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "                        % set doc_name = 'quotation' if object.state in ('draft', 'sent') else 'order'\n"
-"                        Holaaaa,\n"
 "                        <br/><br/>\n"
 "                        Your\n"
 "                        % if ctx.get('proforma'):\n"
@@ -416,6 +415,11 @@ msgid "CRM Stages"
 msgstr "Etapas del CRM"
 
 #. module: sat_companies_sale
+#: model:ir.actions.report,name:sat_companies_sale.id_template_gadget_document
+msgid "Características del aparato"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:mail.template,subject:sat_companies_sale.template_sale_sent_legal_letter
 msgid "Carta de No Defensa Jurídica"
 msgstr ""
@@ -494,6 +498,11 @@ msgstr "Contacto"
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.view_sale_order_inherit_sat_companies_sale
 msgid "Contract"
 msgstr "Contrato"
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__contract_send
+msgid "Contract Send"
+msgstr "Contrato enviado"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_contract
@@ -718,6 +727,11 @@ msgstr "Administrador de finca"
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
 msgid "Fdo. Presidente de la Comunidad"
+msgstr ""
+
+#. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_gadget_document
+msgid "Fecha"
 msgstr ""
 
 #. module: sat_companies_sale
@@ -1146,7 +1160,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_stage__oportunity_type_id
 #: model:ir.ui.menu,name:sat_companies_sale.menu_crm_lead_type
 msgid "Oportunity type"
-msgstr "Tipo"
+msgstr "Tipo de oportunidad"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__opportunity_days
@@ -1199,6 +1213,11 @@ msgid "Presidente"
 msgstr ""
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_gadget_document
+msgid "Presupuesto nº"
+msgstr ""
+
+#. module: sat_companies_sale
 #: model:ir.model.fields.selection,name:sat_companies_sale.selection__crm_lead__client_type__public_organisms
 msgid "Public organisms"
 msgstr "Organismos publicos"
@@ -1213,6 +1232,11 @@ msgstr "Fecha presupuesto enviado"
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__quote_date_sent_min
 msgid "Quote date sent min"
 msgstr "Fecha presupuesto enviado min"
+
+#. module: sat_companies_sale
+#: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__rae
+msgid "R.A.E"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order_line__rae
@@ -1311,6 +1335,11 @@ msgid "Sales Order Line"
 msgstr "Línea de pedido de venta"
 
 #. module: sat_companies_sale
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale.view_sale_order_inherit_sat_companies_sale
+msgid "Send Contrat to signature"
+msgstr "Enviar contrato para firma"
+
+#. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
 msgid "Send Document signatured"
 msgstr "Enviar documento firmado"
@@ -1407,7 +1436,7 @@ msgstr "Asignar tarea a ténico"
 #: code:addons/sat_companies_sale/models/sale_order.py:0
 #, python-format
 msgid "The item should be one per line"
-msgstr "No se pueden repetir las líneas en la tabla"
+msgstr ""
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.sale_contract_report
@@ -1454,7 +1483,7 @@ msgstr "Tipo de contrato"
 #: model:ir.actions.act_window,name:sat_companies_sale.sale_type_servic_action
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
-msgstr "Tipo de servicio"
+msgstr "Tipo de oportunidad"
 
 #. module: sat_companies_sale
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale.report_custom_template_sale_documentation
