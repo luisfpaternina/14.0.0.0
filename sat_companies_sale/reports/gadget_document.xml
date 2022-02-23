@@ -29,7 +29,7 @@
                               </strong>
                           </center>
                           <br></br>
-                          <table width="100%" class="table">
+                          <table width="100%">
                               <tr>
                                   <td>Presupuesto nº</td>
                                   <td><span t-field="o.name"></span></td>
