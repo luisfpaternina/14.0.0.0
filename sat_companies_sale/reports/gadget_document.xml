@@ -23,6 +23,7 @@
                             table, th, td {
                             border: 1px solid black;
                             }
+                            h6 span { display: block; }
                         </style>
                           <center>
                               <strong t-if="p == 0">
@@ -59,6 +60,18 @@
                                     <center>
                                         <p>DATOS TECNICOS PRINCIPALES</p>
                                     </center>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h6>
+                                        <span> W </span>
+                                        <span> E </span>
+                                        <span> B </span>
+                                        <span> E </span>
+                                        <span> R </span>
+                                        <span> A </span>
+                                    </h6>
                                 </th>
                             </tr>
                           </table>
