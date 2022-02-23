@@ -21,7 +21,6 @@
                         <style>
                             table, th, td {
                                 border: 1px solid black;
-                                border-collapse: collapse;
                                 }
                         </style>
                           <center>
@@ -39,7 +38,7 @@
                               </tr>
                               <tr>
                                   <td>Domicilio de la obra</td>
-                                  <td colspan="2">REF.SB33SP</td>
+                                  <td colspan="3">REF.SB33SP</td>
                                   <td></td>
                                   <td></td>
                               </tr>
