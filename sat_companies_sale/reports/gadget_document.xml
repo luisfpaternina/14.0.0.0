@@ -55,7 +55,9 @@
                           <table width="100%">
                             <tr>
                                 <th style="background-color:#6ABDDD">
-                                    <p>DATOS TECNICOS PRINCIPALES</p>
+                                    <center>
+                                        <p>DATOS TECNICOS PRINCIPALES</p>
+                                    </center>
                                 </th>
                             </tr>
                           </table>
