@@ -25,6 +25,7 @@
                     <group name="group_right" string="Information project">
                         <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
                         <field name="gadgets_contract_type_id" attrs="{'invisible': [('check_contract_type', '=', False)]}"/>
+                        <field name="subscription_template_id" options="{'no_create': True, 'no_create_edit':True}"/>
                     </group>
                 </group>
             </xpath>
