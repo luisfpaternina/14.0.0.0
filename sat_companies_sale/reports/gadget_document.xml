@@ -39,7 +39,7 @@
                              <tr>
                                  <td>Personas:</td>
                                  <td>
-                                     <span t-field="product_id.people_numbers"></span>
+                                     <span t-field="o.product_id.people_numbers"></span>
                                  </td>
                              </tr>
                              <tr>
