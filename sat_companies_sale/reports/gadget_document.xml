@@ -8,7 +8,7 @@
                   <t t-foreach="docs" t-as="o">                    
                     <div class="header">
                          <style>
-                            table1, th, td {
+                            table1{
                             border: 1px solid black;
                             }
                         </style>
