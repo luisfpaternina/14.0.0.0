@@ -20,10 +20,14 @@
                         <!-- PAGINA # 2-->
                         <table width="100%" t-if="p == 1" class="table table-bordered">
                              <tr>
-                                <td>Modelo</td>
+                                <td>Modelo:</td>
                                 <td>
                                     <span t-field="o.product_id.model_gadget"></span>
                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>Carga útil:</td>
+                                 <td></td>
                              </tr>
                         </table>
                     </div>
