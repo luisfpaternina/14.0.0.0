@@ -8,7 +8,7 @@
                   <t t-foreach="docs" t-as="o">                    
                     <div class="header">
                          <style>
-                            table1{
+                            t01{
                             border: 1px solid black;
                             }
                         </style>
@@ -23,7 +23,7 @@
                             </tr> 
                         </table>
                         <!-- PAGINA # 2-->
-                        <table width="100%" t-if="p == 1" id="table1">
+                        <table width="100%" t-if="p == 1" id="t01">
                              <tr>
                                 <td>Modelo:</td>
                                 <td>
