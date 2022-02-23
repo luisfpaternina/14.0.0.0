@@ -113,6 +113,14 @@
                          </table>
                          <br></br>
                          <strong t-if="p == 0"> Unidades:______________   Tipo:_____ </strong>
+                         <table width="100%" t-if="p == 1">
+                             <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                             </tr>
+                         </table>
                        </div>
                     </div>
                     <div class="footer">
