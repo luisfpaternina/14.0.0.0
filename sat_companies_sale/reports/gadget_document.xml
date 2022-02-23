@@ -7,6 +7,7 @@
                 <t t-foreach="range(2)" t-as="p">
                   <t t-foreach="docs" t-as="o">                    
                     <div class="header">
+                        <!-- PAGINA # 1 LOGOS-->
                         <table class="one" align="left" border="1"  width="50%" t-if="p == 0"> 
                             <tr> 
                                 <td>
@@ -16,9 +17,19 @@
                                 </td> 
                             </tr> 
                         </table>
+                        <!-- PAGINA # 2-->
+                        <table width="100%" t-if="p == 1">
+                             <tr>
+                                <td>Modelo</td>
+                                <td>
+                                    <span t-field="o.product_id.model_gadget"></span>
+                                </td>
+                             </tr>
+                        </table>
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
+                         <!-- PAGINA # 1-->
                         <style>
                             table, th, td {
                             border: 1px solid black;
@@ -113,14 +124,6 @@
                          </table>
                          <br></br>
                          <strong t-if="p == 0"> Unidades:______________   Tipo:_____ </strong>
-                         <table width="100%" t-if="p == 1">
-                             <tr>
-                                <td>Modelo</td>
-                                <td>
-                                    <span t-field="o.product_id.model_gadget"></span>
-                                </td>
-                             </tr>
-                         </table>
                        </div>
                     </div>
                     <div class="footer">
