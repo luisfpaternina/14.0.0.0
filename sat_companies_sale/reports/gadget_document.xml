@@ -115,10 +115,10 @@
                          <strong t-if="p == 0"> Unidades:______________   Tipo:_____ </strong>
                          <table width="100%" t-if="p == 1">
                              <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
+                                <td>Modelo</td>
+                                <td>
+                                    <span t-field="o.product_id.model_gadget"></span>
+                                </td>
                              </tr>
                          </table>
                        </div>
