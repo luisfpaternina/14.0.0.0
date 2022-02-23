@@ -63,10 +63,11 @@
                                 </th>
                             </tr>
                          </table>
+                         <br></br>
                          <table width="100%" t-if="p == 0">
                             <tr>
                                 <th>
-                                    <h6>
+                                    <h6 align="center">
                                         <span> A </span>
                                         <span> S </span>
                                         <span> C </span>
@@ -102,12 +103,8 @@
                                     </h6>
                                 </th>
                             </tr>
-                            <tr>
-                                <th>
-                                   Unidades:______________   Tipo:_____ 
-                                </th>
-                            </tr>
                          </table>
+                         <strong> Unidades:______________   Tipo:_____ </strong>
                        </div>
                     </div>
                     <div class="footer">
