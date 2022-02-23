@@ -4,7 +4,8 @@
 
         <template id="report_custom_template_gadget_document">
             <t t-call="web.html_container">
-                <t t-foreach="docs" t-as="o">                    
+                <t t-foreach="range(2)" t-as="p">
+                  <t t-foreach="docs" t-as="o">                    
                     <div class="header">
                         <table class="one" align="left" border="1"  width="50%"> 
                             <tr> 
@@ -66,6 +67,7 @@
                     <div class="footer">
                         
                     </div>
+                  </t>
                 </t>
             </t>
         </template>
