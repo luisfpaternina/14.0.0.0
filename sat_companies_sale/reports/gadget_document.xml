@@ -7,6 +7,11 @@
                 <t t-foreach="range(2)" t-as="p">
                   <t t-foreach="docs" t-as="o">                    
                     <div class="header">
+                         <style>
+                            table1, th, td {
+                            border: 1px solid black;
+                            }
+                        </style>
                         <!-- PAGINA # 1 LOGOS-->
                         <table class="one" align="left" border="1"  width="50%" t-if="p == 0"> 
                             <tr> 
@@ -18,7 +23,7 @@
                             </tr> 
                         </table>
                         <!-- PAGINA # 2-->
-                        <table width="100%" t-if="p == 1" class="table table-bordered">
+                        <table width="100%" t-if="p == 1" id="table1">
                              <tr>
                                 <td>Modelo:</td>
                                 <td>
