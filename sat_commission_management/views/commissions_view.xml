@@ -29,6 +29,20 @@
                                 </table>
                             </h1>
                         </div>
+                        <group>
+                            <group>
+                                <field name="create_date"/>
+                            </group>
+                            <group>
+                                <field name="create_uid"/>
+                            </group>
+                            <group>
+                                
+                            </group>
+                            <group>
+                                
+                            </group>
+                        </group>
                         <br></br><br></br><br></br>
                         <notebook colspan="4">
                             <page string="Information">
