@@ -26,7 +26,7 @@
                             <tr> 
                                 <th>
                                     <p align="justify">
-                                        <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                                        <img src="/sat_companies_sale/static/description/logo_tuv.png" width="115" height="90"/>
                                     </p>
                                 </th> 
                             </tr> 
