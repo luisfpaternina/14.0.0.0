@@ -10,7 +10,8 @@ class SaleOrder(models.Model):
     sale_type_id = fields.Many2one(
         'sale.order.type',
         string="Sale type",
-        tracking=True)
+        tracking=True,
+        related="product_id.subscription_template_id.sale_type_id")
     is_potential_client = fields.Boolean(
         string="Is a potential client",
         tracking=True,
