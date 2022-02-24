@@ -2479,7 +2479,7 @@ msgstr "Tipo de aumento"
 #. module: sat_companies_stock
 #: model:ir.ui.menu,name:sat_companies_stock.menu_gadgets_types_assistance
 msgid "Types assistance"
-msgstr "Tipo de aumento"
+msgstr "Tipo de asistencia"
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_types_cabin_tubes
