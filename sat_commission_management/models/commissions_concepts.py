@@ -16,6 +16,8 @@ class CommissionsConcepts(models.Model):
     description = fields.Text(
         string="Description",
         tracking=True)
+    is_client_number = fields.Boolean(
+        string="Required number clients")
 
 
     @api.onchange('name')
