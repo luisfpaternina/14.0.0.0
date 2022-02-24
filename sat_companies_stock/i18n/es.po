@@ -1342,7 +1342,7 @@ msgstr "Es Seguidor"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__is_potential_client
 msgid "Is a potential client"
-msgstr "Cliente potencial"
+msgstr "Contacto potencial"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_cabin_puffer
