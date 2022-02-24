@@ -34,7 +34,7 @@
                             <page string="Information">
                                 <group>
                                     <group>
-                                        
+                                        <field name="user_id" options="{'no_create': True, 'no_create_edit':True}"/>
                                     </group>
                                 </group>
                             </page>
