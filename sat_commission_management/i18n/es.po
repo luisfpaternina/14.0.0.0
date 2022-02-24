@@ -236,7 +236,7 @@ msgstr ""
 #. module: sat_commission_management
 #: model:ir.model.fields,field_description:sat_commission_management.field_commissions_concepts__is_client_number
 msgid "Required number clients"
-msgstr ""
+msgstr "Captación de clientes"
 
 #. module: sat_commission_management
 #: model:ir.model.fields,field_description:sat_commission_management.field_commissions__message_has_sms_error
