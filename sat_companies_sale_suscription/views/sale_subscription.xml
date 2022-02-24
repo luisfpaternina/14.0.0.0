@@ -31,7 +31,7 @@
             </xpath>
 
             <xpath expr="//form[1]/sheet[1]/div[not(@name)][3]/notebook[1]" position="inside">
-                <page string="Contract dates" name="contract_dates_page">
+                <page string="Contract dates" name="contract_dates_page" invisible="1">
                   <group>
                     
                   </group>
