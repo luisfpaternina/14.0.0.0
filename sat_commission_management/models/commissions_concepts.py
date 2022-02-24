@@ -1,6 +1,6 @@
 from odoo import models, fields, api, _
 
-class Commissions(models.Model):
+class CommissionsConcepts(models.Model):
     _name = "commissions.concepts"
     _inherit = 'mail.thread'
     _description = "Commissions concepts"
