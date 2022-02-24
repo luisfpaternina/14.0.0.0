@@ -22,6 +22,15 @@
                                 </th> 
                             </tr> 
                         </table>
+                        <table class="one" align="left" border="0"  width="50%" t-if="p == 0"> 
+                            <tr> 
+                                <th>
+                                    <p align="justify">
+                                        <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                                    </p>
+                                </th> 
+                            </tr> 
+                        </table>
                         <!-- PAGINA # 2-->
                         <table width="100%" t-if="p == 1" id="t01">
                             <tr>
@@ -235,7 +244,7 @@
                                  </td>
                             </tr>
                         </table>
-                        <strong>
+                        <strong t-if="p == 1">
                             *Las medidas de cabina son orientativas y no vinculantes
                             <br></br>
                             ACEPTADO                                                                          
