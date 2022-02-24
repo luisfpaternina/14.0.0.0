@@ -15,6 +15,9 @@ class Commissions(models.Model):
     amount = fields.Float(
         string="Amount",
         tracking=True)
+    description = fields.Text(
+        string="Description",
+        tracking=True)
 
 
     @api.onchange('name')
