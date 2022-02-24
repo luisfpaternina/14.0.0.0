@@ -406,7 +406,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_partner__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_partner.field_res_users__is_potential_client
 msgid "Is a potential client"
-msgstr "Cliente potencial"
+msgstr "Contacto potencial"
 
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.custom_view_res_partner_search
@@ -714,7 +714,7 @@ msgstr "Código del tercero"
 #. module: sat_companies_partner
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.custom_view_res_partner_search
 msgid "Potencial client"
-msgstr "Es Cliente potencial"
+msgstr "Es Contacto potencial"
 
 #. module: sat_companies_partner
 #: model:ir.model,name:sat_companies_partner.model_product_template
@@ -832,7 +832,7 @@ msgstr "Validar"
 #: code:addons/sat_companies_partner/models/account_move_line.py:0
 #, python-format
 msgid "Validate potencial client"
-msgstr "Verificar si el cliente es potencial!"
+msgstr "Verificar si el contacto es potencial!"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/account_move.py:0
@@ -845,7 +845,7 @@ msgstr "El contacto debe tener al menos una cuenta bancaría registrada!"
 #: code:addons/sat_companies_partner/models/account_move.py:0
 #, python-format
 msgid "Validate potencial client!"
-msgstr "Validar si el cliente es potencial!"
+msgstr "Validar si el contacto es potencial!"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/purchase_order.py:0
@@ -878,20 +878,20 @@ msgstr ""
 #: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register a Bank account"
-msgstr "La cuenta bancaría es obligatoria para clientes no potenciales"
+msgstr "La cuenta bancaría es obligatoria para contactos no potenciales"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register a city"
-msgstr "La ciudad es obligatoria para clientes no potenciales"
+msgstr "La ciudad es obligatoria para contactos no potenciales"
 
 #. module: sat_companies_partner
 #: code:addons/sat_companies_partner/models/res_partner.py:0
 #, python-format
 msgid "You must register an identification number"
 msgstr ""
-"El número de identificación es obligatorio para clientes no potenciales"
+"El número de identificación es obligatorio para contactos no potenciales"
 
 #. module: sat_companies_partner
 #: model:ir.model,name:sat_companies_partner.model_res_partner_delegation
