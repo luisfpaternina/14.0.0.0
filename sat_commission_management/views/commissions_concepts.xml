@@ -30,7 +30,7 @@
                             </h1>
                         </div>
                         <group>
-                            
+                            <field name="active"/>
                         </group>
                     </sheet>
                 </form>
