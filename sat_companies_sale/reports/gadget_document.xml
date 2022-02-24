@@ -8,18 +8,18 @@
                   <t t-foreach="docs" t-as="o">                    
                     <div class="header">
                          <style>
-                            #t01{
+                            #t01, td{
                             border: 1px solid black;
                             }
                         </style>
                         <!-- PAGINA # 1 LOGOS-->
                         <table class="one" align="left" border="0"  width="50%" t-if="p == 0"> 
                             <tr> 
-                                <td>
+                                <th>
                                     <p align="justify">
                                         <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                                     </p>
-                                </td> 
+                                </th> 
                             </tr> 
                         </table>
                         <!-- PAGINA # 2-->
