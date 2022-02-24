@@ -8,6 +8,8 @@ class CommissionsConcepts(models.Model):
     name = fields.Char(
         string='Name',
         tracking=True)
+    active = fields.Boolean(
+        string="Active")
 
 
     @api.onchange('name')
