@@ -185,7 +185,7 @@ msgstr "Información tipo contrato"
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription__is_potential_client
 msgid "Is a potential client"
-msgstr "Es cliente potencial"
+msgstr "Es contacto potencial"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_account_setup_bank_manual_config__is_default
@@ -347,4 +347,4 @@ msgstr "Tipo presupuesto/OT"
 #: code:addons/sat_companies_sale_suscription/models/sale_subscription.py:0
 #, python-format
 msgid "Validate potential client in partner"
-msgstr "Validar si el cliente es potencial!"
+msgstr "Validar si el contacto es potencial!"

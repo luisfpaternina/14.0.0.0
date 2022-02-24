@@ -371,7 +371,7 @@ msgstr "Es un seguidor"
 #: model:ir.model.fields,field_description:sat_companies_project.field_sale_order__is_potential_client
 #: model:ir.model.fields,field_description:sat_companies_project.field_stock_picking__is_potential_client
 msgid "Is a potential client"
-msgstr "Cliente potencial"
+msgstr "Contacto potencial"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_wizard_sale_order_type__is_new_project
@@ -798,7 +798,7 @@ msgstr ""
 #: code:addons/sat_companies_project/models/sale_order.py:0
 #, python-format
 msgid "Verify the type of client if it is potential"
-msgstr "Verificar si el cliente es potencial!"
+msgstr "Verificar si el contacto es potencial!"
 
 #. module: sat_companies_project
 #: model:ir.model.fields,field_description:sat_companies_project.field_project_task_categ_udn__website_message_ids
