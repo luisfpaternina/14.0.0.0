@@ -24,30 +24,54 @@
                         </table>
                         <!-- PAGINA # 2-->
                         <table width="100%" t-if="p == 1" id="t01">
-                             <tr>
+                            <tr>
                                 <td>Modelo:</td>
                                 <td>
                                     <span t-field="o.product_id.model_gadget"></span>
                                 </td>
-                             </tr>
-                             <tr>
+                            </tr>
+                            <tr>
                                  <td>Carga útil:</td>
                                  <td>
                                      <span t-field="o.product_id.gadget_load"></span>
                                  </td>
-                             </tr>
-                             <tr>
+                            </tr>
+                            <tr>
                                  <td>Personas:</td>
                                  <td>
                                      <span t-field="o.product_id.people_numbers"></span>
                                  </td>
-                             </tr>
-                             <tr>
+                            </tr>
+                            <tr>
                                  <td>Número de paradas:</td>
                                  <td>
                                      <span t-field="o.product_id.stop_numbers"></span>
                                  </td>
-                             </tr>
+                            </tr>
+                            <tr>
+                                 <td>Número de accesos:</td>
+                                 <td>
+                                     <span></span>
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td>Embarques en cabina:</td>
+                                 <td>
+                                     <span></span>
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td>Recorrido:</td>
+                                 <td>
+                                     <span></span>
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td>Velocidad:</td>
+                                 <td>
+                                     <span></span>
+                                 </td>
+                            </tr>
                         </table>
                     </div>
                     <div class="article o_report_layout_standard">
