@@ -72,13 +72,13 @@
                             <tr>
                                  <td>Recorrido:</td>
                                  <td>
-                                     <span></span>
+                                     <span t-field="o.product_id.route"></span>
                                  </td>
                             </tr>
                             <tr>
                                  <td>Velocidad:</td>
                                  <td>
-                                     <span></span>
+                                     <span t-field="o.product_id.nominal_speed"></span>
                                  </td>
                             </tr>
                             <tr>
@@ -126,7 +126,7 @@
                             <tr>
                                  <td><strong>Maniobra</strong></td>
                                  <td>
-                                     <span></span>
+                                     <span t-field="o.product_id.maneuver"></span>
                                  </td>
                             </tr>
                             <tr>
