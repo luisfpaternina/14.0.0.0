@@ -10,6 +10,12 @@ class CommissionsConcepts(models.Model):
         tracking=True)
     active = fields.Boolean(
         string="Active")
+    amount = fields.Float(
+        string="Amount",
+        tracking=True)
+    description = fields.Text(
+        string="Description",
+        tracking=True)
 
 
     @api.onchange('name')
