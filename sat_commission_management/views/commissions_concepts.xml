@@ -37,7 +37,7 @@
                                 <field name="amount"/>
                             </group>
                             <group>
-                                
+                                <field name="is_client_number"/>
                             </group>
                             <group>
                                 
