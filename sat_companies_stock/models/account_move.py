@@ -16,7 +16,8 @@ class AccountMove(models.Model):
     task_user_id = fields.Many2one(
         'res.users')
     sale_type_id = fields.Many2one(
-        'sale.order.type')
+        'sale.order.type',
+        related="product_id.subscription_template_id.sale_type_id")
     date_begin = fields.Datetime(
         string = 'Date asigned')
     date_end = fields.Datetime(
@@ -56,13 +57,3 @@ class AccountMove(models.Model):
                 record.check_product=True
             else:
                 record.check_product=False
-
-    @api.onchange('product_id')
-    def onchange_check_product(self):
-        for record in self:
-            if record.product_id.employee_notice_id.user_id:
-                record.task_user_id = record.product_id.employee_notice_id.user_id
-            sale_type = record.product_id.subscription_template_id.sale_type_id
-            gadgets_contract = record.product_id.subscription_template_id.gadgets_contract_type_id
-            record.sale_type_id = sale_type
-            record.gadgets_contract_type_id = gadgets_contract
