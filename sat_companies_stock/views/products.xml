@@ -68,7 +68,7 @@
                             <group>
                                 <field name="high_date"/>
                                 <field name="end_guarantee"/>
-                                <field name="start_date_contract"/>
+                                <field name="start_date_contract" invisible="1"/>
                                 <field name="years_number" invisible="1"/>
                                 <field name="months_number" invisible="1"/>
                                 <field name="contract_number" invisible="1"/>
