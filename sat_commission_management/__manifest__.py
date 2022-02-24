@@ -24,6 +24,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/commissions_view.xml',
+        'views/commissions_concepts.xml',
                    
     ],
 
