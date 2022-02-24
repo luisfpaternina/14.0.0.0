@@ -7,7 +7,8 @@ class SaleOrderTemplateInherit(models.Model):
     _inherit = 'sale.order'
     
     gadgets_contract_type_id = fields.Many2one(
-        'stock.gadgets.contract.type')
+        'stock.gadgets.contract.type',
+        related="product_id.subscription_template_id.gadgets_contract_type_id")
     acc_number = fields.Char(
         string="Acc number")
     check_contract_type = fields.Boolean(compute="_compute_check_contract_type")
