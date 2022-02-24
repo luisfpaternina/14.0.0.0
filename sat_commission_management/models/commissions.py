@@ -8,6 +8,13 @@ class Commissions(models.Model):
     name = fields.Char(
         string='Name',
         tracking=True)
+    user_id = fields.Many2one(
+        'res.users',
+        string="Comercial",
+        tracking=True)
+    amount = fields.Float(
+        string="Amount",
+        tracking=True)
 
 
     @api.onchange('name')
