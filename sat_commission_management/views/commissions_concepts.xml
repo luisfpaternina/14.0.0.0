@@ -29,16 +29,9 @@
                                 </table>
                             </h1>
                         </div>
-                        <br></br><br></br><br></br>
-                        <notebook colspan="4">
-                            <page string="Information">
-                                <group>
-                                    <group>
-                                        
-                                    </group>
-                                </group>
-                            </page>
-                        </notebook>
+                        <group>
+                            
+                        </group>
                     </sheet>
                 </form>
             </field>
