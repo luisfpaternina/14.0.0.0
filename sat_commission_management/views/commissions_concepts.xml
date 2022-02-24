@@ -30,7 +30,13 @@
                             </h1>
                         </div>
                         <group>
-                            <field name="active"/>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="amount"/>
+                            </group>
+                            <field name="description" placeholder="Add description...!"/>
                         </group>
                     </sheet>
                 </form>
