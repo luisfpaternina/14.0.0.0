@@ -22,7 +22,7 @@
                                 </th> 
                             </tr> 
                         </table>
-                        <table class="one" align="left" border="0"  width="50%" t-if="p == 0"> 
+                        <table class="one" align="right" border="0"  width="50%" t-if="p == 0"> 
                             <tr> 
                                 <th>
                                     <p align="justify">
