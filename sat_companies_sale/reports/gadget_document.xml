@@ -132,7 +132,7 @@
                             <tr>
                                  <td>Botonera de cabina:</td>
                                  <td>
-                                     <span></span>
+                                     <span t-field="o.product_id.cockpit_type_id"></span>
                                  </td>
                             </tr>
                             <tr>
