@@ -41,7 +41,17 @@ class AccountMove(models.Model):
         related="product_id.subscription_template_id")
     subscription_id = fields.Many2one(
         'sale.subscription',
-        string="Subscription")
+        string="Subscription",
+        compute="_compute_subscription")
+
+
+    @api.depends('partner_id')
+    def _compute_subscription(self):
+        for line in self.invoice_line_ids:
+            if line.subscription_id:
+                self.subscription_id = line.subscription_id.id
+            else:
+                self.subscription_id = False
 
 
     @api.depends('sale_type_id')
