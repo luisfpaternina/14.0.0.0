@@ -147,7 +147,7 @@ class SaleSuscriptionInherit(models.Model):
 
     def create_subs_invoice(self, vals_list):
         dic = {
-        'product_id': vals_list.product_id
+        'product_id': self.product_id
         }
         self.env['account.move'].create(dic)
 
