@@ -10,3 +10,6 @@ class AccountMove(models.Model):
 
     gadgets_contract_type_id = fields.Many2one(
         'stock.gadgets.contract.type')
+    suscription_id = fields.Many2one(
+        'sale.subscription',
+        string="Subscription")
