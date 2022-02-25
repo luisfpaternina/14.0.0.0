@@ -149,7 +149,7 @@ class SaleSuscriptionInherit(models.Model):
 
     def create_subs_invoice(self, vals_list):
         dic = {
-        'product_id': self.product_id
+        'product_id': self.product_id.id
         }
         self.env['account.move'].create(dic)
         logging.info("++++++++++++++++++")
