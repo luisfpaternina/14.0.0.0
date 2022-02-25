@@ -47,7 +47,8 @@ class SaleSuscriptionInherit(models.Model):
         'Signed On',
         help='Date of the signature.',
         copy=False)
-    pdf_file_sale_contract = fields.Binary('PDF Contrato')
+    pdf_file_sale_contract = fields.Binary(
+        'PDF Contrato')
 
 
     @api.onchange('product_id')
@@ -143,6 +144,18 @@ class SaleSuscriptionInherit(models.Model):
         active_cron = True
         return active_cron
     """
+
+    def create_subs_invoice(self, rec):
+        dic = {
+        'product_id':  rec.product_id
+        }
+        self.env['account.move'].create(dic)
+
+    @api.model
+    def  generate_recurring_invoice(self):
+        res = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
+        self.create_subs_invoice(rec)
+        return res
 
 
     def _recurring_create_invoice(self):
