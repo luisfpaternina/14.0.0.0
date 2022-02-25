@@ -10,7 +10,8 @@ class AccountMove(models.Model):
 
     product_id = fields.Many2one(
         'product.template',
-        'Gadgets')
+        'Gadgets',
+        compute="_compute_gadget_name")
     gadgets_contract_type_id = fields.Many2one(
         'stock.gadgets.contract.type')
     task_user_id = fields.Many2one(
@@ -52,6 +53,14 @@ class AccountMove(models.Model):
                 self.subscription_id = line.subscription_id.id
             else:
                 self.subscription_id = False
+
+    @api.depends('subscription_id')
+    def _compute_gadget_name(self):
+        for record in self:
+            if record.subscription_id:
+                record.product_id = record.subscription_id.product_id.id
+            else:
+                record.product_id = False
 
 
     @api.depends('sale_type_id')
