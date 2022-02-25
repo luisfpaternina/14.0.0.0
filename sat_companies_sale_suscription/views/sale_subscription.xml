@@ -23,8 +23,8 @@
                     -->
                     </group>
                     <group name="group_right" string="Information project">
-                        <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}" required="1"/>
-                        <field name="gadgest_contract_type_id" attrs="{'invisible': [('check_contract_type', '!=', True)],'required': [('check_contract_type', '!=', False)]}"/>
+                        <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}" invisible="1"/>
+                        <field name="gadgest_contract_type_id" invisible="1"/>
                         <field name="pdf_file_sale_contract"/>
 
                     </group>
