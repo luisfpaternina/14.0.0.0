@@ -3,6 +3,8 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import datetime
 from pytz import timezone
+import logging
+
 
 class SaleSuscriptionInherit(models.Model):
     _inherit = 'sale.subscription'
@@ -150,11 +152,13 @@ class SaleSuscriptionInherit(models.Model):
         'product_id': self.product_id
         }
         self.env['account.move'].create(dic)
+        logging.info("++++++++++++++++++")
 
 
     def generate_recurring_invoice(self):
         vals_list = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
         self.create_subs_invoice(vals_list)
+        logging.info("===============================")
         return vals_list
 
 
