@@ -15,7 +15,8 @@ class AccountMove(models.Model):
     gadgets_contract_type_id = fields.Many2one(
         'stock.gadgets.contract.type')
     task_user_id = fields.Many2one(
-        'res.users')
+        'res.users',
+        compute="_compute_gadget_name")
     sale_type_id = fields.Many2one(
         'sale.order.type')
     date_begin = fields.Datetime(
@@ -59,8 +60,10 @@ class AccountMove(models.Model):
         for record in self:
             if record.subscription_id:
                 record.product_id = record.subscription_id.product_id.id
+                record.task_user_id = record.subscription_id.task_user_id.id
             else:
                 record.product_id = False
+                record.task_user_id = False
 
 
     @api.depends('sale_type_id')
