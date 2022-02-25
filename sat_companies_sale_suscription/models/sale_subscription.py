@@ -154,6 +154,11 @@ class SaleSuscriptionInherit(models.Model):
         self.env['account.move'].create(dic)
         logging.info("++++++++++++++++++")
 
+    def _prepare_invoice_data(self):
+        vals_list = super(SaleSuscriptionInherit, self)._prepare_invoice_data()
+        self.create_subs_invoice(vals_list)
+        logging.info("===============================")
+        return vals_list
 
     def generate_recurring_invoice(self):
         vals_list = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
