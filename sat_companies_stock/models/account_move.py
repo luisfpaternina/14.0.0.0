@@ -39,6 +39,9 @@ class AccountMove(models.Model):
         'sale.subscription.template',
         string="Subscription template",
         related="product_id.subscription_template_id")
+    subscription_id = fields.Many2one(
+        'sale.subscription',
+        string="Subscription")
 
 
     @api.depends('sale_type_id')
