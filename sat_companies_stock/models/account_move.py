@@ -45,6 +45,13 @@ class AccountMove(models.Model):
         compute="_compute_subscription")
 
 
+    @api.onchange('subscription_id')
+    def gadget_information(self):
+        for record in self:
+            if record.subscription_id:
+                record.product_id = record.subscription_id.product_id.id
+
+
     @api.depends('partner_id')
     def _compute_subscription(self):
         for line in self.invoice_line_ids:
