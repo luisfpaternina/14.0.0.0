@@ -151,7 +151,7 @@ class SaleSuscriptionInherit(models.Model):
         }
         self.env['account.move'].create()
 
-    @api.model
+
     def generate_recurring_invoice(self):
         res = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
         res = self.create_subs_invoice()
