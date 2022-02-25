@@ -154,7 +154,7 @@ class SaleSuscriptionInherit(models.Model):
     @api.model
     def generate_recurring_invoice(self):
         res = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
-        self.create_subs_invoice()
+        res = self.create_subs_invoice()
         return res
 
 
