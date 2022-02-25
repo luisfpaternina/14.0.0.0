@@ -145,16 +145,16 @@ class SaleSuscriptionInherit(models.Model):
         return active_cron
     """
 
-    def create_subs_invoice(self, rec):
+    def create_subs_invoice(self):
         dic = {
-        'product_id': rec.product_id
+        'product_id': self.product_id
         }
-        self.env['account.move'].create(dic)
+        self.env['account.move'].create()
 
     @api.model
     def  generate_recurring_invoice(self):
         rec = super(SaleSuscriptionInherit, self).generate_recurring_invoice()
-        self.create_subs_invoice(rec)
+        self.create_subs_invoice()
         return rec
 
 
