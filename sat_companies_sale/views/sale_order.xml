@@ -29,7 +29,7 @@
                         type="object"
                         class="oe_highlight"
                         string="Send Contrat to signature"
-                        attrs="{'invisible': [('contract_send', '=', True)]}"/>
+                        attrs="{'invisible': ['|',('contract_send', '=', True),('state', '!=', 'sent')]}"/>
             </xpath>
 
             <xpath expr="//form/sheet/group[1]/group[2]/field[(@name='payment_term_id')]" position="after"> 
