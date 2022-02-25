@@ -173,6 +173,9 @@ class SaleOrder(models.Model):
                 print(pdf)
                 b64_pdf = base64.b64encode(pdf[0])
                 record.pdf_file_sale_contract = b64_pdf
+                if record.order_line:
+                    for line in record.order_line:
+                        line.subscription_id.pdf_file_sale_contract = record.pdf_file_sale_contract 
             else:
                 record.pdf_file_sale_contract = False
 

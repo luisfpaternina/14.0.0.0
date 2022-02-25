@@ -47,6 +47,7 @@ class SaleSuscriptionInherit(models.Model):
         'Signed On',
         help='Date of the signature.',
         copy=False)
+    pdf_file_sale_contract = fields.Binary('PDF Contrato')
 
 
     @api.onchange('product_id')
@@ -148,12 +149,12 @@ class SaleSuscriptionInherit(models.Model):
         res = super(SaleSuscriptionInherit, self)._recurring_create_invoice()
         for record in self:
             month_exclude = False
-            active_cron = record._active_cron_invoice(active_cron)
+            #active_cron = record._active_cron_invoice(active_cron)
             if record.template_id.exclude_months == True:
-                if active_cron == True:
-                    date_today = datetime.now().month
-                else:
-                    date_today = record.recurring_next_date.month
+                #if active_cron == True:
+                #    date_today = datetime.now().month
+                #else:
+                date_today = record.recurring_next_date.month
     
                 if date_today == 1 and record.template_id.jan == True:
                     month_exclude = True
@@ -187,21 +188,42 @@ class SaleSuscriptionInherit(models.Model):
                     res.amount_by_group = False
                     #res.amount_total = 0.0
                     total = 0
-                    for line in res.invoice_line_ids:
-                        total = line.price_subtotal
-                    
-                    free_month_product =self.env.ref(
-                    'sat_companies_sale_suscription.free_month_product_service'
-                    )
-                    line_last_product = res.invoice_line_ids[-1]
+                    if res.invoice_line_ids:
+                        for line in res.invoice_line_ids:
+                            total = line.price_subtotal
+                        
+                        free_month_product =self.env.ref(
+                        'sat_companies_sale_suscription.free_month_product_service'
+                        )
+                        line_last_product = res.invoice_line_ids[-1]
+                        vals = {
+                                'product_id': record.product_id.id,
+                                'task_user_id': record.task_user_id.id,
+                                'sale_type_id': record.sale_type_id.id,
+                                'gadgets_contract_type_id': record.gadgest_contract_type_id.id,
+                                'invoice_line_ids': [(0, 0, {
+                                    'name': 'Descuento total por mes',
+                                    'product_id': free_month_product.id,
+                                    'tax_ids': line_last_product.tax_ids.ids,
+                                    'price_unit': -total,
+                                    'quantity': 1,
+                                    })]
+                                    }
+                        res.write(vals)
+                    else:
+                        vals = {
+                            'product_id': record.product_id.id,
+                            'task_user_id': record.task_user_id.id,
+                            'sale_type_id': record.sale_type_id.id,
+                            'gadgets_contract_type_id': record.gadgest_contract_type_id.id,
+                            }
+                        res.write(vals)
+                else:
                     vals = {
-                            'invoice_line_ids': [(0, 0, {
-                                'name': 'Descuento total por mes',
-                                'product_id': free_month_product.id,
-                                'tax_ids': line_last_product.tax_ids.ids,
-                                'price_unit': -total,
-                                'quantity': 1,
-                                })]
+                            'product_id': record.product_id.id,
+                            'task_user_id': record.task_user_id.id,
+                            'sale_type_id': record.sale_type_id.id,
+                            'gadgets_contract_type_id': record.gadgest_contract_type_id.id,
                             }
                     res.write(vals)
                         #line.amount_currency = 0.0
