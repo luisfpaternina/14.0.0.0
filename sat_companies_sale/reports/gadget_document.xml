@@ -267,17 +267,17 @@
                           <br></br>
                           <table width="100%" t-if="p == 0">
                               <tr>
-                                  <td>Presupuesto nº</td>
+                                  <td><strong>Presupuesto nº</strong></td>
                                   <td><span t-field="o.name"></span></td>
-                                  <td>Fecha</td>
+                                  <td><strong>Fecha</strong></td>
                                   <td><span t-field="o.create_date"></span></td>
                               </tr>
                               <tr>
-                                  <td>Domicilio de la obra</td>
+                                  <td><strong>Domicilio de la obra</strong></td>
                                   <td colspan="3">REF.SB33SP</td>
                               </tr>
                               <tr>
-                                  <td>Población/Provincia</td>
+                                  <td><strong>Población/Provincia</strong></td>
                                   <td colspan="3">
                                       <span t-field="o.product_id.city"></span>
                                       <span> </span>
